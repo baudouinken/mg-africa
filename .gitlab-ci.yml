@@ -13,9 +13,8 @@ build_deploy:
     - apk update
     - apk add openssh-client rsync
     - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY" > /tmp/id_rsa
-    - chmod 600 /tmp/id_rsa
-    - ssh-add /tmp/id_rsa
+    - echo "$SSH_PRIVATE_KEY"
+    - echo "$SSH_PRIVATE_KEY" | strace ssh-add -
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - echo "$SSH_HOST_KEY" > ~/.ssh/known_hosts
