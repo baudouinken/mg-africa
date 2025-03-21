@@ -7,7 +7,7 @@ build_deploy:
     - master
   variables:
     # Set to "true" for lots of info in the logs
-    CI_DEBUG_TRACE: "false"
+    CI_DEBUG_TRACE: "true"
   before_script:
     - cat /etc/os-release
     - apk update
