@@ -26,6 +26,51 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .menu {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .menu-title {
+      color: #0d7236;
+      margin-top: 0;
+    }
+    .menu-items {
+      margin-left: 20px;
+    }
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .option {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+    .note {
+      background-color: #f7fff2;
+      padding: 15px;
+      border-left: 4px solid #27ae60;
+      margin: 20px 0;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+  </style>
 
   <!-- =======================================================
   * Template Name: Ninestars
@@ -103,9 +148,52 @@
               <li><i class="bi bi-check-circle"></i> <span>une fête.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>un dîner privé</span></li>
             </ul>
+            nous créons des menus adaptés à vos goûts et à votre budget. <br><br>
             <p>
-              nous créons des menus adaptés à vos goûts et à votre budget.
+              <a href="index.html#portfolio" class="btn-get-started">Voir nos prochains événements</a>
             </p>
+
+            <br>
+            <h3>Nos Offres de Catering</h3>
+            <h4>Sur mesure pour tous les budgets. Exemples ci-dessous (Exemples de Devis) :</h4>
+
+            <h4>Nos menus pour événements</h4>
+
+            <div class="menu">
+              <h3 class="menu-title">1. Mariage (50 personnes)</h3>
+              <ul class="menu-items">
+                <li><strong>Entrée :</strong> Salade avocat-crevettes</li>
+                <li><strong>Plats :</strong> Ndolè, Poisson braisé, Eru</li>
+                <li><strong>Dessert :</strong> Beignets de banane & glace</li>
+                <li class="price"><strong>Prix :</strong> 1 500 €</li>
+              </ul>
+              <p class="option">Option : Ajoutez un buffet de fruits exotiques pour +200 €</p>
+            </div>
+
+            <div class="menu">
+              <h3 class="menu-title">2. Anniversaire (30 personnes)</h3>
+              <ul class="menu-items">
+                <li><strong>Entrée :</strong> Samoussas & accras</li>
+                <li><strong>Plats :</strong> Poulet DG, Riz cantonnais africain</li>
+                <li><strong>Dessert :</strong> Mousse à la mangue</li>
+                <li class="price"><strong>Prix :</strong> 900 €</li>
+              </ul>
+            </div>
+
+            <div class="menu">
+              <h3 class="menu-title">3. Événement d'entreprise (100 personnes)</h3>
+              <ul class="menu-items">
+                <li><strong>Buffet froid :</strong> 10 variétés de mini-délices africains</li>
+                <li class="price"><strong>Prix :</strong> 2 000 €</li>
+              </ul>
+            </div>
+
+            <div class="note">
+              <p><strong>Note :</strong><br>
+                Ces menus sont modifiables. Demandez un devis personnalisé pour votre événement, quel que soit votre budget !</p>
+              <a href="index.html#contact" class="btn-get-started">Demandez votre devis</a>
+            </div>
+
           </div>
         </div>
 
@@ -121,13 +209,13 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-6">
-          <h4>Join Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <h4>Rejoint nos Newsletter</h4>
+          <p>Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            <div class="sent-message">Votre demande d'abonnement a été envoyée. Nous vous remercions de votre attention.</div>
           </form>
         </div>
       </div>
@@ -149,33 +237,34 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Useful Links</h4>
+        <h4>Liens utiles</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">A Propos</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio">Portfolio</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Contact</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Our Services</h4>
+        <h4>Nos Services</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-catering.html">Catering</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-street-food.html">Festivals & Street Food</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html">Ateliers culinaires pour enfants</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html">Location de materiel de cuisine</a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-12">
-        <h4>Follow Us</h4>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        <h4>MG Africa Food</h4>
+        <p>Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
         <div class="social-links d-flex">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href="https://tr.ee/v3aV9wlKpl"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.facebook.com/share/18dYWfkZB7/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/mg_africa_food?igsh=MWN1Y3ZsaW15b2YxNg=="><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/4917675938034"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
 
