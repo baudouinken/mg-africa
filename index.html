@@ -39,61 +39,58 @@
       padding: 3rem 0;
       background-color: #f8f9fa;
     }
-
     .testimonial-card {
       background: white;
       border-radius: 10px;
       padding: 2rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       margin: 0 1rem;
       height: 100%;
     }
-
-    .testimonial-text {
-      font-style: italic;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-    }
-
-    .author-img {
-      width: 60px;
-      height: 60px;
+    .testimonial-img {
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: cover;
-      margin-right: 1rem;
+      margin: 0 auto 1rem;
+      border: 4px solid #99cc33;
     }
-
-    .author-info h5 {
-      margin-bottom: 0.2rem;
-      color: #333;
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: #555;
     }
-
-    .author-info p {
-      margin: 0;
-      color: #777;
+    .testimonial-author {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .testimonial-position {
+      color: #6c757d;
       font-size: 0.9rem;
     }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 5%;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: rgba(0, 0, 0, 0.3);
+    .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      padding: 15px;
+      background-color: #cfffc0;
+    }
+    .carousel-indicators .active {
+      background-color: #0d7236;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 5%;
+      color: #0d7236;
+    }
+    .quote-icon {
+      color: #99cc33;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
-    .rating {
-      color: #ffc107;
-      margin-bottom: 1rem;
+    .bi-chevron-left::before {
+      color: #0d7236;
+    }
+    .bi-chevron-right::before {
+      color: #0d7236;
     }
   </style>
 </head>
@@ -123,14 +120,14 @@
             </ul>
           </li>
           <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="festivals.html">Festivals</a></li>
           <li><a href="index.html#team">Team</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
       <a class="btn-getstarted" href="index.html#about">Get Started</a>
-
     </div>
   </header>
 
@@ -748,66 +745,57 @@
 
     <section class="testimonial-slider">
       <div class="container">
-        <h2 class="text-center mb-5">Ce que nos clients disent</h2>
+        <h2 class="text-center mb-5">What Our Clients Say</h2>
 
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          </div>
+
           <div class="carousel-inner">
-            <!-- Testimonial 1 -->
             <div class="carousel-item active">
-              <div class="testimonial-card text-center">
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"MG Africa Food a transformé notre mariage en une fête inoubliable ! Les plats étaient délicieux et le service impeccable."</p>
-                <div class="testimonial-author justify-content-center">
-                  <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Client" class="author-img">
-                  <div class="author-info">
-                    <h5>Pierre</h5>
-                    <p>Directeur Marketing</p>
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center">
+                    <i class="bi bi-quote quote-icon"></i>
+                    <img src="https://randomuser.me/api/portraits/men/83.jpg" alt="Client" class="testimonial-img">
+                    <p class="testimonial-text">"MG Africa Food a transformé notre mariage en une fête inoubliable ! Les plats étaient délicieux et le service impeccable."</p>
+                    <h5 class="testimonial-author">Pierre</h5>
+                    <p class="testimonial-position">Directeur Marketing, TechCorp</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Testimonial 2 -->
             <div class="carousel-item">
-              <div class="testimonial-card text-center">
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <p class="testimonial-text">"Leur stand au festival était incroyable. J'ai adoré le Porc braisé et l'ambiance chaleureuse."</p>
-                <div class="testimonial-author justify-content-center">
-                  <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Client" class="author-img">
-                  <div class="author-info">
-                    <h5>Lisa</h5>
-                    <p>CEO</p>
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center">
+                    <i class="bi bi-quote quote-icon"></i>
+                    <img src="https://randomuser.me/api/portraits/women/69.jpg" alt="Client" class="testimonial-img">
+                    <p class="testimonial-text">"Leur stand au festival était incroyable. J'ai adoré le Porc braisé et l'ambiance chaleureuse."</p>
+                    <h5 class="testimonial-author">Lisa</h5>
+                    <p class="testimonial-position">CEO, Innovate Solutions</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Testimonial 3 -->
           </div>
 
           <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i class="bi bi-chevron-left fs-1 text-primary"></i>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <i class="bi bi-chevron-right fs-1 text-primary"></i>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
