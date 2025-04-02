@@ -92,6 +92,11 @@
     .bi-chevron-right::before {
       color: #0d7236;
     }
+
+    .logo-inner {
+      width: 170px !important;
+      height: 150px !important;
+    }
   </style>
 </head>
 
@@ -102,8 +107,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">MG Africa Food</h1>
+        <img src="assets/img/logo.png" alt="" class="logo-inner">
+<!--        <h1 class="sitename">MG Africa Food</h1>-->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -236,7 +241,24 @@
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/pngegg%20(1).png" alt="" class="img-fluid">
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/food/food_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/food/food_3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/food/food_4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/food/food_8.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -603,95 +625,71 @@
     </section><!-- /Faq Section -->
 
     <!-- Team Section -->
-<!--    <section id="team" class="team section">-->
+    <section id="team" class="team section">
 
-<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
-<!--      <div class="container section-title" data-aos="fade-up">-->
-<!--        <h2>Team</h2>-->
-<!--        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
-<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Quelques spécialités</h2>
+        <p>Découvrez certaines de nos spécialités</p>
+      </div><!-- End Section Title -->
 
-<!--      <div class="container">-->
+      <div class="container">
 
-<!--        <div class="row gy-4">-->
+        <div class="row gy-4">
 
-<!--          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">-->
-<!--            <div class="member">-->
-<!--              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">-->
-<!--              <div class="member-info">-->
-<!--                <div class="member-info-content">-->
-<!--                  <h4>Walter White</h4>-->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/food/food_7.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Poulet rotis + frittes de plantin</h4>
 <!--                  <span>Chief Executive Officer</span>-->
-<!--                </div>-->
-<!--                <div class="social">-->
-<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
-<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
-<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
-<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-<!--          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">-->
-<!--            <div class="member">-->
-<!--              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">-->
-<!--              <div class="member-info">-->
-<!--                <div class="member-info-content">-->
-<!--                  <h4>Sarah Jhonson</h4>-->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/food/food_6.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Légume + plantin vappeur</h4>
 <!--                  <span>Product Manager</span>-->
-<!--                </div>-->
-<!--                <div class="social">-->
-<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
-<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
-<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
-<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-<!--          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">-->
-<!--            <div class="member">-->
-<!--              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">-->
-<!--              <div class="member-info">-->
-<!--                <div class="member-info-content">-->
-<!--                  <h4>William Anderson</h4>-->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/food/food_5.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Poisson braisé + Battons de magnoc</h4>
 <!--                  <span>CTO</span>-->
-<!--                </div>-->
-<!--                <div class="social">-->
-<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
-<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
-<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
-<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-<!--          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">-->
-<!--            <div class="member">-->
-<!--              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">-->
-<!--              <div class="member-info">-->
-<!--                <div class="member-info-content">-->
-<!--                  <h4>Amanda Jepson</h4>-->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/food/food_2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Igname sauté au légume</h4>
 <!--                  <span>Accountant</span>-->
-<!--                </div>-->
-<!--                <div class="social">-->
-<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
-<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
-<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
-<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-<!--        </div>-->
+        </div>
 
-<!--      </div>-->
+      </div>
 
-<!--    </section>&lt;!&ndash; /Team Section &ndash;&gt;-->
+    </section><!-- /Team Section -->
 
     <!-- Clients Section -->
 <!--    <section id="clients" class="clients section light-background">-->
@@ -757,7 +755,7 @@
 
     <section class="testimonial-slider">
       <div class="container">
-        <h2 class="text-center mb-5">Se que disent nos Clients</h2>
+        <h2 class="text-center mb-5">Ce que disent nos Clients</h2>
 
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -773,7 +771,7 @@
                     <i class="bi bi-quote quote-icon"></i>
                     <img src="https://randomuser.me/api/portraits/men/83.jpg" alt="Client" class="testimonial-img">
                     <p class="testimonial-text">"MG Africa Food a transformé notre mariage en une fête inoubliable ! Les plats étaient délicieux et le service impeccable."</p>
-                    <h5 class="testimonial-author">Pierre</h5>
+                    <h5 class="testimonial-author">Stephane</h5>
                     <p class="testimonial-position">Directeur Marketing, TechCorp</p>
                   </div>
                 </div>
@@ -787,8 +785,21 @@
                     <i class="bi bi-quote quote-icon"></i>
                     <img src="https://randomuser.me/api/portraits/women/69.jpg" alt="Client" class="testimonial-img">
                     <p class="testimonial-text">"Leur stand au festival était incroyable. J'ai adoré le Porc braisé et l'ambiance chaleureuse."</p>
-                    <h5 class="testimonial-author">Lisa</h5>
+                    <h5 class="testimonial-author">Flora</h5>
                     <p class="testimonial-position">CEO, Innovate Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center">
+                    <i class="bi bi-quote quote-icon"></i>
+                    <img src="https://randomuser.me/api/portraits/lego/5.jpg" alt="Client" class="testimonial-img">
+                    <p class="testimonial-text">"Ils ont géré le catering pour notre championat et nous avons beaucoup aimé"</p>
+                    <h5 class="testimonial-author">Santé Coppi e.V.</h5>
                   </div>
                 </div>
               </div>
