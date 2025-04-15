@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Catering</title>
+  <title>MG Africa Food</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -59,15 +59,18 @@
       border-left: 4px solid #27ae60;
       margin: 20px 0;
     }
-    .cta-button {
-      display: inline-block;
-      background-color: #27ae60;
+
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/catering.webp');
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-      margin-top: 10px;
+      padding: 5rem 0;
+      margin-bottom: 3rem;
+    }
+
+    .head  {
+      color: white !important;
     }
 
   </style>
@@ -88,28 +91,28 @@
 
     <a href="index.html" class="logo d-flex align-items-center me-auto">
       <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="assets/img/logo.png" alt="">
-      <h1 class="sitename">MG Africa Food</h1>
+      <img src="assets/img/logo.png" alt="" class="logo-inner">
+      <!--        <h1 class="sitename">MG Africa Food</h1>-->
     </a>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html#hero">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <!--          <li><a href="index.html#services">Services</a></li>-->
-        <li class="dropdown active"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
-          <ul>
-            <li><a href="service-details-catering.html">Catering</a></li>
-            <li><a href="service-details-street-food.html">Festivals</a></li>
-            <li><a href="service-details-atelier.html">Atelier pour enfants</a></li>
-            <li><a href="service-details-location.html">Location matériel</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="festivals.html">Festivals</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#hero"><b>Home</b></a></li>
+        <li><a href="index.html#about"><b>About</b></a></li>
+        <li><a href="index.html#services" class="active"><b>Services</b></a></li>
+        <!--          <li class="dropdown"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>-->
+        <!--            <ul>-->
+        <!--              <li><a href="service-details-catering.html">Catering</a></li>-->
+        <!--              <li><a href="service-details-street-food.html">Festivals</a></li>-->
+        <!--              <li><a href="service-details-atelier.html">Atelier pour enfants</a></li>-->
+        <!--              <li><a href="service-details-location.html">Location matériel</a></li>-->
+        <!--            </ul>-->
+        <!--          </li>-->
+        <li><a href="index.html#portfolio"><b>Portfolio</b></a></li>
+        <li><a href="blog.html"><b>Blog</b></a></li>
+        <li><a href="festivals.html"><b>Festivals</b></a></li>
+        <li><a href="index.html#faq"><b>FAQ</b></a></li>
+        <li><a href="index.html#contact"><b>Contact</b></a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
@@ -132,6 +135,13 @@
       </div>
     </div><!-- End Page Title -->
 
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3 head">Service Catering sur mesure</h1>
+        <p class="lead">Découvrez nos recettes, astuces et aventures culinaires !</p>
+      </div>
+    </section>
+
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
 
@@ -139,8 +149,8 @@
         <div class="row gy-4">
           <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200"></div>
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/catering.webp" alt="" class="img-fluid services-img">
-            <h3>Catering sur mesure</h3>
+<!--            <img src="assets/img/catering.webp" alt="" class="img-fluid services-img">-->
+<!--            <h3>Catering sur mesure</h3>-->
             <p>
               Offrez à vos invités une expérience culinaire inoubliable avec notre catering sur mesure. <br>
               Que ce soit pour:
@@ -152,7 +162,7 @@
             </ul>
             nous créons des menus adaptés à vos goûts et à votre budget. <br><br>
             <p>
-              <a href="index.html#portfolio" class="btn-get-started">Voir nos prochains événements</a>
+              <a href="festivals.html" class="btn btn-outline-success buttons">Prochains événements <i class="bi bi-arrow-right"></i></a>
             </p>
 
             <br>
@@ -193,7 +203,7 @@
             <div class="note">
               <p><strong>Note :</strong><br>
                 Ces menus sont modifiables. Demandez un devis personnalisé pour votre événement, quel que soit votre budget !</p>
-              <a href="index.html#contact" class="btn-get-started">Demandez votre devis</a>
+              <a href="index.html#contact" class="btn btn-success buttons">Demandez votre devis </a>
             </div>
 
           </div>
@@ -233,6 +243,7 @@
         <div class="footer-contact pt-3">
           <p>Petersburger Straße 92</p>
           <p>10247 Berlin</p>
+          <p>Deutschlandweite Einsatzbereitschaft</p>
           <p class="mt-3"><strong>Phone:</strong> <span>+49 176 75938034</span></p>
           <p><strong>Email:</strong> <span>contact@mgafricafood.com</span></p>
         </div>
