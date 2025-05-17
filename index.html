@@ -113,9 +113,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active notranslate"><b>Home</b></a></li>
-          <li><a href="index.html#about" class="notranslate"><b>About</b></a></li>
-          <li><a href="index.html#services" class="notranslate"><b>Services</b></a></li>
+          <li><a href="index.html#hero" class="active" data-i18n="menu_home"><b>Home</b></a></li>
+          <li><a href="index.html#about" class="notranslate" data-i18n="menu_about"><b>About</b></a></li>
+          <li><a href="index.html#services" class="notranslate" data-i18n="menu_Services"><b>Services</b></a></li>
 <!--          <li class="dropdown"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>-->
 <!--            <ul>-->
 <!--              <li><a href="service-details-catering.html">Catering</a></li>-->
@@ -128,11 +128,11 @@
           <li><a href="blog.html" class="notranslate"><b>Blog</b></a></li>
           <li><a href="festivals.html" class="notranslate"><b>Festivals</b></a></li>
           <li><a href="index.html#faq" class="notranslate"><b>FAQ</b></a></li>
-          <li><a href="index.html#contact"><b>Contact</b></a></li>
+          <li><a href="index.html#contact" data-i18n="menu_Contact"><b>Contact</b></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="index.html#about" data-i18n="get_started">Get Started</a>
     </div>
   </header>
 
@@ -144,14 +144,14 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1 class="big-title">Découvrez les <span class="text-middle">saveurs authentiques</span> de l'Afrique en Allemagne</h1>
-            <p>Catering, festivals, ateliers culinaires et bien plus encore. Plongez dans une expérience culinaire unique !</p>
+            <h1 class="big-title"> <span data-i18n="homepage_title_1">Découvrez les </span> <span class="text-middle" data-i18n="homepage_title_2">saveurs authentiques</span> <span data-i18n="homepage_title_3"> de l'Afrique en Allemagne</span></h1>
+            <p data-i18n="subtitle">Catering, festivals, ateliers culinaires et bien plus encore. Plongez dans une expérience culinaire unique !</p>
             <p>
               <span class="text-middle"><i>Taste africa, Feel the love.</i></span>
             </p>
             <div class="d-flex">
-              <a href="index.html#services" class="btn btn-success buttons">Nos services</a> &nbsp; &nbsp;&nbsp;&nbsp;
-              <a href="index.html#contact" class="btn btn-outline-success buttons">Contactez-nous <i class="bi bi-arrow-right"></i></a>
+              <a href="index.html#services" class="btn btn-success buttons" data-i18n="nos_services">Nos services</a> &nbsp; &nbsp;&nbsp;&nbsp;
+              <a href="index.html#contact" class="btn btn-outline-success buttons"> <span data-i18n="contactez_nous">Contactez-nous</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -169,10 +169,10 @@
         <div class="row gy-3">
           <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="100">
             <h3 class="fw-bold">
-              <span class="text-heller">Qui Sommes-</span><span class="text-dunkle">Nous</span><span class="text-heller">?</span>
+              <span class="text-heller" data-i18n="about_qui_sommes">Qui Sommes</span>-<span class="text-dunkle" data-i18n="about_nous">Nous</span><span class="text-heller">?</span>
             </h3>
             <div class="border-bottom  border-4 mt-3 mb-4 w-5 mx-auto"></div>
-              <p>
+              <p data-i18n="about_intro">
                 MG Africa Food, c'est bien plus qu'une entreprise de restauration. Nous sommes passionnés par la cuisine
                 africaine et nous nous engageons à partager ses saveurs riches et variées avec vous. Que ce soit pour un
                 événement privé, un festival ou un atelier culinaire, nous vous offrons une expérience gastronomique inoubliable.
@@ -1096,6 +1096,15 @@
       </div>
     </div>
 
+    <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
+      <label for="languageSwitcher" class="visually-hidden">Language</label>
+      <select id="languageSwitcher" class="form-select w-auto">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+
   </footer>
 
   <!-- Scroll Top -->
@@ -1116,10 +1125,88 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-<!--  <div class="gtranslate_wrapper"></div>-->
-<!--  <script>window.gtranslateSettings = {"default_language":"fr","detect_browser_language":true,"languages":["fr","en","de"],"wrapper_selector":".gtranslate_wrapper"}</script>-->
-<!--  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>-->
+  <script src="https://unpkg.com/i18next@23.4.7/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          menu_home: "Home",
+          menu_about: "About",
+          menu_Services: "Services",
+          menu_Contact: "Contact",
+          get_started: "Get Started",
+          homepage_title_1: "Discover the",
+          homepage_title_2: "authentic flavors",
+          homepage_title_3: "of Africa in Germany",
+          subtitle: "Catering, festivals, culinary workshops and much more. Dive into a unique culinary experience!",
+          nos_services: "Our Services",
+          contactez_nous: "Contact Us",
+          about_qui_sommes: "Wo we",
+          about_nous: "are",
+          about_intro: "MG Africa Food is much more than a catering company. We are passionate about African cuisine and committed to sharing its rich and varied flavors with you. Whether for a private event, a festival, or a culinary workshop, we offer you an unforgettable gastronomic experience.",
+        }
+      },
+      fr: {
+        translation: {
+          menu_home: "Accueil",
+          menu_about: "About",
+          menu_Services: "Services",
+          menu_Contact: "Contact",
+          get_started: "Get Started",
+          homepage_title_1: "Découvrez les",
+          homepage_title_2: "saveurs authentiques",
+          homepage_title_3: "de l'Afrique en Allemagne",
+          subtitle: "Catering, festivals, ateliers culinaires et bien plus encore. Plongez dans une expérience culinaire unique !",
+          nos_services: "Nos Services",
+          contactez_nous: "Contactez-nous",
+          about_qui_sommes: "Qui sommes",
+          about_nous: "nous",
+          about_intro: "MG Africa Food, c'est bien plus qu'une entreprise de restauration. Nous sommes passionnés par la cuisine africaine et nous nous engageons à partager ses saveurs riches et variées avec vous. Que ce soit pour un événement privé, un  festival ou un atelier culinaire, nous vous offrons une expérience gastronomique inoubliable."
+        }
+      },
+      de: {
+        translation: {
+          menu_home: "Home",
+          menu_about: "Über uns",
+          menu_Services: "Dienstleistungen",
+          menu_Contact: "Kontakt",
+          get_started: "Loslegen",
+          homepage_title_1: "Entdecken Sie die",
+          homepage_title_2: "authentischen Geschmäcker",
+          homepage_title_3: "Afrikas in Deutschland",
+          subtitle: "Catering, Festivals, Kochworkshops und vieles mehr. Tauchen Sie ein in ein einzigartiges kulinarisches Erlebnis!",
+          nos_services: "Unsere Dienstleistungen",
+          contactez_nous: "Kontaktieren Sie uns",
+          about_qui_sommes: "Wer sind",
+          about_nous: "wir",
+          about_intro: " MG Africa Food ist viel mehr als ein Catering Unternehmen. Wir sind  leidenschaftlich begeistert von der afrikanischen Küche und engagieren uns dafür, ihre reichen und vielfältigen Aromen mit Ihnen zu teilen. Ob für eine private Veranstaltung, ein Festival oder einen Kochworkshop, wir bieten Ihnen ein unvergessliches gastronomisches Erlebnis.",
+        }
+      }
+    };
 
+    i18next
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        resources,
+        fallbackLng: 'en',
+        debug: true
+      }, function(err, t) {
+        updateContent();
+      });
+
+    function updateContent() {
+      $('[data-i18n]').each(function () {
+        const key = $(this).attr('data-i18n');
+        $(this).text(i18next.t(key));
+      });
+    }
+
+    $('#languageSwitcher').on('change', function () {
+      const selectedLang = $(this).val();
+      i18next.changeLanguage(selectedLang, updateContent);
+    });
+  </script>
 </body>
-
 </html>
