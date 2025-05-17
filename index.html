@@ -113,9 +113,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active" data-i18n="menu_home"><b>Home</b></a></li>
-          <li><a href="index.html#about" class="notranslate" data-i18n="menu_about"><b>About</b></a></li>
-          <li><a href="index.html#services" class="notranslate" data-i18n="menu_Services"><b>Services</b></a></li>
+          <li><a href="index.html#hero" class="active"><b><span data-i18n="menu_home">Home</span></b></a></li>
+          <li><a href="index.html#about" class="notranslate"><b><span data-i18n="menu_about">About</span></b></a></li>
+          <li><a href="index.html#services" class="notranslate"><b><span data-i18n="menu_Services">Services</span></b></a></li>
 <!--          <li class="dropdown"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>-->
 <!--            <ul>-->
 <!--              <li><a href="service-details-catering.html">Catering</a></li>-->
@@ -128,7 +128,7 @@
           <li><a href="blog.html" class="notranslate"><b>Blog</b></a></li>
           <li><a href="festivals.html" class="notranslate"><b>Festivals</b></a></li>
           <li><a href="index.html#faq" class="notranslate"><b>FAQ</b></a></li>
-          <li><a href="index.html#contact" data-i18n="menu_Contact"><b>Contact</b></a></li>
+          <li><a href="index.html#contact"><b><span data-i18n="menu_Contact">Contact</span></b></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -196,8 +196,8 @@
                 <li>
                   <img src="assets/img/parchment.png" width="40px" height="40px" style="margin-right: 12px">
                   <div>
-                    <h4>Notre histoire</h4>
-                    <p>MG Africa Food est né de la passion pour la cuisine africaine et du désir de partager ses saveurs uniques avec le monde.
+                    <h4 data-i18n="notre_histoire">Notre histoire</h4>
+                    <p data-i18n="notre_histoire_text">MG Africa Food est né de la passion pour la cuisine africaine et du désir de partager ses saveurs uniques avec le monde.
                       Fondé par Denis 1 Fotso, notre entreprise s'est rapidement imposée comme une référence en Allemagne pour les événements
                       culinaires africains. Que ce soit à travers notre catering, nos stands de festival ou nos ateliers, nous nous engageons à
                       offrir une expérience authentique et mémorable.</p>
@@ -206,8 +206,8 @@
                 <li>
                   <img src="assets/img/kiosk.png" width="40px" height="40px" style="margin-right: 12px">
                   <div>
-                    <h4>Événements</h4>
-                    <p>
+                    <h4 data-i18n="events">Événements</h4>
+                    <p data-i18n="events_text">
                       Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier,
                       nous sommes là pour vous. Contactez-nous dès aujourd'hui pour discuter de vos besoins ! <br>
                       <a href="index.html#contact" class="btn btn-success buttons mt-3" style="width: 200px">Demander un devis</a> &nbsp;&nbsp;
@@ -229,17 +229,21 @@
                   <img src="assets/img/goal.png" width="40px" height="40px" style="margin-right: 12px">
                   <div>
                     <h4>Mission</h4>
-                    <p>Notre mission est de faire découvrir la richesse de la cuisine africaine à travers des plats savoureux, des événements
+                    <p data-i18n="mission">
+                      Notre mission est de faire découvrir la richesse de la cuisine africaine à travers des plats savoureux, des événements
                       vibrants et des ateliers éducatifs. Nous croyons que la nourriture est bien plus qu'un simple repas – c'est une expérience
-                      culturelle qui rapproche les gens.</p>
+                      culturelle qui rapproche les gens.
+                    </p>
                   </div>
                 </li>
                 <li>
                   <img src="assets/img/heart.png" width="40px" height="40px" style="margin-right: 12px">
                   <div>
-                    <h4>Passion</h4>
-                    <p>Notre équipe est composée de passionnés de cuisine, de culture et de service client. Chacun de nos membres apporte une
-                      expertise unique, mais nous partageons tous la même vision : vous offrir le meilleur de l'Afrique dans chaque assiette.</p>
+                    <h4 data-i18n="passion">Passion</h4>
+                    <p data-i18n="passion_text">
+                      Notre équipe est composée de passionnés de cuisine, de culture et de service client. Chacun de nos membres apporte une
+                      expertise unique, mais nous partageons tous la même vision : vous offrir le meilleur de l'Afrique dans chaque assiette.
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -1098,7 +1102,7 @@
 
     <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
       <label for="languageSwitcher" class="visually-hidden">Language</label>
-      <select id="languageSwitcher" class="form-select w-auto">
+      <select id="languageSwitcher" class="form-select w-auto" style=" background-color: #0d7236; color: white">
         <option value="en">English</option>
         <option value="fr">Français</option>
         <option value="de">Deutsch</option>
@@ -1146,6 +1150,14 @@
           about_qui_sommes: "Wo we",
           about_nous: "are",
           about_intro: "MG Africa Food is much more than a catering company. We are passionate about African cuisine and committed to sharing its rich and varied flavors with you. Whether for a private event, a festival, or a culinary workshop, we offer you an unforgettable gastronomic experience.",
+          notre_histoire: "Our Story",
+          notre_histoire_text: "MG Africa Food was born out of a passion for African cuisine and the desire to share its unique flavors with the world. Founded by Denis 1 Fotso, our company quickly established itself as a reference in Germany for African culinary events. Whether through our catering, festival stands, or workshops, we are committed to providing an authentic and memorable experience.",
+          events: "Events",
+          events_text: " Whether you're planning an event, wish to meet us at a festival, or participate in a workshop, we are here for you. Contact us today to discuss your needs!",
+          mission: "Our mission is to showcase the richness of African cuisine through flavorful dishes, vibrant events, and educational workshops. We believe that food is much more than just a meal – it's a cultural experience that brings people together.",
+          passion: "Passion",
+          passion_text: "Our team is made up of people passionate about food, culture, and customer service. Each of our members brings unique expertise, but we all share the same vision: to offer you the best of Africa on every plate.",
+
         }
       },
       fr: {
@@ -1163,7 +1175,15 @@
           contactez_nous: "Contactez-nous",
           about_qui_sommes: "Qui sommes",
           about_nous: "nous",
-          about_intro: "MG Africa Food, c'est bien plus qu'une entreprise de restauration. Nous sommes passionnés par la cuisine africaine et nous nous engageons à partager ses saveurs riches et variées avec vous. Que ce soit pour un événement privé, un  festival ou un atelier culinaire, nous vous offrons une expérience gastronomique inoubliable."
+          about_intro: "MG Africa Food, c'est bien plus qu'une entreprise de restauration. Nous sommes passionnés par la cuisine africaine et nous nous engageons à partager ses saveurs riches et variées avec vous. Que ce soit pour un événement privé, un  festival ou un atelier culinaire, nous vous offrons une expérience gastronomique inoubliable.",
+          notre_histoire: "Notre Histoire",
+          notre_histoire_text: "MG Africa Food est né de la passion pour la cuisine africaine et du désir de partager ses saveurs uniques avec le monde. Fondé par Denis 1 Fotso, notre entreprise s'est rapidement imposée comme une référence en Allemagne pour les événements culinaires africains. Que ce soit à travers notre catering, nos stands de festival ou nos ateliers, nous nous engageons à offrir une expérience authentique et mémorable.",
+          events: "Événements",
+          events_text: "Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier, nous sommes là pour vous. Contactez-nous dès aujourd'hui pour discuter de vos besoins !",
+          mission: "Notre mission est de faire découvrir la richesse de la cuisine africaine à travers des plats savoureux, des événements vibrants et des ateliers éducatifs. Nous croyons que la nourriture est bien plus qu'un simple repas – c'est une expérience culturelle qui rapproche les gens.",
+          passion: "Passion",
+          passion_text: "Notre équipe est composée de personnes passionnées par la cuisine, la culture et le service client. Chacun de nos membres apporte une expertise unique, mais nous partageons tous la même vision : vous offrir le meilleur de l'Afrique dans chaque assiette.",
+
         }
       },
       de: {
@@ -1182,6 +1202,14 @@
           about_qui_sommes: "Wer sind",
           about_nous: "wir",
           about_intro: " MG Africa Food ist viel mehr als ein Catering Unternehmen. Wir sind  leidenschaftlich begeistert von der afrikanischen Küche und engagieren uns dafür, ihre reichen und vielfältigen Aromen mit Ihnen zu teilen. Ob für eine private Veranstaltung, ein Festival oder einen Kochworkshop, wir bieten Ihnen ein unvergessliches gastronomisches Erlebnis.",
+          notre_histoire: "Unsere Geschichte",
+          notre_histoire_text: "MG Africa Food wurde aus einer Leidenschaft für die afrikanische Küche und dem Wunsch geboren, ihre einzigartigen Aromen mit der Welt zu teilen. Gegründet von Denis 1 Fotso, hat sich unser Unternehmen schnell als Referenz in Deutschland für afrikanische kulinarische Veranstaltungen etabliert. Ob durch unser Catering, unsere Festivalstände oder Workshops, wir verpflichten uns, ein authentisches und unvergessliches Erlebnis zu bieten.",
+          events: "Veranstaltungen",
+          events_text: "Ob Sie eine Veranstaltung planen, uns auf einem Festival treffen oder an einem Workshop teilnehmen möchten, wir sind für Sie da. Kontaktieren Sie uns noch heute, um Ihre Bedürfnisse zu besprechen!",
+          mission: "Unsere Mission ist es, den Reichtum der afrikanischen Küche durch schmackhafte Gerichte, lebendige Veranstaltungen und lehrreiche Workshops zu präsentieren. Wir glauben, dass Essen viel mehr ist als nur eine Mahlzeit – es ist ein kulturelles Erlebnis, das Menschen zusammenbringt.",
+          passion: "Leidenschaft",
+          passion_text: " Unser Team besteht aus Menschen, die leidenschaftlich für Kochen, Kultur und Kundenservice brennen. Jedes unserer Mitglieder bringt einzigartige Expertise mit, aber wir alle teilen die gleiche Vision: Ihnen das Beste aus Afrika auf jedem Teller zu bieten.",
+
         }
       }
     };
