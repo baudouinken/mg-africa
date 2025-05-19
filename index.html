@@ -937,8 +937,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contactez-nous</h2>
-        <p>Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier,
+        <h2 data-i18n="contact_title">Contactez-nous</h2>
+        <p data-i18n="contact_text">Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier,
           nous sommes là pour vous. Contactez-nous dès aujourd'hui pour discuter de vos besoins !</p>
       </div><!-- End Section Title -->
 
@@ -952,7 +952,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Addresse</h3>
+                  <h3 data-i18n="contact_form_adress">Addresse</h3>
                   <p>Petersburger Straße 92, 10247 Berlin</p>
                 </div>
               </div><!-- End Info Item -->
@@ -960,7 +960,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Appelez-nous</h3>
+                  <h3 data-i18n="contact_form_call">Appelez-nous</h3>
                   <p>+49 176 75938034</p>
                 </div>
               </div><!-- End Info Item -->
@@ -973,7 +973,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8913931339366!2d13.45033177716082!3d52.51730453642851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e67c18707df%3A0xdaf9aa49ff964a75!2sPetersburger%20Str.%2092%2C%2010247%20Berlin!5e0!3m2!1sfr!2sde!4v1747669788157!5m2!1sfr!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
@@ -982,22 +982,22 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Nom</label>
+                  <label for="name-field" class="pb-2" data-i18n="contact_form_name">Nom</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
 
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Email</label>
+                  <label for="email-field" class="pb-2" data-i18n="contact_form_email">Email</label>
                   <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Sujet</label>
+                  <label for="subject-field" class="pb-2" data-i18n="contact_form_subject">Sujet</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
+                  <label for="message-field" class="pb-2" data-i18n="contact_form_message">Message</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
@@ -1006,7 +1006,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Envoyer</button>
+                  <button type="submit" data-i18n="contact_form_send">Envoyer</button>
                 </div>
 
               </div>
@@ -1027,10 +1027,10 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6">
-            <h4>Rejoint nos Newsletter</h4>
-            <p>Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
+            <h4 data-i18n="news_letter_title">Rejoint nos Newsletter</h4>
+            <p data-i18n="news_letter_text">Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire"></div>
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire" data-i18n="news_letter_button"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Votre demande d'abonnement a été envoyée. Nous vous remercions de votre attention.</div>
@@ -1058,26 +1058,26 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Liens utiles</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#about">A Propos</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about"><span data-i18n="menu_about">A Propos</span></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services"><span data-i18n="menu_Services"></span>Services</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact"><span data-i18n="menu_Contact"></span>Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nos Services</h4>
+          <h4><span data-i18n="services_nos">Nos</span> <span data-i18n="services">Services</span></h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="service-details-catering.html">Catering</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="service-details-street-food.html">Festivals & Street Food</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html">Ateliers culinaires pour enfants</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html">Location de materiel de cuisine</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html"><span data-i18n="footer_atelier_enfant">Ateliers culinaires pour enfants</span></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html"><span data-i18n="footer_location">Location de materiel de cuisine</span></a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
           <h4>MG Africa Food</h4>
-          <p>Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
+          <p data-i18n="mg_food_slogan_footer">Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
           <div class="social-links d-flex">
             <a href="https://tr.ee/v3aV9wlKpl"><i class="bi bi-tiktok"></i></a>
             <a href="https://www.facebook.com/share/18dYWfkZB7/"><i class="bi bi-facebook"></i></a>
@@ -1220,8 +1220,22 @@
           testi_3: "\"Our dream of a wedding with African flavors came true thanks to MG Africa Food. The impeccable service and delicious dishes made our day even more magical. Thank you for bringing a touch of Africa to Berlin!\"",
           testi_4: "\"Successful Turkish-African fusion! MG Africa Food adapted its menu to our two cultures, surprising all our guests. Warm service and refined presentation\"",
           testi_5: "\"100 guests and zero disappointment! MG Africa Food turned our event into a culinary journey across Africa. The Poulet DG and Ndolè were the talk of the evening.\"",
-          testi_6: "\"For my 25th birthday, I wanted flavors that remind me of my native Cameroon. MG Africa Food exceeded all my expectations with dishes just like my mother makes. Guaranteed emotion!\""
-
+          testi_6: "\"For my 25th birthday, I wanted flavors that remind me of my native Cameroon. MG Africa Food exceeded all my expectations with dishes just like my mother makes. Guaranteed emotion!\"",
+          contact_title: "Contact Us",
+          contact_text: "Whether you're planning an event, wish to meet us at a festival, or participate in a workshop, we are here for you. Contact us today to discuss your needs!",
+          contact_form_name: "Name",
+          contact_form_email: "Email",
+          contact_form_subject: "Subject",
+          contact_form_message: "Message",
+          contact_form_send: "Send",
+          contact_form_adress: "Address",
+          contact_form_call: "Call-us",
+          news_letter_title: "Join our Newsletter",
+          news_letter_text: "Subscribe to our newsletter and receive the latest news about our products and services!",
+          news_letter_button: "Subscribe",
+          footer_atelier_enfant: "Culinary workshops for children",
+          footer_location: "Rental of kitchen equipment",
+          mg_food_slogan_footer: "Catering, festivals, culinary workshops and much more. Discover the flavors of Africa in Germany.",
 
 
         }
@@ -1311,7 +1325,23 @@
           testi_3: "\"Notre rêve d'un mariage aux saveurs africaines est devenu réalité grâce à MG Africa Food. Le service impeccable et les plats délicieux ont rendu notre jour encore plus magique. Merci pour cette touche d'Afrique à Berlin !\"",
           testi_4: "\"Fusion turco-africaine réussie ! MG Africa Food a su adapter son menu à nos deux cultures, surprenant tous nos invités. Un service chaleureux et une présentation raffinée\"",
           testi_5: "\"100 convives et zéro déception ! MG Africa Food a transformé notre événement en un voyage culinaire à travers l'Afrique. Le poulet DG et le ndolé étaient au cœur des conversations\"",
-          testi_6: "\"Pour mes 25 ans, je voulais des saveurs qui rappellent mon Cameroun natal. MG Africa Food a dépassé toutes mes attentes avec des plats comme ma mère les fait. Émotion garantie !\""
+          testi_6: "\"Pour mes 25 ans, je voulais des saveurs qui rappellent mon Cameroun natal. MG Africa Food a dépassé toutes mes attentes avec des plats comme ma mère les fait. Émotion garantie !\"",
+          contact_title: "Contactez-nous",
+          contact_text: "Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier, nous sommes là pour vous. Contactez-nous dès aujourd'hui pour discuter de vos besoins !",
+          contact_form_name: "Nom",
+          contact_form_email: "Email",
+          contact_form_subject: "Sujet",
+          contact_form_message: "Message",
+          contact_form_send: "Envoyer",
+          contact_form_adress: "Adresse",
+          contact_form_call: "Appelez-nous",
+          news_letter_title: "Rejoignez notre Newsletter",
+          news_letter_text: "Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !",
+          news_letter_button: "Souscrire",
+          footer_atelier_enfant: "Ateliers culinaires pour enfants",
+          location_materiel: "Location de materiel de cuisine",
+          mg_food_slogan_footer: "Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne."
+
 
         }
       },
@@ -1401,8 +1431,21 @@
           testi_4: "\"Erfolgreiche türkisch-afrikanische Fusion! MG Africa Food hat sein Menü an unsere beiden Kulturen angepasst und damit alle unsere Gäste überrascht. Ein herzlicher Service und eine raffinierte Präsentation\"",
           testi_5: "\"100 Gäste und null Enttäuschung! MG Africa Food hat unsere Veranstaltung in eine kulinarische Reise durch Afrika verwandelt. Das Poulet DG und der Ndolé standen im Mittelpunkt der Gespräche\"",
           testi_6: "\"Zu meinem 25. Geburtstag wollte ich Geschmäcker, die an meine Heimat Kamerun erinnern. MG Africa Food hat meine Erwartungen mit Gerichten, wie sie meine Mutter zubereitet, übertroffen. Emotionen garantiert!\"",
-
-
+          contact_title: "Kontaktieren Sie uns",
+          contact_text: "Ob Sie eine Veranstaltung planen, uns auf einem Festival treffen oder an einem Workshop teilnehmen möchten, wir sind für Sie da. Kontaktieren Sie uns noch heute, um Ihre Bedürfnisse zu besprechen!",
+          contact_form_name: "Name",
+          contact_form_email: "Email",
+          contact_form_subject: "Betreff",
+          contact_form_message: "Nachricht",
+          contact_form_send: "Absenden",
+          contact_form_adress: "Adresse",
+          contact_form_call: "Rufen Sie uns an",
+          news_letter_title: "Abonnieren Sie unseren Newsletter",
+          news_letter_text: "Melden Sie sich für unseren Newsletter an und erhalten Sie die neuesten Nachrichten zu unseren Produkten und Dienstleistungen!",
+          news_letter_button: "Abonnieren",
+          footer_atelier_enfant: "Kochworkshops für Kinder",
+          location_materiel: "Vermietung von Küchenequipment",
+          mg_food_slogan_footer: "Catering, Festivals, Kochworkshops und vieles mehr. Entdecken Sie die Aromen Afrikas in Deutschland."
 
 
         }
