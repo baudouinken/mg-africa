@@ -49,9 +49,9 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="index.html#hero" class="active"><b>Home</b></a></li>
-        <li><a href="index.html#about"><b>About</b></a></li>
-        <li><a href="index.html#services"><b>Services</b></a></li>
+        <li><a href="index.html#hero" class="active"><b><span data-i18n="menu_home">Home</span></b></a></li>
+        <li><a href="index.html#about"><b><span data-i18n="menu_about">About</span></b></a></li>
+        <li><a href="index.html#services"><b><span data-i18n="menu_Services">Services</span></b></a></li>
         <!--          <li class="dropdown"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>-->
         <!--            <ul>-->
         <!--              <li><a href="service-details-catering.html">Catering</a></li>-->
@@ -64,11 +64,11 @@
         <li><a href="blog.html"><b>Blog</b></a></li>
         <li><a href="festivals.html"><b>Festivals</b></a></li>
         <li><a href="index.html#faq"><b>FAQ</b></a></li>
-        <li><a href="index.html#contact"><b>Contact</b></a></li>
+        <li><a href="index.html#contact"><b><span data-i18n="menu_Contact">Contact</span></b></a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
-    <a class="btn-getstarted" href="index.html#about">Get Started</a>
+    <a class="btn-getstarted" href="index.html#about" data-i18n="get_started">Get Started</a>
   </div>
 </header>
 
@@ -168,10 +168,10 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-6">
-          <h4>Rejoint nos Newsletter</h4>
-          <p>Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
+          <h4 data-i18n="news_letter_title">Rejoint nos Newsletter</h4>
+          <p data-i18n="news_letter_text">Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire"></div>
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire" data-i18n="news_letter_button"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Votre demande d'abonnement a été envoyée. Nous vous remercions de votre attention.</div>
@@ -199,26 +199,26 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Liens utiles</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#about">A Propos</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#about"><span data-i18n="menu_about">A Propos</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#services"><span data-i18n="menu_Services"></span>Services</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#contact"><span data-i18n="menu_Contact"></span>Contact</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Nos Services</h4>
+        <h4><span data-i18n="services_nos">Nos</span> <span data-i18n="services">Services</span></h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="service-details-catering.html">Catering</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="service-details-street-food.html">Festivals & Street Food</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html">Ateliers culinaires pour enfants</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html">Location de materiel de cuisine</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html"><span data-i18n="footer_atelier_enfant">Ateliers culinaires pour enfants</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html"><span data-i18n="footer_location">Location de materiel de cuisine</span></a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-12">
         <h4>MG Africa Food</h4>
-        <p>Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
+        <p data-i18n="mg_food_slogan_footer">Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
         <div class="social-links d-flex">
           <a href="https://tr.ee/v3aV9wlKpl"><i class="bi bi-tiktok"></i></a>
           <a href="https://www.facebook.com/share/18dYWfkZB7/"><i class="bi bi-facebook"></i></a>
@@ -241,6 +241,15 @@
     </div>
   </div>
 
+  <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
+    <label for="languageSwitcher" class="visually-hidden">Language</label>
+    <select id="languageSwitcher" class="form-select w-auto" style=" background-color: #99cc33; color: white">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+
 </footer>
 
   <!-- Scroll Top -->
@@ -260,9 +269,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-<div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"fr","detect_browser_language":true,"languages":["fr","en","de"],"wrapper_selector":".gtranslate_wrapper"}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+  <!-- translation -->
+  <script src="https://unpkg.com/i18next@23.4.7/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="assets/js/translation.js"></script>
 </body>
 
 </html>
