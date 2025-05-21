@@ -184,6 +184,52 @@ const resources = {
             service_location_ask_location: "Demander une location",
             service_location_subtitle: "Découvrez notre matériel de cuisine professionnel !",
 
+            festival_title: "Calendrier des Événements",
+            germany: "Allemagne",
+            june: "Juin",
+            festival_event_1_title: "Atelier de cuisine pour enfants",
+            festival_event_1_text: "Retrouvez-nous à Potsdam pour un Atelier cuisine GRATUIT pour enfants.",
+            festival_event_2_text: "Retrouvez-nous à Brandenburg pour un festival street food.",
+            festival_event_3_title: "Challenge Camerounais 2025",
+            festival_event_3_text: "Compétition culinaire et dégustation de plats traditionnels camerounais à Emsdetten.",
+            festival_event_4_text: "Participation au célèbre carnaval des cultures de Berlin avec un stand de cuisine interactive.",
+            festival_event_5_text: "Participation au célèbre Symposium Mboa de Berlin.",
+
+            blog_title: "Le Blog MG Africa Food",
+            blog_text: "Découvrez nos recettes, astuces et aventures culinaires !",
+            blog_text_1: "Articles Mis en Avant",
+
+            blog_1_title_1: "Recettes Africaines",
+            blog_1_title_2: "Nos 3 plats star pour un été réussi",
+            blog_1_text: "Découvrez nos plats phares qui raviront vos invités tout au long de l'été. Des saveurs authentiques qui transportent directement en Afrique.",
+            published: "Publié le 15 mai 2024",
+
+            blog_2_title_1: "Conseils",
+            blog_2_title_2: "Ateliers enfants : pourquoi cuisiner ensemble est éducatif",
+            blog_2_text: "Découvrez comment nos ateliers culinaires pour enfants stimulent la créativité, l'autonomie et l'ouverture culturelle.",
+            published_1: "Publié le 2 juin 2024",
+
+            blog_3_title_1: "Recettes Africaines",
+            blog_3_title_2: "Comment préparer le Ndolè parfait",
+            blog_3_text: "Toutes nos astuces pour préparer ce plat camerounais emblématique avec des feuilles de ndolè fraîches.",
+            published_2: "Publié le 10 juin 2024",
+
+            blog_4_title_1: "Événements",
+            blog_4_title_2: "Retour sur le Karneval der Kulturen 2024",
+            blog_4_text: "Revivez les moments forts de notre participation à ce festival multiculturel berlinois.",
+            published_3: "Publié le 28 mai 2024",
+
+            blog_5_title_1: "Conseils",
+            blog_5_title_2: "5 astuces pour organiser un mariage réussi",
+            blog_5_text: "Nos conseils pour un mariage mémorable avec une touche africaine authentique.",
+            published_4: "Publié le 15 mai 2024",
+
+            blog_6_title_1: "Culture",
+            blog_6_title_2: "L'histoire du Poulet DG au Cameroun",
+            blog_6_text: "Découvrez les origines de ce plat prestigieux qui porte le nom d'une fonction importante.",
+            published_5: "Publié le 5 mai 2024",
+
+            last_articles: "Derniers Articles",
 
         }
     },
@@ -367,6 +413,51 @@ const resources = {
             service_location_ask_location: "Request a rental",
             service_location_subtitle: "Discover our professional kitchen equipment!",
 
+            festival_title: "Event Calendar",
+            germany: "Germany",
+            june: "June",
+            festival_event_1_title: "Children's cooking workshop",
+            festival_event_1_text: "Join us in Potsdam for a FREE cooking workshop for children.",
+            festival_event_2_text: "Join us in Brandenburg for a street food festival.",
+            festival_event_3_title: "Cameroonian Challenge 2025",
+            festival_event_3_text: "Culinary competition and tasting of traditional Cameroonian dishes in Emsdetten.",
+            festival_event_4_text: "Participation in the famous Berlin Carnival of Cultures with an interactive cooking stand.",
+            festival_event_5_text: "Participation in the famous Mboa Symposium in Berlin.",
+
+            blog_title: "MG Africa Food Blog",
+            blog_text: "Discover our recipes, tips and culinary adventures!",
+            blog_text_1: "Featured Articles",
+            blog_1_title_1: "African Recipes",
+            blog_1_title_2: "Our 3 star dishes for a successful summer",
+            blog_1_text: "Discover our flagship dishes that will delight your guests all summer long. Authentic flavors that transport you straight to Africa.",
+            published: "Published on May 15, 2024",
+
+            blog_2_title_1: "Tips",
+            blog_2_title_2: "Children's workshops: why cooking together is educational",
+            blog_2_text: "Discover how our culinary workshops for children stimulate creativity, autonomy and cultural openness.",
+            published_1: "Published on June 2, 2024",
+
+            blog_3_title_1: "African Recipes",
+            blog_3_title_2: "How to prepare the perfect Ndolè",
+            blog_3_text: "All our tips for preparing this iconic Cameroonian dish with fresh Ndolè leaves.",
+            published_2: "Published on June 10, 2024",
+
+            blog_4_title_1: "Events",
+            blog_4_title_2: "Back on the Karneval der Kulturen 2024",
+            blog_4_text: "Relive the highlights of our participation in this multicultural Berlin festival.",
+            published_3: "Published on May 28, 2024",
+
+            blog_5_title_1: "Tips",
+            blog_5_title_2: "5 tips for organizing a successful wedding",
+            blog_5_text: "Our tips for a memorable wedding with an authentic African touch.",
+            published_4: "Published on May 15, 2024",
+
+            blog_6_title_1: "Culture",
+            blog_6_title_2: "The history of Poulet DG in Cameroon",
+            blog_6_text: "Discover the origins of this prestigious dish that bears the name of an important function.",
+            published_5: "Published on May 5, 2024",
+
+            last_articles: "Latest Articles",
 
 
         }
@@ -469,8 +560,8 @@ const resources = {
             news_letter_title: "Abonnieren Sie unseren Newsletter",
             news_letter_text: "Melden Sie sich für unseren Newsletter an und erhalten Sie die neuesten Nachrichten zu unseren Produkten und Dienstleistungen!",
             news_letter_button: "Abonnieren",
-            footer_atelier_enfant: "Kochworkshops für Kinder",
-            footer_atelier_enfant_1: "Kochworkshops für Kinder",
+            footer_atelier_enfant: "Kinder Kochkurse",
+            footer_atelier_enfant_1: "Kinder Kochkurse",
             location_materiel: "Vermietung von Küchenequipment",
             location_materiel_1: "Vermietung von Küchenequipment",
             mg_food_slogan_footer: "Catering, Festivals, Kochworkshops und vieles mehr. Entdecken Sie die Aromen Afrikas in Deutschland.",
@@ -521,7 +612,7 @@ const resources = {
 
             service_atelier_enfant: "Entdecken Sie unsere Rezepte, Tipps und kulinarischen Abenteuer!",
             service_atelier_after_about: "Bei MG Africa Food glauben wir, dass Kochen ein Tor zur Kultur und Kreativität ist.\n" +
-                "Deshalb bieten wir kostenlose Kochworkshops für Kinder an, in denen sie lernen, traditionelle afrikanische Gerichte zuzubereiten und dabei Spaß zu haben. Diese Workshops sind darauf ausgelegt, ihre Neugier zu wecken und ihnen neue Geschmäcker näherzubringen. Überprüfen Sie unseren Kalender für die nächsten Workshop-Termine und melden Sie Ihre Kinder für ein einzigartiges kulinarisches Erlebnis an!",
+                "Deshalb bieten wir kostenlose Kinder Kochkurse an, in denen sie lernen, traditionelle afrikanische Gerichte zuzubereiten und dabei Spaß zu haben. Diese Workshops sind darauf ausgelegt, ihre Neugier zu wecken und ihnen neue Geschmäcker näherzubringen. Überprüfen Sie unseren Kalender für die nächsten Workshop-Termine und melden Sie Ihre Kinder für ein einzigartiges kulinarisches Erlebnis an!",
             service_atelier_1: "Kostenloser Kochworkshop für Kinder.",
             service_atelier_2: "Wecken Sie die Neugier der Kinder.",
             service_atelier_3: "Führen Sie sie in neue Geschmäcker ein.",
@@ -546,8 +637,52 @@ const resources = {
             service_location_ask_location: "Vermietung anfragen",
             service_location_subtitle: "Entdecken Sie unsere professionelle Küchenausrüstung!",
 
+            festival_title: "Veranstaltungskalender",
+            germany: "Deutschland",
+            june: "Juni",
+            festival_event_1_title: "Kochworkshop für Kinder",
+            festival_event_1_text: "Begleiten Sie uns in Potsdam zu einem KOSTENLOSEN Kochworkshop für Kinder.",
+            festival_event_2_text: "Begleiten Sie uns in Brandenburg zu einem Street Food Festival.",
+            festival_event_3_title: "Kamerun-Challenge 2025",
+            festival_event_3_text: "Kochwettbewerb und Verkostung traditioneller kamerunischer Gerichte in Emsdetten.",
+            festival_event_4_text: "Teilnahme am berühmten Karneval der Kulturen in Berlin mit einem interaktiven Kochstand.",
+            festival_event_5_text: "Teilnahme am berühmten Mboa-Symposium in Berlin.",
 
+            blog_title: "MG Africa Food Blog",
+            blog_text: "Entdecken Sie unsere Rezepte, Tipps und kulinarischen Abenteuer!",
+            blog_text_1: "Ausgewählte Artikel",
 
+            blog_1_title_1: "Afrikanische Rezepte",
+            blog_1_title_2: "Unsere 3 Star-Gerichte für einen gelungenen Sommer",
+            blog_1_text: "Entdecken Sie unsere Star-Gerichte, die Ihre Gäste den ganzen Sommer über begeistern werden. Authentische Aromen, die Sie direkt nach Afrika bringen.",
+            published: "Veröffentlicht am 15. Mai 2024",
+
+            blog_2_title_1: "Tipps",
+            blog_2_title_2: "Kochworkshops für Kinder: Warum gemeinsames Kochen lehrreich ist",
+            blog_2_text: "Entdecken Sie, wie unsere Kochworkshops für Kinder Kreativität, Autonomie und kulturelle Offenheit fördern.",
+            published_1: "Veröffentlicht am 2. Juni 2024",
+
+            blog_3_title_1: "Afrikanische Rezepte",
+            blog_3_title_2: "So bereiten Sie das perfekte Ndolè zu",
+            blog_3_text: "Alle unsere Tipps zur Zubereitung dieses ikonischen kamerunischen Gerichts mit frischen Ndolè-Blättern.",
+            published_2: "Veröffentlicht am 10. Juni 2024",
+
+            blog_4_title_1: "Veranstaltungen",
+            blog_4_title_2: "Rückblick auf den Karneval der Kulturen 2024",
+            blog_4_text: "Erleben Sie die Höhepunkte unserer Teilnahme an diesem multikulturellen Festival in Berlin.",
+            published_3: "Veröffentlicht am 28. Mai 2024",
+
+            blog_5_title_1: "Tipps",
+            blog_5_title_2: "5 Tipps für die Organisation einer gelungenen Hochzeit",
+            blog_5_text: "Unsere Tipps für eine unvergessliche Hochzeit mit einem authentischen afrikanischen Touch.",
+            published_4: "Veröffentlicht am 15. Mai 2024",
+
+            blog_6_title_1: "Kultur",
+            blog_6_title_2: "Die Geschichte des Poulet DG in Kamerun",
+            blog_6_text: "Entdecken Sie die Ursprünge dieses prestigeträchtigen Gerichts, das den Namen einer wichtigen Funktion trägt.",
+            published_5: "Veröffentlicht am 5. Mai 2024",
+
+            last_articles: "Neueste Artikel",
 
 
         }
