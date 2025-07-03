@@ -187,6 +187,9 @@ const resources = {
             festival_title: "Calendrier des Événements",
             germany: "Allemagne",
             june: "Juin",
+            juli: "Juillet",
+            august: "Aout",
+            december: "Decembre",
             festival_event_1_title: "Atelier de cuisine pour enfants",
             festival_event_1_text: "Retrouvez-nous à Potsdam pour un Atelier cuisine GRATUIT pour enfants.",
             festival_event_2_text: "Retrouvez-nous à Brandenburg pour un festival street food.",
@@ -231,6 +234,89 @@ const resources = {
 
             last_articles: "Derniers Articles",
 
+            //event 6
+            event6_title1: "Fête de la musique à Hannover",
+            event6_title2: "MG Africa Food à la Fête de la musique de Hanovre Lieu: Centre-ville de Hanovre",
+            event6_text: "Vivez les rythmes de l'Afrique non seulement avec vos oreilles, mais aussi avec vos papilles!" +
+                "                  MG Africa Food apporte d'authentiques délices africains à la Fête de la musique de Hanovre." +
+                "                  Pendant que vous profitez des sons variés de ce festival international de musique, nous vous choyons" +
+                "                  avec des plats traditionnels qui reflètent la diversité culinaire du continent africain." +
+                "                  Visitez notre stand dans le centre-ville et laissez-vous emporter dans un voyage gustatif qui s'harmonise" +
+                "                  parfaitement avec les sons musicaux du monde entier.",
+
+            //event 7
+            event7_title1: "Tournoi sportif de FeeFee e.V.",
+            event7_title2: "MG Africa Food accompagne Santé Coppi e.V. au tournoi sportif de FeeFee e.V.",
+            event7_text: "Le 5 juillet 2025, MG Africa Food est fier de fournir le service traiteur pour Santé Coppi e.V. à l’occasion du " +
+                "                    grand tournoi organisé par FeeFee e.V.. Pendant que les équipes se donnent à fond sur le terrain, nous proposerons " +
+                "                    une cuisine africaine savoureuse, équilibrée et pleine d’énergie – idéale pour une journée sportive." +
+                "                    Un plaisir de partager notre passion culinaire avec une association engagée pour la santé, le sport et la solidarité." +
+                "                    MG Africa Food – Goûtez l’Afrique. Ressentez l’amour.",
+
+            //event 8
+            event8_title1: "Festival Africain de Potsdam",
+            event8_title2: "MG Africa Food au Festival Africain de Potsdam",
+            event8_text: "Plongez dans les arômes et les parfums de l'Afrique lors du Festival Africain de Potsdam " +
+                "                    de cette année ! MG Africa Food est fier de faire partie de ce moment culturel fort et " +
+                "                    vous propose des plats authentiques de différentes régions du continent. Des ragoûts " +
+                "                    épicés aux douceurs sucrées – notre offre variée vous enchantera. Visitez notre stand " +
+                "                    au Volkspark et découvrez comment la nourriture relie les personnes et les cultures. " +
+                "                    Laissez-vous envoûter par nos délices tout en profitant de la musique, des danses et de" +
+                "                    l'artisanat du festival.",
+
+            //event 9
+            event9_title1: "Coupe d'Afrique de Berlin",
+            event9_title2: "MG Africa Food à la Coupe d'Afrique de Berlin",
+            event9_text: "Sport et plaisir culinaire se rejoignent à la Coupe d'Afrique de Berlin !" +
+                "                    MG Africa Food assure une restauration authentique lors de ce passionnant tournoi de " +
+                "                    football qui rassemble des équipes de la communauté africaine de Berlin. Savourez nos " +
+                "                    spécialités énergisantes, parfaites pour encourager les joueurs et renforcer la communauté. " +
+                "                    Des boissons rafraîchissantes aux plats copieux – nous vous offrons une expérience " +
+                "                    gustative qui reflète la diversité de l'Afrique. Venez encourager votre équipe préférée " +
+                "                    et découvrez le lien entre sport, culture et art culinaire !",
+
+            //event 10
+            event10_title1: "Événement d'intégration de Wolfenbüttel",
+            event10_title2: "MG Africa Food à l'événement d'intégration de Wolfenbüttel",
+            event10_text: "La culture unit – et la nourriture est un langage universel ! MG Africa Food est fier d'accompagner culinairement l'événement d'intégration africaine à Wolfenbüttel. " +
+                "Lors de cet important événement qui promeut le dialogue interculturel et l'intégration, nous apportons d'authentiques plats africains qui construisent des ponts entre les cultures. " +
+                "Découvrez comment nos recettes traditionnelles, transmises de génération en génération, rassemblent les gens. Visitez notre stand au marché central et faites partie d'un événement qui " +
+                "célèbre la diversité et favorise l'échange culturel à travers le plaisir de manger ensemble.",
+
+            //event 11
+            event11_title1: "Service-traiteur exclusif pour mariage",
+            event11_title2: "MG Africa Food comme service-traiteur exclusif pour mariage",
+            event11_text: "MG Africa Food donne à votre mariage une touche culinaire unique ! Pour une célébration de " +
+                "                    mariage spéciale à Berlin, nous créons un menu sur mesure qui combine les traditions africaines " +
+                "                    avec des influences modernes. Nos chefs expérimentés préparent chaque plat avec amour et " +
+                "                    attention pour rendre votre journée spéciale inoubliable. Des créations élégantes d'amuse-bouches " +
+                "                    pour la réception au menu principal festif – nous veillons à ce que vos invités soient choyés sur " +
+                "                    le plan culinaire. Contactez-nous pour votre planification de mariage personnalisée et créons " +
+                "                    ensemble un menu qui raconte votre histoire personnelle.",
+
+            //event 12
+            event12_title1: "Service-traiteur africain pour mariage",
+            event12_title2: "Service-traiteur africain pour mariage à Hambourg",
+            event12_text: "Célébrez votre amour avec les arômes exquis de l'Afrique ! MG Africa Food se rend à Hambourg pour enrichir une célébration de mariage spéciale avec d'authentiques spécialités " +
+                "africaines. Notre équipe expérimentée crée un menu personnalisé qui allie les souhaits des mariés à la riche tradition culinaire africaine. De la décoration élégante au dernier dessert – " +
+                "nous nous occupons de chaque détail pour que vous et vos invités puissiez profiter d'une journée inoubliable. Nos plats racontent des histoires de communauté, d'amour et de tradition – " +
+                "parfaits pour le début de votre voyage commun. Parlez-nous de vos idées pour cette occasion spéciale.",
+
+            //event 13
+            event13_title1: "Menu de mariage fusion",
+            event13_title2: "Menu de mariage fusion à Würzburg",
+            event13_text: "Un mariage qui relie les cultures ! MG Africa Food apporte les saveurs de l'Afrique à Würzburg pour une célébration de mariage très spéciale. Notre équipe créative de traiteurs a " +
+                "développé un menu fusion unique qui combine des spécialités africaines avec des influences franconiennes – un pont culinaire entre les traditions. Chaque plat est préparé avec des ingrédients " +
+                "frais et de saison, reflétant à la fois l'origine et l'avenir du couple. De l'entrée au dessert, nous offrons une expérience gustative qui ravira vos invités. Créons ensemble un point culminant " +
+                "culinaire pour votre journée spéciale qui restera dans les mémoires.",
+
+            //event 14
+            event14_title1: "Fête de Noël d'inspiration africaine",
+            event14_title2: "Fête de Noël d'inspiration africaine au Paul Gerhardt Stift",
+            event14_text: "Une fête de Noël d'un genre particulier ! MG Africa Food apporte la chaleur et l'hospitalité africaines à la saison festive au Paul Gerhardt Stift à Berlin. Pour environ 600 employés," +
+                " nous créons un buffet festif qui combine les arômes traditionnels de Noël avec des spécialités africaines. Découvrez comment les épices africaines enrichissent les plats de Noël classiques de " +
+                "manière surprenante et créent de nouvelles expériences gustatives. Notre équipe expérimentée assure un déroulement fluide et une atmosphère accueillante qui invite à s'attarder et à savourer. " +
+                "Un voyage culinaire mondial qui célèbre la diversité des traditions festives et ouvre de nouvelles perspectives – parfait pour une fin d'année inoubliable.\n",
         }
     },
     en: {
@@ -416,6 +502,9 @@ const resources = {
             festival_title: "Event Calendar",
             germany: "Germany",
             june: "June",
+            juli: "July",
+            august: "August",
+            december: "December",
             festival_event_1_title: "Children's cooking workshop",
             festival_event_1_text: "Join us in Potsdam for a FREE cooking workshop for children.",
             festival_event_2_text: "Join us in Brandenburg for a street food festival.",
@@ -460,6 +549,78 @@ const resources = {
             last_articles: "Latest Articles",
 
 
+            //event 6
+            event6_title1: "Music festival in Hanover",
+            event6_title2: "MG Africa Food at the music festival in Hanover Location: Hanover city centre",
+            event6_text: "Experience the rhythms of Africa not only with your ears, but also with your taste buds!" +
+                "                  MG Africa Food is bringing authentic African delights to the Hannover Music Festival." +
+                "                  While you enjoy the varied sounds of this international music festival, we pamper you" +
+                " with traditional dishes that reflect the culinary diversity of the African continent." +
+                "                  Visit our stand in the city centre and let us take you on a culinary journey that blends" +
+                " perfectly with the sounds of music from all over the world.",
+
+            //event 7
+            event7_title1: "FeeFee e.V. sports tournament",
+            event7_title2: "MG Africa Food accompanies Santé Coppi e.V. at the FeeFee e.V. sports tournament",
+            event7_text: "On July 5th, 2025, MG Africa Food will proudly provide catering for Santé Coppi e.V. during the exciting tournament hosted by FeeFee e.V.. While the teams give their best on the field, we’ll serve up fresh, energizing and flavorful African dishes – the perfect match for a day full of action.\n" +
+                "It’s an honor to support a community dedicated to health, sports and togetherness with the tastes of Africa.\n" +
+                "MG Africa Food – Taste Africa. Feel the Love.\n",
+
+            //event 8
+            event8_title1: "Potsdam's Africa Festival",
+            event8_title2: "MG Africa Food at Potsdam's Africa Festival",
+            event8_text: "Immerse yourself in the flavors and aromas of Africa at this year's Africa Festival in Potsdam! " +
+                "MG Africa Food is proud to be part of this cultural highlight, bringing you authentic dishes from various regions " +
+                "of the continent. From spicy stews to sweet treats – our diverse offerings will delight you. Visit our stand at the " +
+                "Volkspark and experience how food connects people and cultures. Let yourself be enchanted by our delicacies while enjoying " +
+                "the music, dances, and crafts of the festival.",
+
+            //event 9
+            event9_title1: "Africa Cup Berlin",
+            event9_title2: "MG Africa Food at the Africa Cup Berlin",
+            event9_text: "Culture connects – and food is the universal language! MG Africa Food is proud to provide culinary support for the African Integration Event in Wolfenbüttel. " +
+                "At this important event promoting intercultural dialogue and integration, we bring authentic African dishes that build bridges between cultures. Experience how our traditional " +
+                "recipes, passed down through generations, bring people together. Visit our stand at the city market and become part of an event that celebrates diversity and promotes cultural " +
+                "exchange through the joy of sharing meals.\n",
+
+            //event 10
+            event10_title1: "Wolfenbüttel's Integration Event",
+            event10_title2: "MG Africa Food at Wolfenbüttel's Integration Event",
+            event10_text: "Culture connects – and food is the universal language! MG Africa Food is proud to provide culinary support for the African Integration Event in Wolfenbüttel. " +
+                "At this important event promoting intercultural dialogue and integration, we bring authentic African dishes that build bridges between cultures. Experience how our traditional recipes, " +
+                "passed down through generations, bring people together. Visit our stand at the city market and become part of an event that celebrates diversity and promotes cultural exchange through " +
+                "the joy of sharing meals.",
+
+            //event 11
+            event11_title1: "Exclusive Wedding Catering",
+            event11_title2: "Exclusive Wedding Catering in Berlin",
+            event11_text: "MG Africa Food gives your wedding a unique culinary accent! For a special wedding celebration in Berlin, we create a customized menu that combines African traditions with " +
+                "modern influences. Our experienced chefs prepare each dish with love and care to make your special day unforgettable. From elegant finger food creations for the reception to the festive" +
+                " main menu – we ensure your guests are pampered culinary. Contact us for your individual wedding planning and let's create a menu together that tells your personal story.",
+
+            //event 12
+            event12_title1: "African Wedding Catering",
+            event12_title2: "African Wedding Catering in Hamburg",
+            event12_text: "Celebrate your love with the exquisite flavors of Africa! MG Africa Food travels to Hamburg to enrich a special wedding celebration with authentic African specialties. " +
+                "Our experienced team creates a customized menu that combines the wishes of the bride and groom with Africa's rich culinary tradition. From stylish decoration to the final dessert – " +
+                "we take care of every detail so you and your guests can enjoy an unforgettable day. Our dishes tell stories of community, love, and tradition – perfect for the beginning of your journey " +
+                "together. Talk to us about your ideas for this special occasion.",
+
+            //event 13
+            event13_title1: "Fusion Wedding Menu",
+            event13_title2: "Fusion Wedding Menu in Würzburg",
+            event13_text: "A wedding that connects cultures! MG Africa Food brings the flavors of Africa to Würzburg for a very special wedding celebration. Our creative catering team has developed a unique " +
+                "fusion menu that combines African specialties with Franconian influences – a culinary bridge between traditions. Each dish is prepared with fresh, seasonal ingredients and reflects both the " +
+                "origin and future of the couple. From appetizer to dessert, we offer a taste experience that will delight your guests. Let's create together a culinary highlight for your special day that will " +
+                "be remembered.",
+
+            //event 14
+            event14_title1: "African-inspired Christmas Party",
+            event14_title2: "African-inspired Christmas Party at Paul Gerhardt Stift",
+            event14_text: "A Christmas celebration with a special twist! MG Africa Food brings African warmth and hospitality to the festive season at Paul Gerhardt Stift in Berlin. For around 600 employees, " +
+                "we create a festive buffet that combines traditional Christmas flavors with African specialties. Experience how African spices enrich classic Christmas dishes in surprising ways and create new " +
+                "taste experiences. Our experienced team ensures a smooth process and a welcoming atmosphere that invites you to linger and enjoy. A culinary world tour that celebrates the diversity of holiday " +
+                "traditions and opens new perspectives – perfect for an unforgettable year-end celebration.",
         }
     },
     de: {
@@ -640,6 +801,9 @@ const resources = {
             festival_title: "Veranstaltungskalender",
             germany: "Deutschland",
             june: "Juni",
+            juli: "Juli",
+            august: "August",
+            december: "December",
             festival_event_1_title: "Kochworkshop für Kinder",
             festival_event_1_text: "Begleiten Sie uns in Potsdam zu einem KOSTENLOSEN Kochworkshop für Kinder.",
             festival_event_2_text: "Begleiten Sie uns in Brandenburg zu einem Street Food Festival.",
@@ -684,7 +848,81 @@ const resources = {
 
             last_articles: "Neueste Artikel",
 
+            //event 6
+            event6_title1: "Musikfest in Hannover",
+            event6_title2: "MG Africa Food auf dem Musikfest in Hannover Ort: Innenstadt von Hannover",
+            event6_text: "Erleben Sie die Rhythmen Afrikas nicht nur mit den Ohren, sondern auch mit dem Gaumen!" +
+                "                  MG Africa Food bringt authentische afrikanische Köstlichkeiten auf das Musikfest in Hannover." +
+                "                  Während Sie die vielfältigen Klänge dieses internationalen Musikfestivals genießen, verwöhnen wir Sie" +
+                " mit traditionellen Gerichten, die die kulinarische Vielfalt des afrikanischen Kontinents widerspiegeln." +
+                "                  Besuchen Sie unseren Stand in der Innenstadt und lassen Sie sich auf eine Geschmacksreise entführen, die" +
+                " perfekt mit den musikalischen Klängen aus aller Welt harmoniert.",
 
+            //event 7
+            event7_title1: "FeeFee e.V. Sportturnier",
+            event7_title2: "MG Africa Food begleitet Santé Coppi e.V. beim Sportturnier von FeeFee e.V.",
+            event7_text: "Am 5. Juli 2025 ist MG Africa Food stolz darauf, das Catering für Santé Coppi e.V. anlässlich des" +
+                " großen Turniers, das von FeeFee e.V. organisiert wird, zu liefern. Während die Mannschaften auf dem Spielfeld alles geben, werden wir" +
+                " eine schmackhafte, ausgewogene und energiegeladene afrikanische Küche anbieten - ideal für einen sportlichen Tag." +
+                "                    Es ist ein Vergnügen, unsere kulinarische Leidenschaft mit einem Verein zu teilen, der sich für Gesundheit, Sport und Solidarität engagiert." +
+                "                    MG Africa Food - Schmecken Sie Afrika. Spüren Sie die Liebe.",
+
+            //event 8
+            event8_title1: "Afrika Festival Potsdam",
+            event8_title2: "MG Africa Food beim Afrika Festival Potsdam",
+            event8_text: "Tauchen Sie ein in die Aromen und Düfte Afrikas beim diesjährigen Afrika Festival in Potsdam! MG Africa Food ist stolz darauf, Teil dieses kulturellen " +
+                "Highlights zu sein und bringt Ihnen authentische Gerichte aus verschiedenen Regionen des Kontinents. Von würzigen Eintöpfen bis hin zu süßen Leckereien – unser " +
+                "vielfältiges Angebot wird Sie begeistern. Besuchen Sie unseren Stand im Volkspark und erleben Sie, wie Essen Menschen und Kulturen verbindet. Lassen Sie sich von " +
+                "unseren Köstlichkeiten verzaubern, während Sie die Musik, Tänze und Kunsthandwerke des Festivals genießen.",
+
+            //event 9
+            event9_title1: "Africa Cup Berlin",
+            event9_title2: "MG Africa Food beim Afrika Cup Berlin",
+            event9_text: "Sport und kulinarischer Genuss vereinen sich beim Afrika Cup Berlin! MG Africa Food sorgt für die authentische Verpflegung bei diesem spannenden Fußballturnier, " +
+                "das Teams aus der afrikanischen Community in Berlin zusammenbringt. Genießen Sie unsere energiereichen Spezialitäten, die perfekt sind, um die Spieler anzufeuern und die " +
+                "Gemeinschaft zu stärken. Von erfrischenden Getränken bis zu herzhaften Gerichten – wir bieten Ihnen ein Geschmackserlebnis, das die Vielfalt Afrikas widerspiegelt. Kommen " +
+                "Sie vorbei, feuern Sie Ihr Lieblingsteam an und entdecken Sie die Verbindung zwischen Sport, Kultur und Kulinarik!",
+
+            //event 10
+            event10_title1: "Integrationsevent Wolfenbüttel",
+            event10_title2: "MG Africa Food beim Integrationsevent Wolfenbüttel",
+            event10_text: "Kultur verbindet – und Essen ist die universelle Sprache! MG Africa Food ist stolz darauf, das Afrikanische Integrationsevent in Wolfenbüttel kulinarisch zu begleiten. " +
+                "Bei dieser wichtigen Veranstaltung, die den interkulturellen Dialog und die Integration fördert, bringen wir authentische afrikanische Gerichte mit, die Brücken zwischen Kulturen bauen. " +
+                "Erleben Sie, wie unsere traditionellen Rezepte, die von Generation zu Generation weitergegeben wurden, Menschen zusammenbringen. Besuchen Sie unseren Stand am Stadtmarkt und werden Sie " +
+                "Teil eines Ereignisses, das Vielfalt feiert und kulturellen Austausch durch die Freude am gemeinsamen Essen fördert.\n",
+
+            //event 11
+            event11_title1: "Exklusives Hochzeits-Catering",
+            event11_title2: "Exklusives Hochzeits-Catering in Berlin",
+            event11_text: "MG Africa Food verleiht Ihrer Hochzeit einen einzigartigen kulinarischen Akzent! Für eine besondere Hochzeitsfeier in Berlin kreieren wir ein maßgeschneidertes Menü, " +
+                "das afrikanische Traditionen mit modernen Einflüssen verbindet. Unsere erfahrenen Köche bereiten jedes Gericht mit Liebe und Sorgfalt zu, um Ihren besonderen Tag unvergesslich zu machen. " +
+                "Von eleganten Fingerfood-Kreationen für den Empfang bis hin zum festlichen Hauptmenü – wir sorgen dafür, dass Ihre Gäste kulinarisch verwöhnt werden. Kontaktieren Sie uns für Ihre" +
+                " individuelle Hochzeitsplanung und lassen Sie uns gemeinsam ein Menü gestalten, das Ihre persönliche Geschichte erzählt.",
+
+            //event 12
+            event12_title1: "Hochzeits-Catering",
+            event12_title2: "Afrikanisches Hochzeits-Catering in Hamburg",
+            event12_text: "Feiern Sie Ihre Liebe mit den exquisiten Aromen Afrikas! MG Africa Food reist nach Hamburg, um eine besondere Hochzeitsfeier mit authentischen afrikanischen Spezialitäten zu " +
+                "bereichern. Unser erfahrenes Team kreiert ein individuelles Menü, das die Wünsche des Brautpaares mit der reichen kulinarischen Tradition Afrikas verbindet. Von der stilvollen Dekoration " +
+                "bis zum letzten Dessert – wir kümmern uns um jedes Detail, damit Sie und Ihre Gäste einen unvergesslichen Tag genießen können. Unsere Gerichte erzählen Geschichten von Gemeinschaft, Liebe " +
+                "und Tradition – perfekt für den Beginn Ihrer gemeinsamen Reise. Sprechen Sie mit uns über Ihre Vorstellungen für diesen besonderen Anlass.",
+
+            //event 13
+            event13_title1: "Fusion-Hochzeitsmenü",
+            event13_title2: "Fusion-Hochzeitsmenü in Würzburg",
+            event13_text: "Eine Hochzeit, die Kulturen verbindet! MG Africa Food bringt die Aromen Afrikas nach Würzburg für eine ganz besondere Hochzeitsfeier. Unser kreatives Catering-Team hat ein einzigartiges " +
+                "Fusion-Menü entwickelt, das afrikanische Spezialitäten mit fränkischen Einflüssen kombiniert – eine kulinarische Brücke zwischen Traditionen. Jedes Gericht wird mit frischen, saisonalen Zutaten " +
+                "zubereitet und spiegelt sowohl die Herkunft als auch die Zukunft des Paares wider. Von der Vorspeise bis zum Dessert bieten wir ein Geschmackserlebnis, das Ihre Gäste begeistern wird. Lassen Sie " +
+                "uns gemeinsam einen kulinarischen Höhepunkt für Ihren besonderen Tag gestalten, der in Erinnerung bleibt.",
+
+            //event 14
+            event14_title1: "Afrikanisch inspirierte Weihnachtsfeier",
+            event14_title2: "Afrikanisch inspirierte Weihnachtsfeier im Paul Gerhardt Stift",
+            event14_text: "Eine Weihnachtsfeier der besonderen Art! MG Africa Food bringt afrikanische Wärme und Gastfreundschaft in die festliche Jahreszeit beim Paul Gerhardt Stift in Berlin. Für rund " +
+                "600 Mitarbeiter kreieren wir ein festliches Buffet, das traditionelle Weihnachtsaromen mit afrikanischen Spezialitäten verbindet. Erleben Sie, wie afrikanische Gewürze klassische " +
+                "Weihnachtsgerichte auf überraschende Weise bereichern und neue Geschmackserlebnisse schaffen. Unser erfahrenes Team sorgt für einen reibungslosen Ablauf und eine einladende Atmosphäre, " +
+                "die zum Verweilen und Genießen einlädt. Eine kulinarische Weltreise, die die Vielfalt der Festtagstraditionen feiert und neue Perspektiven eröffnet – perfekt für einen unvergesslichen " +
+                "Jahresabschluss.",
         }
     }
 };
