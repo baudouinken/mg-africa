@@ -23,7 +23,7 @@ class PHP_Email_Form {
     public function send() {
         // Validate required fields
         if (empty($this->to) || empty($this->from_email) || empty($this->subject)) {
-            return $this->ajax ? json_encode(array('status' => 'error', 'message' => 'Required fields are missing')) : false;
+            return $this->ajax ? 'Required fields are missing' : false;
         }
 
         // Build email headers
@@ -59,35 +59,121 @@ class PHP_Email_Form {
         $headers = implode("\r\n", $this->headers);
 
         if (mail($this->to, $this->subject, $email_content, $headers)) {
-            return $this->ajax ? json_encode(array('status' => 'success', 'message' => 'Message sent successfully')) : true;
+            return $this->ajax ? 'OK' : true;
         } else {
-            return $this->ajax ? json_encode(array('status' => 'error', 'message' => 'Failed to send message')) : false;
+            return $this->ajax ? 'Failed to send message. Please check your mail server configuration.' : false;
         }
     }
 
     private function send_via_smtp($email_content) {
-        require_once 'PHPMailer/PHPMailerAutoload.php';
+        $host = $this->smtp['host'];
+        $port = isset($this->smtp['port']) ? $this->smtp['port'] : 587;
+        $username = $this->smtp['username'];
+        $password = $this->smtp['password'];
+        $encryption = isset($this->smtp['encryption']) ? $this->smtp['encryption'] : 'tls';
 
-        $mail = new PHPMailer;
+        // Build email
+        $headers = implode("\r\n", $this->headers);
+        $to = $this->to;
+        $subject = $this->subject;
 
-        $mail->isSMTP();
-        $mail->Host = $this->smtp['host'];
-        $mail->SMTPAuth = true;
-        $mail->Username = $this->smtp['username'];
-        $mail->Password = $this->smtp['password'];
-        $mail->SMTPSecure = isset($this->smtp['encryption']) ? $this->smtp['encryption'] : 'tls';
-        $mail->Port = isset($this->smtp['port']) ? $this->smtp['port'] : 587;
+        // Use fsockopen for SMTP
+        $socket_context = stream_context_create([
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            ]
+        ]);
 
-        $mail->setFrom($this->from_email, $this->from_name);
-        $mail->addAddress($this->to);
-        $mail->Subject = $this->subject;
-        $mail->Body = $email_content;
-        $mail->isHTML(true);
+        $prefix = ($encryption === 'ssl') ? 'ssl://' : '';
+        $smtp_conn = @stream_socket_client(
+            $prefix . $host . ':' . $port,
+            $errno,
+            $errstr,
+            30,
+            STREAM_CLIENT_CONNECT,
+            $socket_context
+        );
 
-        if ($mail->send()) {
-            return $this->ajax ? json_encode(array('status' => 'success', 'message' => 'Message sent successfully')) : true;
-        } else {
-            return $this->ajax ? json_encode(array('status' => 'error', 'message' => 'Mailer Error: ' . $mail->ErrorInfo)) : false;
+        if (!$smtp_conn) {
+            return $this->ajax ? "SMTP Connection failed: $errstr ($errno)" : false;
         }
+
+        // Read greeting
+        $this->smtp_get_response($smtp_conn);
+
+        // EHLO
+        fwrite($smtp_conn, "EHLO " . gethostname() . "\r\n");
+        $this->smtp_get_response($smtp_conn);
+
+        // STARTTLS for port 587
+        if ($encryption === 'tls' && $port == 587) {
+            fwrite($smtp_conn, "STARTTLS\r\n");
+            $this->smtp_get_response($smtp_conn);
+            stream_socket_enable_crypto($smtp_conn, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
+            fwrite($smtp_conn, "EHLO " . gethostname() . "\r\n");
+            $this->smtp_get_response($smtp_conn);
+        }
+
+        // AUTH LOGIN
+        fwrite($smtp_conn, "AUTH LOGIN\r\n");
+        $this->smtp_get_response($smtp_conn);
+
+        fwrite($smtp_conn, base64_encode($username) . "\r\n");
+        $this->smtp_get_response($smtp_conn);
+
+        fwrite($smtp_conn, base64_encode($password) . "\r\n");
+        $response = $this->smtp_get_response($smtp_conn);
+
+        if (strpos($response, '235') === false) {
+            fclose($smtp_conn);
+            return $this->ajax ? "SMTP Authentication failed" : false;
+        }
+
+        // MAIL FROM
+        fwrite($smtp_conn, "MAIL FROM:<" . $username . ">\r\n");
+        $this->smtp_get_response($smtp_conn);
+
+        // RCPT TO
+        fwrite($smtp_conn, "RCPT TO:<" . $to . ">\r\n");
+        $this->smtp_get_response($smtp_conn);
+
+        // DATA
+        fwrite($smtp_conn, "DATA\r\n");
+        $this->smtp_get_response($smtp_conn);
+
+        // Message
+        $message = "To: " . $to . "\r\n";
+        $message .= "From: " . $this->from_name . " <" . $username . ">\r\n";
+        $message .= "Reply-To: " . $this->from_email . "\r\n";
+        $message .= "Subject: " . $subject . "\r\n";
+        $message .= "MIME-Version: 1.0\r\n";
+        $message .= "Content-Type: text/html; charset=utf-8\r\n";
+        $message .= "\r\n";
+        $message .= $email_content . "\r\n";
+        $message .= ".\r\n";
+
+        fwrite($smtp_conn, $message);
+        $response = $this->smtp_get_response($smtp_conn);
+
+        // QUIT
+        fwrite($smtp_conn, "QUIT\r\n");
+        fclose($smtp_conn);
+
+        if (strpos($response, '250') !== false) {
+            return $this->ajax ? 'OK' : true;
+        } else {
+            return $this->ajax ? "Failed to send email: $response" : false;
+        }
+    }
+
+    private function smtp_get_response($conn) {
+        $response = '';
+        while ($line = fgets($conn, 515)) {
+            $response .= $line;
+            if (substr($line, 3, 1) == ' ') break;
+        }
+        return $response;
     }
 }
