@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MG Africa Food</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.ico" rel="icon">
+  <link href="assets/img/logo.ico" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=3" rel="stylesheet">
+  <style>
+    /* La règle globale h1 a été retirée : elle écrasait le titre de page. */
+    .menu {
+      background-color: var(--cream);
+      border: 1px solid var(--sand-line);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .menu-title {
+      color: var(--accent-color);
+      margin-top: 0;
+    }
+    .menu-items {
+      margin-left: 20px;
+    }
+    .price {
+      font-weight: bold;
+      color: var(--terracotta);
+    }
+    .option {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+    .note {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 20px 0;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/catering.webp');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 5rem 0;
+      margin-bottom: 3rem;
+    }
+
+    .head  {
+      color: white !important;
+    }
+
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Ninestars
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="service-details-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/logo.png" alt="" class="logo-inner">
+      <!--        <h1 class="sitename">MG Africa Food</h1>-->
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="notranslate"><b><span data-i18n="menu_home">Home</span></b></a></li>
+        <li><a href="index.html#about" class="notranslate"><b><span data-i18n="menu_about">About</span></b></a></li>
+        <li><a href="index.html#services" class="active notranslate"><b><span data-i18n="menu_Services">Services</span></b></a></li>
+        <!--          <li class="dropdown"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>-->
+        <!--            <ul>-->
+        <!--              <li><a href="service-details-catering.html">Catering</a></li>-->
+        <!--              <li><a href="service-details-street-food.html">Festivals</a></li>-->
+        <!--              <li><a href="service-details-atelier.html">Atelier pour enfants</a></li>-->
+        <!--              <li><a href="service-details-location.html">Location matériel</a></li>-->
+        <!--            </ul>-->
+        <!--          </li>-->
+        <li><a href="index.html#portfolio" class="notranslate"><b>Portfolio</b></a></li>
+        <li><a href="blog.html" class="notranslate"><b>Blog</b></a></li>
+        <li><a href="festivals.html" class="notranslate"><b>Festivals</b></a></li>
+        <li><a href="index.html#faq" class="notranslate"><b>FAQ</b></a></li>
+        <li><a href="index.html#contact"><b><span data-i18n="menu_Contact">Contact</span></b></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+    <a class="btn-getstarted" href="index.html#about" data-i18n="get_started">Get Started</a>
+  </div>
+</header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Catering</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3 head" data-i18n="service_catering_title">Service Catering sur mesure</h1>
+        <p class="lead" data-i18n="service_catering_subtitle">Découvrez nos recettes, astuces et aventures culinaires !</p>
+      </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200"></div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+<!--            <img src="assets/img/catering.webp" alt="" class="img-fluid services-img">-->
+            <h3 data-i18n="service_about">À Propos de ce Service</h3>
+            <p data-i18n="service_catering_offer">
+              Offrez à vos invités une expérience culinaire inoubliable avec notre catering sur mesure. <br>
+              Que ce soit pour:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span data-i18n="service_catering_offer_1">un mariage.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-i18n="service_catering_offer_2">une fête.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-i18n="service_catering_offer_3">un dîner privé</span></li>
+            </ul>
+            <span data-i18n="service_catering_text_after_offer">nous créons des menus adaptés à vos goûts et à votre budget.</span> <br><br>
+            <p>
+              <a href="festivals.html" class="btn btn-success buttons"><span data-i18n="service_coming_events">Prochains événements</span> &nbsp; <i class="bi bi-calendar-date"></i></a>
+            </p>
+
+            <br>
+            <h3 data-i18n="service_catering_offers">Nos Offres de Catering</h3>
+            <h4 data-i18n="service_catering_offers_text">Sur mesure pour tous les budgets. Exemples ci-dessous (Exemples de Devis) :</h4>
+
+            <h4 data-i18n="service_catering_menu_title">Nos menus pour événements</h4>
+
+            <div class="menu">
+              <h3 class="menu-title" data-i18n="service_catering_menu_mariage">1. Mariage (50 personnes)</h3>
+              <ul class="menu-items">
+                <li><strong data-i18n="service_catering_menu_mariage_entree">Entrée :</strong> <span data-i18n="service_catering_menu_mariage_entree_text">Salade avocat-crevettes</span></li>
+                <li><strong data-i18n="service_catering_menu_mariage_plat">Plats :</strong> <span data-i18n="service_catering_menu_mariage_plat_text">Ndolè, Poisson braisé, Eru</span></li>
+                <li><strong data-i18n="service_catering_menu_mariage_dessert">Dessert :</strong> <span data-i18n="service_catering_menu_mariage_dessert_text">Beignets de banane & glace</span></li>
+                <li class="price"><strong data-i18n="service_catering_menu_mariage_prix">Prix :</strong> 1 200 €</li>
+              </ul>
+              <p class="option" data-i18n="service_catering_menu_mariage_option">Option : Ajoutez un buffet de fruits exotiques pour +200 €</p>
+            </div>
+
+            <div class="menu">
+              <h3 class="menu-title" data-i18n="service_catering_menu_anniv">2. Anniversaire (30 personnes)</h3>
+              <ul class="menu-items">
+                <li><strong data-i18n="service_catering_menu_anniv_entree">Entrée :</strong> <span data-i18n="service_catering_menu_anniv_entree_text">Samoussas & accras</span></li>
+                <li><strong data-i18n="service_catering_menu_anniv_plat">Plats :</strong> <span data-i18n="service_catering_menu_anniv_plat_text">Poulet DG, Riz cantonais africain</span></li>
+                <li><strong data-i18n="service_catering_menu_anniv_dessert">Dessert :</strong> <span data-i18n="service_catering_menu_anniv_dessert_text">Mousse à la mangue</span></li>
+                <li class="price"><strong data-i18n="service_catering_menu_anniv_prix">Prix :</strong> 700 €</li>
+              </ul>
+            </div>
+
+            <div class="menu">
+              <h3 class="menu-title" data-i18n="service_catering_menu_entreprise_event">3. Événement d'entreprise (100 personnes)</h3>
+              <ul class="menu-items">
+                <li><strong data-i18n="service_catering_menu_entreprise_event_buffet">Buffet froid :</strong> <span data-i18n="service_catering_menu_entreprise_event_buffet_text">10 variétés de mini-délices africains</span></li>
+                <li class="price"><strong data-i18n="service_catering_menu_entreprise_event_prix">Prix :</strong> 2 000 €</li>
+              </ul>
+            </div>
+
+            <div class="note">
+              <p><strong data-i18n="service_catering_note">Note :</strong><br>
+                <span data-i18n="service_catering_note_text">Ces menus sont modifiables. Demandez un devis personnalisé pour votre événement, quel que soit votre budget !</span>
+              </p>
+              <a href="index.html#contact" class="btn btn-success buttons" data-i18n="service_catering_avis">Demandez votre devis </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+<footer id="footer" class="footer position-relative">
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6">
+          <h4 data-i18n="news_letter_title">Rejoint nos Newsletter</h4>
+          <p data-i18n="news_letter_text">Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire" data-i18n="news_letter_button"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Votre demande d'abonnement a été envoyée. Nous vous remercions de votre attention.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="d-flex align-items-center">
+          <span class="sitename">MG Africa Food</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Petersburger Straße 92</p>
+          <p>10247 Berlin</p>
+          <p>Deutschlandweite Einsatzbereitschaft</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+49 176 75938034</span></p>
+          <p><strong>Email:</strong> <span>contact@mgafricafood.com</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="#about"><span data-i18n="menu_about">A Propos</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#services"><span data-i18n="menu_Services">Services</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#contact"><span data-i18n="menu_Contact">Contact</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4><span data-i18n="services_nos">Nos</span> <span data-i18n="services">Services</span></h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-catering.html">Catering</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-street-food.html">Festivals & Street Food</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html"><span data-i18n="footer_atelier_enfant">Ateliers culinaires pour enfants</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html"><span data-i18n="footer_location">Location de materiel de cuisine</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <h4>MG Africa Food</h4>
+        <p data-i18n="mg_food_slogan_footer">Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
+        <div class="social-links d-flex">
+          <a href="https://tr.ee/v3aV9wlKpl"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.facebook.com/share/18dYWfkZB7/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/mg_africa_food?igsh=MWN1Y3ZsaW15b2YxNg=="><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/4917675938034"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p> <span></span> <strong class="px-1 sitename">MG Africa Food</strong> <span class="px-1">Powered by <a href="https://afrovibe.taplink.bio" target="_blank" rel="noopener noreferrer">Afrovibe</a></span> </p>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url]
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    </div>
+  </div>
+
+  <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
+    <label for="languageSwitcher" class="visually-hidden">Language</label>
+    <select id="languageSwitcher" class="form-select w-auto" style=" background-color: #99cc33; color: white">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- translation -->
+  <script src="https://unpkg.com/i18next@23.4.7/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="assets/js/translation.js?v=6"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MG Africa Food</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.ico" rel="icon">
+  <link href="assets/img/logo.ico" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=3" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Ninestars
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    /* Spécifique à la page Festivals — le reste (cartes, dates, typo) est géré
+       par le système de design central dans assets/css/main.css */
+    .event-title {
+      color: var(--heading-color);
+      font-weight: 600;
+      font-size: 1.45rem;
+      line-height: 1.2;
+    }
+    .event-month { text-transform: uppercase; letter-spacing: .06em; }
+    .card-body { padding: 1.4rem; }
+
+    .gallery-img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .gallery-img:hover {
+      transform: scale(1.04);
+      box-shadow: var(--shadow-lg);
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/logo.png" alt="" class="logo-inner">
+      <!--        <h1 class="sitename">MG Africa Food</h1>-->
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="notranslate"><b><span data-i18n="menu_home">Home</span></b></a></li>
+        <li><a href="index.html#about" class="notranslate"><b><span data-i18n="menu_about">About</span></b></a></li>
+        <li><a href="index.html#services" class="notranslate"><b><span data-i18n="menu_Services">Services</span></b></a></li>
+        <!--          <li class="dropdown"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i>-->
+        <!--            <ul>-->
+        <!--              <li><a href="service-details-catering.html">Catering</a></li>-->
+        <!--              <li><a href="service-details-street-food.html">Festivals</a></li>-->
+        <!--              <li><a href="service-details-atelier.html">Atelier pour enfants</a></li>-->
+        <!--              <li><a href="service-details-location.html">Location matériel</a></li>-->
+        <!--            </ul>-->
+        <!--          </li>-->
+        <li><a href="index.html#portfolio" class="notranslate"><b>Portfolio</b></a></li>
+        <li><a href="blog.html" class="notranslate"><b>Blog</b></a></li>
+        <li><a href="festivals.html" class="active notranslate"><b>Festivals</b></a></li>
+        <li><a href="index.html#faq" class="notranslate"><b>FAQ</b></a></li>
+        <li><a href="index.html#contact"><b><span data-i18n="menu_Contact">Contact</span></b></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+    <a class="btn-getstarted" href="index.html#about" data-i18n="get_started">Get Started</a>
+  </div>
+</header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Festivals</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Festivals</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+
+      <!-- Hero Section
+      <section class="hero-section text-center">
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-3">Retrouvez-nous en Festival !</h1>
+          <p class="lead">Vivez l'expérience MG Africa Food en live.</p>
+        </div>
+      </section> -->
+
+      <!-- Main Content -->
+      <div class="container">
+        <!-- Upcoming Events -->
+        <div class="row mb-5">
+          <h2 class="mb-4" data-i18n="festival_title">Calendrier des Événements</h2>
+
+          <!-- ===== Événements 2026 ===== -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">22-25</div>
+                <div class="event-month"><span data-i18n="month_may">Mai</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_karneval">Karneval der Kulturen, Berlin</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">12-14</div>
+                <div class="event-month"><span data-i18n="june">Juni</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_niedersachsen">Tag der Niedersachsen, Braunschweig</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">15</div>
+                <div class="event-month"><span data-i18n="june">Juni</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_geburtstag">Geburtstagsparty, Wolfenbüttel</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">25</div>
+                <div class="event-month"><span data-i18n="june">Juni</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_hochzeit_dk">Hochzeit in Dänemark</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">11</div>
+                <div class="event-month"><span data-i18n="month_july">Juli</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_potsdam">Afrika Festival Potsdam</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">02</div>
+                <div class="event-month"><span data-i18n="month_october">Oktober</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_hochzeit_bs">Hochzeit in Braunschweig</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">12</div>
+                <div class="event-month"><span data-i18n="month_december">Dezember</span> 2026</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="ev_hochzeit_wob">Hochzeit in Wolfsburg</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ===== Fin événements 2026 ===== -->
+
+          <!-- Event 1 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">03</div>
+                <div class="event-month">Mai 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="festival_event_1_title">Atelier de cuisine pour enfants</h3>
+                <p class="card-text" data-i18n="festival_event_1_text">Retrouvez-nous à Potsdam pour un Atelier cuisine GRATUIT pour enfants.
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Potsdam, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">09-11</div>
+                <div class="event-month">Mai 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title">Street Food Brandenburg an der Havel</h3>
+                <p class="card-text" data-i18n="festival_event_2_text">Retrouvez-nous à Brandenburg pour un festival street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Brandenburg an der Havel, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">07-08</div>
+                <div class="event-month"><span data-i18n="june">Juin</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="festival_event_3_title">Challenge Camerounais 2025</h3>
+                <p class="card-text" data-i18n="festival_event_3_text">Compétition culinaire et dégustation de plats traditionnels camerounais à Emsdetten.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Emsdetten, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Event 4 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">06-09</div>
+                <div class="event-month"><span data-i18n="june">Juin</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title">Karneval der Kulturen Berlin</h3>
+                <p class="card-text" data-i18n="festival_event_4_text">Participation au célèbre carnaval des cultures de Berlin avec un stand de cuisine
+                  interactive.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Berlin, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">07-08</div>
+                <div class="event-month"><span data-i18n="june">Juin</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title">Symposium Mboa</h3>
+                <p class="card-text" data-i18n="festival_event_5_text">Participation au célèbre Symposium Mboa de Berlin.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Berlin, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">21</div>
+                <div class="event-month"><span data-i18n="june">Juin</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event6_title1">Fête de la musique à Hannover</h3>
+                <p class="card-text">
+                  <b data-i18n="event6_title2">MG Africa Food à la Fête de la musique de Hanovre Lieu: Centre-ville de Hanovre</b>
+                  <br>
+                  <span data-i18n="event6_text">
+                    Vivez les rythmes de l'Afrique non seulement avec vos oreilles, mais aussi avec vos papilles!
+                  MG Africa Food apporte d'authentiques délices africains à la Fête de la musique de Hanovre.
+                  Pendant que vous profitez des sons variés de ce festival international de musique, nous vous choyons
+                  avec des plats traditionnels qui reflètent la diversité culinaire du continent africain.
+                  Visitez notre stand dans le centre-ville et laissez-vous emporter dans un voyage gustatif qui s'harmonise
+                  parfaitement avec les sons musicaux du monde entier.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Hannover, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 7 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">05</div>
+                <div class="event-month"><span data-i18n="juli">Juillet</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event7_title1">Tournoi sportif de FeeFee e.V.</h3>
+                <p class="card-text">
+                  <b data-i18n="event7_title2">MG Africa Food accompagne Santé Coppi e.V. au tournoi sportif de FeeFee e.V.</b>
+                  <br>
+                  <span data-i18n="event7_text">
+                    Le 5 juillet 2025, MG Africa Food est fier de fournir le service traiteur pour Santé Coppi e.V. à l’occasion du
+                    grand tournoi organisé par FeeFee e.V.. Pendant que les équipes se donnent à fond sur le terrain, nous proposerons
+                    une cuisine africaine savoureuse, équilibrée et pleine d’énergie – idéale pour une journée sportive.
+                    Un plaisir de partager notre passion culinaire avec une association engagée pour la santé, le sport et la solidarité.
+                    MG Africa Food – Goûtez l’Afrique. Ressentez l’amour.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Berlin, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 8 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">05</div>
+                <div class="event-month"><span data-i18n="juli">Juillet</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event8_title1">Festival Africain de Potsdam</h3>
+                <p class="card-text">
+                  <b data-i18n="event8_title2">MG Africa Food au Festival Africain de Potsdam</b>
+                  <br>
+                  <span data-i18n="event8_text">
+                    Plongez dans les arômes et les parfums de l'Afrique lors du Festival Africain de Potsdam
+                    de cette année ! MG Africa Food est fier de faire partie de ce moment culturel fort et
+                    vous propose des plats authentiques de différentes régions du continent. Des ragoûts
+                    épicés aux douceurs sucrées – notre offre variée vous enchantera. Visitez notre stand
+                    au Volkspark et découvrez comment la nourriture relie les personnes et les cultures.
+                    Laissez-vous envoûter par nos délices tout en profitant de la musique, des danses et de
+                    l'artisanat du festival.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Potsdam, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 9 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">12</div>
+                <div class="event-month"><span data-i18n="juli">Juillet</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event9_title1">Festival Africain de Potsdam</h3>
+                <p class="card-text">
+                  <b data-i18n="event9_title2">MG Africa Food au Festival Africain de Potsdam</b>
+                  <br>
+                  <span data-i18n="event9_text">
+                    Sport et plaisir culinaire se rejoignent à la Coupe d'Afrique de Berlin !
+                    MG Africa Food assure une restauration authentique lors de ce passionnant tournoi de
+                    football qui rassemble des équipes de la communauté africaine de Berlin. Savourez nos
+                    spécialités énergisantes, parfaites pour encourager les joueurs et renforcer la communauté.
+                    Des boissons rafraîchissantes aux plats copieux – nous vous offrons une expérience
+                    gustative qui reflète la diversité de l'Afrique. Venez encourager votre équipe préférée
+                    et découvrez le lien entre sport, culture et art culinaire !
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Potsdam, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 10 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">12</div>
+                <div class="event-month"><span data-i18n="juli">Juillet</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event10_title1">Événement d'intégration de Wolfenbüttel</h3>
+                <p class="card-text">
+                  <b data-i18n="event10_title2">MG Africa Food à l'événement d'intégration de Wolfenbüttel</b>
+                  <br>
+                  <span data-i18n="event10_text">
+                    La culture unit – et la nourriture est un langage universel ! MG Africa Food est fier d'accompagner
+                    culinairement l'événement d'intégration africaine à Wolfenbüttel. Lors de cet important événement qui
+                    promeut le dialogue interculturel et l'intégration, nous apportons d'authentiques plats africains qui
+                    construisent des ponts entre les cultures. Découvrez comment nos recettes traditionnelles, transmises de
+                    génération en génération, rassemblent les gens. Visitez notre stand au marché central et faites partie d'un
+                    événement qui célèbre la diversité et favorise l'échange culturel à travers le plaisir de manger ensemble.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Wolfenbüttel, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 11 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">26</div>
+                <div class="event-month"><span data-i18n="juli">Juillet</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event11_title1">Service-traiteur exclusif pour mariage</h3>
+                <p class="card-text">
+                  <b data-i18n="event11_title2">MG Africa Food comme service-traiteur exclusif pour mariage</b>
+                  <br>
+                  <span data-i18n="event11_text">
+                    MG Africa Food donne à votre mariage une touche culinaire unique ! Pour une célébration de
+                    mariage spéciale à Berlin, nous créons un menu sur mesure qui combine les traditions africaines
+                    avec des influences modernes. Nos chefs expérimentés préparent chaque plat avec amour et
+                    attention pour rendre votre journée spéciale inoubliable. Des créations élégantes d'amuse-bouches
+                    pour la réception au menu principal festif – nous veillons à ce que vos invités soient choyés sur
+                    le plan culinaire. Contactez-nous pour votre planification de mariage personnalisée et créons
+                    ensemble un menu qui raconte votre histoire personnelle.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Berlin, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 12 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">01</div>
+                <div class="event-month"><span data-i18n="august">Aout</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event12_title1">Service-traiteur africain pour mariage</h3>
+                <p class="card-text">
+                  <b data-i18n="event12_title2">MG Africa Food comme service-traiteur africain pour mariage à Hambourg</b>
+                  <br>
+                  <span data-i18n="event12_text">
+                    Célébrez votre amour avec les arômes exquis de l'Afrique ! MG Africa Food se rend à Hambourg pour enrichir
+                    une célébration de mariage spéciale avec d'authentiques spécialités africaines. Notre équipe expérimentée
+                    crée un menu personnalisé qui allie les souhaits des mariés à la riche tradition culinaire africaine.
+                    De la décoration élégante au dernier dessert – nous nous occupons de chaque détail pour que vous et vos
+                    invités puissiez profiter d'une journée inoubliable. Nos plats racontent des histoires de communauté,
+                    d'amour et de tradition – parfaits pour le début de votre voyage commun. Parlez-nous de vos idées pour cette occasion spéciale.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Hamburg, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 13 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">16</div>
+                <div class="event-month"><span data-i18n="august">Aout</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event13_title1">Menu de mariage fusion</h3>
+                <p class="card-text">
+                  <b data-i18n="event13_title2">Menu de mariage fusion à Würzburg</b>
+                  <br>
+                  <span data-i18n="event13_text">
+                    Célébrez votre amour avec les arômes exquis de l'Afrique ! MG Africa Food se rend à Hambourg pour enrichir
+                    une célébration de mariage spéciale avec d'authentiques spécialités africaines. Notre équipe expérimentée
+                    crée un menu personnalisé qui allie les souhaits des mariés à la riche tradition culinaire africaine.
+                    De la décoration élégante au dernier dessert – nous nous occupons de chaque détail pour que vous et vos
+                    invités puissiez profiter d'une journée inoubliable. Nos plats racontent des histoires de communauté,
+                    d'amour et de tradition – parfaits pour le début de votre voyage commun. Parlez-nous de vos idées pour cette occasion spéciale.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted">Würzburg, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 14 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="event-card h-100">
+              <div class="event-date">
+                <div class="event-day">07</div>
+                <div class="event-month"><span data-i18n="december">Decembre</span> 2025</div>
+              </div>
+              <div class="card-body">
+                <h3 class="event-title" data-i18n="event14_title1">Fête de Noël</h3>
+                <p class="card-text">
+                  <b data-i18n="event14_title2">Fête de Noël d'inspiration africaine au Paul Gerhardt Stift</b>
+                  <br>
+                  <span data-i18n="event14_text">
+                    Une fête de Noël d'un genre particulier ! MG Africa Food apporte la chaleur et l'hospitalité africaines
+                    à la saison festive au Paul Gerhardt Stift à Berlin. Pour environ 600 employés, nous créons un buffet
+                    festif qui combine les arômes traditionnels de Noël avec des spécialités africaines. Découvrez comment
+                    les épices africaines enrichissent les plats de Noël classiques de manière surprenante et créent de nouvelles
+                    expériences gustatives. Notre équipe expérimentée assure un déroulement fluide et une atmosphère accueillante
+                    qui invite à s'attarder et à savourer. Un voyage culinaire mondial qui célèbre la diversité des traditions
+                    festives et ouvre de nouvelles perspectives – parfait pour une fin d'année inoubliable.
+                  </span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <small class="text-muted"> Paul Gerhardt Stift, Berlin, <span data-i18n="germany">Allemagne</span></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Gallery Section -->
+<!--        <div class="row mb-5">-->
+<!--          <h2 class="mb-4">Galerie des Festivals Passés</h2>-->
+
+<!--          <div class="col-12">-->
+<!--            <div class="row g-3">-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 1">-->
+<!--              </div>-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 3">-->
+<!--              </div>-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 4">-->
+<!--              </div>-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 5">-->
+<!--              </div>-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 6">-->
+<!--              </div>-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 7">-->
+<!--              </div>-->
+<!--              <div class="col-6 col-md-4 col-lg-3">-->
+<!--                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="gallery-img" alt="Festival 8">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+<footer id="footer" class="footer position-relative">
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6">
+          <h4 data-i18n="news_letter_title">Rejoint nos Newsletter</h4>
+          <p data-i18n="news_letter_text">Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Souscrire" data-i18n="news_letter_button"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Votre demande d'abonnement a été envoyée. Nous vous remercions de votre attention.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="d-flex align-items-center">
+          <span class="sitename">MG Africa Food</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Petersburger Straße 92</p>
+          <p>10247 Berlin</p>
+          <p>Deutschlandweite Einsatzbereitschaft</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+49 176 75938034</span></p>
+          <p><strong>Email:</strong> <span>contact@mgafricafood.com</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="#about"><span data-i18n="menu_about">A Propos</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#services"><span data-i18n="menu_Services">Services</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#contact"><span data-i18n="menu_Contact">Contact</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4><span data-i18n="services_nos">Nos</span> <span data-i18n="services">Services</span></h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-catering.html">Catering</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-street-food.html">Festivals & Street Food</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-atelier.html"><span data-i18n="footer_atelier_enfant">Ateliers culinaires pour enfants</span></a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details-location.html"><span data-i18n="location_materiel_1">Location de materiel de cuisine</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <h4>MG Africa Food</h4>
+        <p data-i18n="mg_food_slogan_footer">Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.</p>
+        <div class="social-links d-flex">
+          <a href="https://tr.ee/v3aV9wlKpl"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.facebook.com/share/18dYWfkZB7/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/mg_africa_food?igsh=MWN1Y3ZsaW15b2YxNg=="><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/4917675938034"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p> <span></span> <strong class="px-1 sitename">MG Africa Food</strong> <span class="px-1">Powered by <a href="https://afrovibe.taplink.bio" target="_blank" rel="noopener noreferrer">Afrovibe</a></span> </p>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url]
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    </div>
+  </div>
+
+  <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
+    <label for="languageSwitcher" class="visually-hidden">Language</label>
+    <select id="languageSwitcher" class="form-select w-auto" style=" background-color: #99cc33; color: white">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- translation -->
+  <script src="https://unpkg.com/i18next@23.4.7/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="assets/js/translation.js?v=6"></script>
+</body>
+
+</html>

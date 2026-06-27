@@ -1,0 +1,1044 @@
+const resources = {
+    fr: {
+        translation: {
+            menu_home: "Accueil",
+            menu_about: "About",
+            menu_Services: "Services",
+            menu_Contact: "Contact",
+            get_started: "Get Started",
+            homepage_title_1: "Découvrez les",
+            homepage_title_2: "saveurs authentiques",
+            homepage_title_3: "de l'Afrique en Allemagne",
+            subtitle: "Catering, festivals, ateliers culinaires et bien plus encore. Plongez dans une expérience culinaire unique !",
+            nos_services: "Nos Services",
+            contactez_nous: "Contactez-nous",
+            about_qui_sommes: "Qui sommes",
+            about_nous: "nous",
+            about_intro: "MG Africa Food, c'est bien plus qu'une entreprise de restauration. Nous sommes passionnés par la cuisine africaine et nous nous engageons à partager ses saveurs riches et variées avec vous. Que ce soit pour un événement privé, un  festival ou un atelier culinaire, nous vous offrons une expérience gastronomique inoubliable.",
+            notre_histoire: "Notre Histoire",
+            notre_histoire_text: "MG Africa Food est né de la passion pour la cuisine africaine et du désir de partager ses saveurs uniques avec le monde. Fondé par Denis 1 Fotso, notre entreprise s'est rapidement imposée comme une référence en Allemagne pour les événements culinaires africains. Que ce soit à travers notre catering, nos stands de festival ou nos ateliers, nous nous engageons à offrir une expérience authentique et mémorable.",
+            events: "Événements",
+            events_text: "Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier, nous sommes là pour vous. Contactez-nous dès aujourd'hui pour discuter de vos besoins !",
+            mission: "Notre mission est de faire découvrir la richesse de la cuisine africaine à travers des plats savoureux, des événements vibrants et des ateliers éducatifs. Nous croyons que la nourriture est bien plus qu'un simple repas – c'est une expérience culturelle qui rapproche les gens.",
+            passion: "Passion",
+            passion_text: "Notre équipe est composée de personnes passionnées par la cuisine, la culture et le service client. Chacun de nos membres apporte une expertise unique, mais nous partageons tous la même vision : vous offrir le meilleur de l'Afrique dans chaque assiette.",
+            services: "Services",
+            services_nos: "Nos",
+            services_text: " Chez MG Africa Food, nous proposons une gamme complète de services pour répondre à tous vos besoins culinaires. Que vous organisiez un événement privé, un festival, ou que vous ayez besoin de matériel de cuisine professionnel, nous sommes là pour vous.",
+            service_catering: "Des buffets sur mesure pour vos événements privés ou professionnels.",
+            service_festivals: "Des stands de street food pour vos festivals et événements en plein air.",
+            service_festival_after_about: "Nous apportons les saveurs de l'Afrique à vos festivals préférés.",
+            service_ateliers: " Initiez vos enfants à la cuisine africaine grâce à nos ateliers gratuits et éducatifs. Découvrez les dates des prochains ateliers.",
+            service_location: "Louez du matériel de cuisine professionnel, y compris des marmites chauffantes, pour vos événements.",
+            service_savoir_plus: "En savoir plus",
+            protofolio_intro: "Découvrez quelques-uns de nos projets récents. Que ce soit pour un mariage, un festival ou un atelier culinaire, chaque événement est une occasion de partager notre passion pour la cuisine africaine.",
+            portofolio_realisations: "Nos réalisations",
+            /* --- Portfolio details --- */
+            pd_title: "MG Africa Food en action",
+            pd_brief: "En bref",
+            pd_k_specialty: "Spécialité", pd_v_specialty: "Cuisine africaine authentique",
+            pd_k_services: "Prestations", pd_v_services: "Catering, festivals & street food, ateliers",
+            pd_k_coverage: "Couverture", pd_v_coverage: "Toute l'Allemagne",
+            pd_k_based: "Basé à", pd_v_based: "Berlin",
+            pd_cta: "Demander un devis",
+            pd_h2: "Des saveurs africaines à chaque événement",
+            pd_p1: "De nos stands sur les festivals à nos prestations de catering pour des événements privés, MG Africa Food fait découvrir la richesse de la cuisine africaine partout en Allemagne. Notre équipe prépare chaque plat à partir d'ingrédients frais, avec la même exigence, que ce soit pour quelques convives ou pour plusieurs centaines.",
+            pd_p2: "Nous animons également des ateliers culinaires pour enfants et accompagnons des événements communautaires et solidaires – parce que la nourriture rapproche les gens.",
+            pd_hl1: "Stands festival & street food à travers l'Allemagne",
+            pd_hl2: "Catering pour mariages et événements privés (jusqu'à 150 convives, mariage turco-africain à Brandenburg)",
+            pd_hl3: "Ateliers culinaires pour enfants",
+            pd_hl4: "Cuisine fraîche préparée sur place, options végétariennes",
+            /* --- Mois + événements 2026 --- */
+            month_may: "Mai", month_july: "Juillet", month_october: "Octobre", month_december: "Décembre",
+            ev_karneval: "Carnaval des Cultures, Berlin",
+            ev_niedersachsen: "Tag der Niedersachsen, Braunschweig",
+            ev_geburtstag: "Fête d'anniversaire, Wolfenbüttel",
+            ev_hochzeit_dk: "Mariage au Danemark",
+            ev_potsdam: "Festival Africain de Potsdam",
+            ev_hochzeit_bs: "Mariage à Braunschweig",
+            ev_hochzeit_wob: "Mariage à Wolfsburg",
+            evenements_culinaires: "Événements culinaires",
+            tous: "Tous",
+            partenariats: "Partenariats",
+            actions: "Actions Solidaires",
+            faq_intro: "Trouvez ici les réponses à vos questions. Sinon, contactez-nous !",
+            faq_ques_1: "Proposez-vous vos services de catering dans toute l'Allemagne ?",
+            faq_resp_1: "Oui ! Nous couvrons toute l'Allemagne avec nos services de catering et d'événements. Des frais de déplacement peuvent s'appliquer selon la distance (nous les précisons toujours dans nos devis).",
+            faq_ques_2: "Quelles sont vos spécialités culinaires ?",
+            faq_resp_2: `Nous nous concentrons sur les cuisines :
+
+                      - Camerounaise : Ndolè, Poulet DG, Eru etc.
+                      - Nigériane : Jollof Rice, Soupe Egusi, Suya etc.
+                      - Ghanéenne : Banku & Tilapia, Waakye etc.
+                      - Ivoirienne : Alloco, Attieke, Garba, Sauce graine etc.
+                      Nous adaptons aussi les plats à vos préférences !`,
+            faq_ques_3: "Je veux organiser un événement mais j'ai un petit budget. Est-ce possible ?",
+            faq_resp_3: `Absolument ! Nous proposons des formules adaptées à tous les budgets. Par exemple :
+
+                      - Mini-buffet à partir de 10€/personne (2 plats + accompagnement)
+                      - Food Truck / Mobile Gastronomie pour événements intimes.
+                      Dites-nous votre budget, nous trouverons une solution !`,
+            faq_ques_4: "Comment réserver votre catering pour un événement ?",
+            faq_resp_4: "Envoyez-nous une demande via notre formulaire de contact ou WhatsApp avec la date, le nombre de personnes et vos préférences. Nous vous enverrons un devis sous 24h.",
+            faq_ques_5: "Proposez-vous la livraison ?",
+            faq_resp_5: "Oui, dans toute la région de Berlin-Brandenburg avec des frais selon la distance.",
+            faq_ques_6: "Quels modes de paiement acceptez-vous ?",
+            faq_resp_6: "Espèces, virement bancaire, PayPal, et cartes (sur place).",
+            faq_ques_7: "Puis-je goûter les plats avant de réserver ?",
+            faq_resp_7: "Oui ! Nous proposons des séances de dégustation sur rendez-vous (frais symboliques déduits en cas de réservation).",
+            faq_ques_8: "Fournissez-vous aussi la décoration et la vaisselle ?",
+            faq_resp_8: "Oui, en option :\n" +
+                "- Décoration africaine\n" +
+                "- Location de vaisselle",
+            faq_ques_9: "Comment garantir la fraîcheur des plats lors d'un événement loin de votre base ?",
+            faq_resp_9: "Nous utilisons des camions frigorifiques et du matériel de maintien au chaud professionnel pour une qualité optimale.",
+            faq_ques_10: "Proposez-vous des services halal/végétarien/végan ?",
+            faq_resp_10: "Oui, tous nos plats peuvent être adaptés (prévenez-nous à la réservation).",
+            faq_ques_11: "Que se passe-t-il en cas d'annulation ?",
+            faq_resp_11: "- >30 jours avant : remboursement à 100%\n" +
+                "- 15-30 jours avant : 50%\n" +
+                "- <15 jours : frais de 30%",
+            faq_ques_12: "Une question manque ici ? Contactez-nous via",
+            faq_resp_12: " WhatsApp\n" +
+                " Notre formulaire de contact",
+            specialities_intro: "Quelques spécialités",
+            specialities_text: "Découvrez certaines de nos spécialités",
+            testi_intro: "Ce que disent nos Clients",
+            testi_1: "\"MG Africa Food assure le catering de nos assemblées générales depuis plusieurs années. Leur professionnalisme, la qualité exceptionnelle de leurs plats et leur flexibilité font de eux un partenaire incontournable. Toujours parfait !\"",
+            testi_2: "\"Pour notre AG annuel, MG Africa Food a créé un buffet africain qui a ébloui nos invités. Un mélange parfait d'authenticité et de créativité culinaire. Nos donateurs en parlent encore !\"",
+            testi_3: "\"Notre rêve d'un mariage aux saveurs africaines est devenu réalité grâce à MG Africa Food. Le service impeccable et les plats délicieux ont rendu notre jour encore plus magique. Merci pour cette touche d'Afrique à Berlin !\"",
+            testi_4: "\"Fusion turco-africaine réussie ! MG Africa Food a su adapter son menu à nos deux cultures, surprenant tous nos invités. Un service chaleureux et une présentation raffinée\"",
+            testi_5: "\"100 convives et zéro déception ! MG Africa Food a transformé notre événement en un voyage culinaire à travers l'Afrique. Le poulet DG et le ndolé étaient au cœur des conversations\"",
+            testi_6: "\"Pour mes 25 ans, je voulais des saveurs qui rappellent mon Cameroun natal. MG Africa Food a dépassé toutes mes attentes avec des plats comme ma mère les fait. Émotion garantie !\"",
+
+            contact_title: "Contactez-nous",
+            contact_text: "Que vous planifiez un événement, souhaitiez nous rencontrer à un festival ou participer à un atelier, nous sommes là pour vous. Contactez-nous dès aujourd'hui pour discuter de vos besoins !",
+            contact_form_name: "Nom",
+            contact_form_email: "Email",
+            contact_form_subject: "Sujet",
+            contact_form_message: "Message",
+            contact_form_send: "Envoyer",
+            contact_form_adress: "Adresse",
+            contact_form_call: "Appelez-nous",
+
+            news_letter_title: "Rejoignez notre Newsletter",
+            news_letter_text: "Inscrivez-vous à notre lettre d'information et recevez les dernières nouvelles sur nos produits et services !",
+            news_letter_button: "Souscrire",
+
+            footer_atelier_enfant: "Ateliers culinaires pour enfants",
+            footer_location: "Location de matériel de cuisine",
+            footer_atelier_enfant_1: "Ateliers pour enfants",
+            location_materiel: "Location de materiel de cuisine",
+            location_materiel_1: "Location de materiel",
+            mg_food_slogan_footer: "Catering, festivals, ateliers culinaires et bien plus encore. Découvrez les saveurs de l'Afrique en Allemagne.",
+
+            service_catering_title: "Service Catering sur mesure",
+            service_catering_subtitle: "Découvrez nos recettes, astuces et aventures culinaires !",
+            service_about: "À Propos de ce Service",
+            service_coming_events: "Prochains événements",
+
+            service_catering_offer: "Offrez à vos invités une expérience culinaire inoubliable avec notre catering sur mesure.\n" +
+                "Que ce soit pour:",
+            service_catering_offer_1: "un mariage",
+            service_catering_offer_2: "une fête",
+            service_catering_offer_3: "un dîner privé",
+            service_catering_text_after_offer: "nous créons des menus adaptés à vos goûts et à votre budget.",
+            service_catering_offers: "Nos Offres de catering",
+            service_catering_offers_text: "Sur mesure pour tous les budgets. Exemples ci-dessous (Exemples de Devis) :",
+            service_catering_menu_title: "Nos menus pour événements",
+
+            service_catering_menu_mariage: "1. Mariage (50 personnes)",
+            service_catering_menu_mariage_entree: "Entrée :",
+            service_catering_menu_mariage_entree_text: "Salade de mangue et crevettes",
+            service_catering_menu_mariage_plat: "Plats :",
+            service_catering_menu_mariage_plat_text: "Ndolè, Poisson braisé, Eru",
+            service_catering_menu_mariage_dessert: "Dessert :",
+            service_catering_menu_mariage_dessert_text: "Beignets de banane & glace",
+            service_catering_menu_mariage_prix: "Prix :",
+            service_catering_menu_mariage_option: "Option : Ajoutez un buffet de fruits exotiques pour +200 €",
+
+            service_catering_menu_anniv: "2. Anniversaire (30 personnes)",
+            service_catering_menu_anniv_entree: "Entrée :",
+            service_catering_menu_anniv_entree_text: "Samoussas & accras",
+            service_catering_menu_anniv_plat: "Plats :",
+            service_catering_menu_anniv_plat_text: "Poulet DG, Riz cantonais africain",
+            service_catering_menu_anniv_dessert: "Dessert :",
+            service_catering_menu_anniv_dessert_text: "Mousse à la mangue",
+            service_catering_menu_anniv_prix: "Prix :",
+
+            service_catering_menu_entreprise_event: "3. Événement d'entreprise (100 personnes)",
+            service_catering_menu_entreprise_event_buffet: "Buffet froid :",
+            service_catering_menu_entreprise_event_buffet_text: "10 variétés de mini-délices africains",
+            service_catering_menu_entreprise_event_prix: "Prix :",
+
+            service_catering_note: "Note :",
+            service_catering_note_text: "Ces menus sont modifiables. Demandez un devis personnalisé pour votre événement, quel que soit votre budget !",
+            service_catering_avis: "Demandez votre devis",
+
+            service_festival_subtitle: "Nous faisons de chaque festival un moment unique",
+            service_festivaL_after_about: "Nous apportons les saveurs de l'Afrique à vos festivals préférés.",
+            service_festival_stand: "Découvrez nos stands colorés.",
+            service_festival_plats: "Dégustez des plats traditionnels préparés avec amour.",
+
+            service_atelier_enfant: "Découvrez nos recettes, astuces et aventures culinaires !",
+            service_atelier_after_about: "Chez MG Africa Food, nous croyons que la cuisine est une porte d'entrée vers la culture et la créativité.\n" +
+                "            C'est pourquoi nous proposons des ateliers de cuisine gratuits pour les enfants, où ils apprennent à préparer\n" +
+                "            des plats africains traditionnels tout en s'amusant. Ces ateliers sont conçus pour éveiller leur curiosité et\n" +
+                "            leur faire découvrir de nouvelles saveurs. Consultez notre calendrier pour connaître les dates des prochains\n" +
+                "            ateliers et inscrivez vos enfants à une expérience culinaire unique !",
+            service_atelier_1: "Atelier de cuisine gratuit pour les enfants.",
+            service_atelier_2: "Éveiller la curiosité des enfants.",
+            service_atelier_3: "Leur faire découvrir de nouvelles saveurs.",
+            service_atelier_event_1_title: "Cours de cuisine pour enfants",
+            service_atelier_event_1_program: "Programme",
+            service_atelier_event_1_program_detail_1: "Découverte des saveurs camerounaises",
+            service_atelier_event_1_program_detail_2: "Préparation de plats simples et amusants",
+            service_atelier_event_1_footer_1: "Enfants de 6 à 12 ans",
+            service_atelier_event_1_inscription: "Inscription obligatoire",
+            service_atelier_event_1_inscription_ici: "ici",
+            service_atelier_event_1_inscription_ou_ici: "ou ici",
+
+            service_location_text: "Nous proposons la location de matériel de cuisine professionnel, y compris des marmites chauffantes,\n" +
+                "            pour vos événements ou vos besoins culinaires. Notre équipement est de haute qualité et parfaitement\n" +
+                "            entretenu pour garantir votre succès.\n" +
+                "            Liste des équipements disponibles :",
+            service_location_marmite: "Marmites chauffantes",
+            service_location_couverts: "Couverts",
+            service_location_grills: "Grills et barbecues",
+            service_location_refrigerateur: "Réfrigérateurs et congélateurs portables",
+            service_location_ustensiles: "Ustensiles de cuisine (louches, spatules, etc.)",
+            service_location_ask_location: "Demander une location",
+            service_location_subtitle: "Découvrez notre matériel de cuisine professionnel !",
+
+            festival_title: "Calendrier des Événements",
+            germany: "Allemagne",
+            june: "Juin",
+            juli: "Juillet",
+            august: "Aout",
+            december: "Decembre",
+            festival_event_1_title: "Atelier de cuisine pour enfants",
+            festival_event_1_text: "Retrouvez-nous à Potsdam pour un Atelier cuisine GRATUIT pour enfants.",
+            festival_event_2_text: "Retrouvez-nous à Brandenburg pour un festival street food.",
+            festival_event_3_title: "Challenge Camerounais 2025",
+            festival_event_3_text: "Compétition culinaire et dégustation de plats traditionnels camerounais à Emsdetten.",
+            festival_event_4_text: "Participation au célèbre carnaval des cultures de Berlin avec un stand de cuisine interactive.",
+            festival_event_5_text: "Participation au célèbre Symposium Mboa de Berlin.",
+
+            blog_title: "Le Blog MG Africa Food",
+            blog_text: "Découvrez nos recettes, astuces et aventures culinaires !",
+            blog_text_1: "Articles Mis en Avant",
+
+            blog_1_title_1: "Recettes Africaines",
+            blog_1_title_2: "Nos 3 plats star pour un été réussi",
+            blog_1_text: "Découvrez nos plats phares qui raviront vos invités tout au long de l'été. Des saveurs authentiques qui transportent directement en Afrique.",
+            published: "Publié le 15 mai 2024",
+
+            blog_2_title_1: "Conseils",
+            blog_2_title_2: "Ateliers enfants : pourquoi cuisiner ensemble est éducatif",
+            blog_2_text: "Découvrez comment nos ateliers culinaires pour enfants stimulent la créativité, l'autonomie et l'ouverture culturelle.",
+            published_1: "Publié le 2 juin 2024",
+
+            blog_3_title_1: "Recettes Africaines",
+            blog_3_title_2: "Comment préparer le Ndolè parfait",
+            blog_3_text: "Toutes nos astuces pour préparer ce plat camerounais emblématique avec des feuilles de ndolè fraîches.",
+            published_2: "Publié le 10 juin 2024",
+
+            blog_4_title_1: "Événements",
+            blog_4_title_2: "Retour sur le Karneval der Kulturen 2024",
+            blog_4_text: "Revivez les moments forts de notre participation à ce festival multiculturel berlinois.",
+            published_3: "Publié le 28 mai 2024",
+
+            blog_5_title_1: "Conseils",
+            blog_5_title_2: "5 astuces pour organiser un mariage réussi",
+            blog_5_text: "Nos conseils pour un mariage mémorable avec une touche africaine authentique.",
+            published_4: "Publié le 15 mai 2024",
+
+            blog_6_title_1: "Culture",
+            blog_6_title_2: "L'histoire du Poulet DG au Cameroun",
+            blog_6_text: "Découvrez les origines de ce plat prestigieux qui porte le nom d'une fonction importante.",
+            published_5: "Publié le 5 mai 2024",
+
+            last_articles: "Derniers Articles",
+
+            //event 6
+            event6_title1: "Fête de la musique à Hannover",
+            event6_title2: "MG Africa Food à la Fête de la musique de Hanovre Lieu: Centre-ville de Hanovre",
+            event6_text: "Vivez les rythmes de l'Afrique non seulement avec vos oreilles, mais aussi avec vos papilles!" +
+                "                  MG Africa Food apporte d'authentiques délices africains à la Fête de la musique de Hanovre." +
+                "                  Pendant que vous profitez des sons variés de ce festival international de musique, nous vous choyons" +
+                "                  avec des plats traditionnels qui reflètent la diversité culinaire du continent africain." +
+                "                  Visitez notre stand dans le centre-ville et laissez-vous emporter dans un voyage gustatif qui s'harmonise" +
+                "                  parfaitement avec les sons musicaux du monde entier.",
+
+            //event 7
+            event7_title1: "Tournoi sportif de FeeFee e.V.",
+            event7_title2: "MG Africa Food accompagne Santé Coppi e.V. au tournoi sportif de FeeFee e.V.",
+            event7_text: "Le 5 juillet 2025, MG Africa Food est fier de fournir le service traiteur pour Santé Coppi e.V. à l’occasion du " +
+                "                    grand tournoi organisé par FeeFee e.V.. Pendant que les équipes se donnent à fond sur le terrain, nous proposerons " +
+                "                    une cuisine africaine savoureuse, équilibrée et pleine d’énergie – idéale pour une journée sportive." +
+                "                    Un plaisir de partager notre passion culinaire avec une association engagée pour la santé, le sport et la solidarité." +
+                "                    MG Africa Food – Goûtez l’Afrique. Ressentez l’amour.",
+
+            //event 8
+            event8_title1: "Festival Africain de Potsdam",
+            event8_title2: "MG Africa Food au Festival Africain de Potsdam",
+            event8_text: "Plongez dans les arômes et les parfums de l'Afrique lors du Festival Africain de Potsdam " +
+                "                    de cette année ! MG Africa Food est fier de faire partie de ce moment culturel fort et " +
+                "                    vous propose des plats authentiques de différentes régions du continent. Des ragoûts " +
+                "                    épicés aux douceurs sucrées – notre offre variée vous enchantera. Visitez notre stand " +
+                "                    au Volkspark et découvrez comment la nourriture relie les personnes et les cultures. " +
+                "                    Laissez-vous envoûter par nos délices tout en profitant de la musique, des danses et de" +
+                "                    l'artisanat du festival.",
+
+            //event 9
+            event9_title1: "Coupe d'Afrique de Berlin",
+            event9_title2: "MG Africa Food à la Coupe d'Afrique de Berlin",
+            event9_text: "Sport et plaisir culinaire se rejoignent à la Coupe d'Afrique de Berlin !" +
+                "                    MG Africa Food assure une restauration authentique lors de ce passionnant tournoi de " +
+                "                    football qui rassemble des équipes de la communauté africaine de Berlin. Savourez nos " +
+                "                    spécialités énergisantes, parfaites pour encourager les joueurs et renforcer la communauté. " +
+                "                    Des boissons rafraîchissantes aux plats copieux – nous vous offrons une expérience " +
+                "                    gustative qui reflète la diversité de l'Afrique. Venez encourager votre équipe préférée " +
+                "                    et découvrez le lien entre sport, culture et art culinaire !",
+
+            //event 10
+            event10_title1: "Événement d'intégration de Wolfenbüttel",
+            event10_title2: "MG Africa Food à l'événement d'intégration de Wolfenbüttel",
+            event10_text: "La culture unit – et la nourriture est un langage universel ! MG Africa Food est fier d'accompagner culinairement l'événement d'intégration africaine à Wolfenbüttel. " +
+                "Lors de cet important événement qui promeut le dialogue interculturel et l'intégration, nous apportons d'authentiques plats africains qui construisent des ponts entre les cultures. " +
+                "Découvrez comment nos recettes traditionnelles, transmises de génération en génération, rassemblent les gens. Visitez notre stand au marché central et faites partie d'un événement qui " +
+                "célèbre la diversité et favorise l'échange culturel à travers le plaisir de manger ensemble.",
+
+            //event 11
+            event11_title1: "Service-traiteur exclusif pour mariage",
+            event11_title2: "MG Africa Food comme service-traiteur exclusif pour mariage",
+            event11_text: "MG Africa Food donne à votre mariage une touche culinaire unique ! Pour une célébration de " +
+                "                    mariage spéciale à Berlin, nous créons un menu sur mesure qui combine les traditions africaines " +
+                "                    avec des influences modernes. Nos chefs expérimentés préparent chaque plat avec amour et " +
+                "                    attention pour rendre votre journée spéciale inoubliable. Des créations élégantes d'amuse-bouches " +
+                "                    pour la réception au menu principal festif – nous veillons à ce que vos invités soient choyés sur " +
+                "                    le plan culinaire. Contactez-nous pour votre planification de mariage personnalisée et créons " +
+                "                    ensemble un menu qui raconte votre histoire personnelle.",
+
+            //event 12
+            event12_title1: "Service-traiteur africain pour mariage",
+            event12_title2: "Service-traiteur africain pour mariage à Hambourg",
+            event12_text: "Célébrez votre amour avec les arômes exquis de l'Afrique ! MG Africa Food se rend à Hambourg pour enrichir une célébration de mariage spéciale avec d'authentiques spécialités " +
+                "africaines. Notre équipe expérimentée crée un menu personnalisé qui allie les souhaits des mariés à la riche tradition culinaire africaine. De la décoration élégante au dernier dessert – " +
+                "nous nous occupons de chaque détail pour que vous et vos invités puissiez profiter d'une journée inoubliable. Nos plats racontent des histoires de communauté, d'amour et de tradition – " +
+                "parfaits pour le début de votre voyage commun. Parlez-nous de vos idées pour cette occasion spéciale.",
+
+            //event 13
+            event13_title1: "Menu de mariage fusion",
+            event13_title2: "Menu de mariage fusion à Würzburg",
+            event13_text: "Un mariage qui relie les cultures ! MG Africa Food apporte les saveurs de l'Afrique à Würzburg pour une célébration de mariage très spéciale. Notre équipe créative de traiteurs a " +
+                "développé un menu fusion unique qui combine des spécialités africaines avec des influences franconiennes – un pont culinaire entre les traditions. Chaque plat est préparé avec des ingrédients " +
+                "frais et de saison, reflétant à la fois l'origine et l'avenir du couple. De l'entrée au dessert, nous offrons une expérience gustative qui ravira vos invités. Créons ensemble un point culminant " +
+                "culinaire pour votre journée spéciale qui restera dans les mémoires.",
+
+            //event 14
+            event14_title1: "Fête de Noël d'inspiration africaine",
+            event14_title2: "Fête de Noël d'inspiration africaine au Paul Gerhardt Stift",
+            event14_text: "Une fête de Noël d'un genre particulier ! MG Africa Food apporte la chaleur et l'hospitalité africaines à la saison festive au Paul Gerhardt Stift à Berlin. Pour environ 600 employés," +
+                " nous créons un buffet festif qui combine les arômes traditionnels de Noël avec des spécialités africaines. Découvrez comment les épices africaines enrichissent les plats de Noël classiques de " +
+                "manière surprenante et créent de nouvelles expériences gustatives. Notre équipe expérimentée assure un déroulement fluide et une atmosphère accueillante qui invite à s'attarder et à savourer. " +
+                "Un voyage culinaire mondial qui célèbre la diversité des traditions festives et ouvre de nouvelles perspectives – parfait pour une fin d'année inoubliable.\n",
+        }
+    },
+    en: {
+        translation: {
+            menu_home: "Home",
+            menu_about: "About",
+            menu_Services: "Services",
+            menu_Contact: "Contact",
+            get_started: "Get Started",
+            homepage_title_1: "Discover the",
+            homepage_title_2: "authentic flavors",
+            homepage_title_3: "of Africa in Germany",
+            subtitle: "Catering, festivals, culinary workshops and much more. Dive into a unique culinary experience!",
+            nos_services: "Our Services",
+            contactez_nous: "Contact Us",
+            about_qui_sommes: "Wo we",
+            about_nous: "are",
+            about_intro: "MG Africa Food is much more than a catering company. We are passionate about African cuisine and committed to sharing its rich and varied flavors with you. Whether for a private event, a festival, or a culinary workshop, we offer you an unforgettable gastronomic experience.",
+            notre_histoire: "Our Story",
+            notre_histoire_text: "MG Africa Food was born out of a passion for African cuisine and the desire to share its unique flavors with the world. Founded by Denis 1 Fotso, our company quickly established itself as a reference in Germany for African culinary events. Whether through our catering, festival stands, or workshops, we are committed to providing an authentic and memorable experience.",
+            events: "Events",
+            events_text: " Whether you're planning an event, wish to meet us at a festival, or participate in a workshop, we are here for you. Contact us today to discuss your needs!",
+            mission: "Our mission is to showcase the richness of African cuisine through flavorful dishes, vibrant events, and educational workshops. We believe that food is much more than just a meal – it's a cultural experience that brings people together.",
+            passion: "Passion",
+            passion_text: "Our team is made up of people passionate about food, culture, and customer service. Each of our members brings unique expertise, but we all share the same vision: to offer you the best of Africa on every plate.",
+            services: "Services",
+            services_nos: "Our",
+            services_text: "At MG Africa Food, we offer a complete range of services to meet all your culinary needs.Whether you're organizing a private event, a festival, or need professional kitchen equipment, we are here for you.",
+            service_catering: "Custom buffets for your private or professional events.",
+            service_festivals: "An explosion of African flavors at your favorite festivals.",
+            service_ateliers: "Introduce your children to African cuisine through our free and educational workshops. Discover the dates of upcoming workshops.",
+            service_location: "Rent professional kitchen equipment, including heating pots, for your events.",
+            service_savoir_plus: "Learn more",
+            protofolio_intro: "Discover some of our recent projects. Whether it's a wedding, a festival, or a culinary workshop, each event is an opportunity to share our passion for African cuisine.",
+            portofolio_realisations: "Our achievements",
+            /* --- Portfolio details --- */
+            pd_title: "MG Africa Food in action",
+            pd_brief: "In brief",
+            pd_k_specialty: "Speciality", pd_v_specialty: "Authentic African cuisine",
+            pd_k_services: "Services", pd_v_services: "Catering, festivals & street food, workshops",
+            pd_k_coverage: "Coverage", pd_v_coverage: "All across Germany",
+            pd_k_based: "Based in", pd_v_based: "Berlin",
+            pd_cta: "Request a quote",
+            pd_h2: "African flavors at every event",
+            pd_p1: "From our festival stands to catering for private events, MG Africa Food shares the richness of African cuisine all across Germany. Our team prepares every dish from fresh ingredients, with the same care, whether for a handful of guests or several hundred.",
+            pd_p2: "We also run cooking workshops for children and support community and charity events – because food brings people together.",
+            pd_hl1: "Festival & street food stands across Germany",
+            pd_hl2: "Catering for weddings and private events (up to 150 guests, Turkish-African wedding in Brandenburg)",
+            pd_hl3: "Cooking workshops for children",
+            pd_hl4: "Fresh food prepared on site, vegetarian options",
+            /* --- Months + 2026 events --- */
+            month_may: "May", month_july: "July", month_october: "October", month_december: "December",
+            ev_karneval: "Carnival of Cultures, Berlin",
+            ev_niedersachsen: "Tag der Niedersachsen, Braunschweig",
+            ev_geburtstag: "Birthday party, Wolfenbüttel",
+            ev_hochzeit_dk: "Wedding in Denmark",
+            ev_potsdam: "Potsdam Africa Festival",
+            ev_hochzeit_bs: "Wedding in Braunschweig",
+            ev_hochzeit_wob: "Wedding in Wolfsburg",
+            evenements_culinaires: "Culinary events",
+            tous: "All",
+            partenariats: "Partnerships",
+            actions: "Solidarity Actions",
+            faq_intro: "Find answers to your questions here. If not, contact us!",
+            faq_ques_1: "Do you offer catering services throughout Germany?",
+            faq_resp_1: "Yes! We cover all of Germany with our catering and event services. Travel fees may apply depending on the distance (we always specify them in our quotes).",
+            faq_ques_2: "What are your culinary specialties?",
+            faq_resp_2: `We focus on the cuisines:
+
+                      - Cameroonian: Ndolè, Poulet DG, Eru etc.
+                      - Nigerian: Jollof Rice, Egusi Soup, Suya etc.
+                      - Ghanaian: Banku & Tilapia, Waakye etc.
+                      - Ivorian: Alloco, Attieke, Garba, Sauce graine etc.
+                      We also adapt the dishes to your preferences!`,
+            faq_ques_3: "I want to organise an event but I have a small budget. Is this possible?",
+            faq_resp_3: `Absolutely! We offer packages to suit all budgets. For example:
+
+                      - Mini-buffet from €10/person (2 courses + side dishes)
+                      - Food Truck / Mobile Gastronomy for intimate events.
+                      Tell us your budget and we'll find a solution!`,
+            faq_ques_4: "How do you book your catering for an event?",
+            faq_resp_4: "Send us a request via our contact form or WhatsApp with the date, number of people and your preferences. We'll send you a quote within 24 hours.",
+            faq_ques_5: "Do you offer delivery?",
+            faq_resp_5: "Yes, throughout the Berlin-Brandenburg region, with charges according to distance.",
+            faq_ques_6: "What payment methods do you accept?",
+            faq_resp_6: "Cash, bank transfer, PayPal and cards (on site).",
+
+            faq_ques_7: "Can I taste the dishes before booking?",
+            faq_resp_7: "Yes, we offer tasting sessions by appointment (with a token fee deducted if booked in advance).",
+            faq_ques_8: "Do you also supply the decorations and crockery?",
+            faq_resp_8: "Yes, optional \n" +
+                "- African decoration \n" +
+                "- Crockery hire",
+            faq_ques_9: "How can you guarantee the freshness of food at an event far from your base?",
+            faq_resp_9: "We use refrigerated lorries and professional heat-holding equipment to ensure optimum quality.",
+            faq_ques_10: "Do you offer halal/vegetarian/vegan services?",
+            faq_resp_10: "Yes, all our dishes can be adapted (please let us know when booking).",
+            faq_ques_11: "What happens in the event of cancellation?",
+            faq_resp_11: "- >30 days before: 100% refund \n" +
+                "- 15-30 days before: 50% refund \n" +
+                "- <15 days: 30% fee",
+            faq_ques_12: "Missing a question here? Contact us via",
+            faq_resp_12: "WhatsApp \n" +
+                " Our contact form",
+            specialities_intro: "Some specialities",
+            specialities_text: "Discover some of our specialities",
+            testi_intro: "What our customers say",
+            testi_1: "\"MG Africa Food has been catering for our general meetings for several years. Their professionalism, the exceptional quality of their dishes and their flexibility make them an essential partner. Always perfect!\"",
+            testi_2: "\"For our annual AGM, MG Africa Food created an African buffet that dazzled our guests. A perfect blend of authenticity and culinary creativity. Our donors are still talking about it!\"",
+            testi_3: "\"Our dream of a wedding with African flavors came true thanks to MG Africa Food. The impeccable service and delicious dishes made our day even more magical. Thank you for bringing a touch of Africa to Berlin!\"",
+            testi_4: "\"Successful Turkish-African fusion! MG Africa Food adapted its menu to our two cultures, surprising all our guests. Warm service and refined presentation\"",
+            testi_5: "\"100 guests and zero disappointment! MG Africa Food turned our event into a culinary journey across Africa. The Poulet DG and Ndolè were the talk of the evening.\"",
+            testi_6: "\"For my 25th birthday, I wanted flavors that remind me of my native Cameroon. MG Africa Food exceeded all my expectations with dishes just like my mother makes. Guaranteed emotion!\"",
+            contact_title: "Contact Us",
+            contact_text: "Whether you're planning an event, wish to meet us at a festival, or participate in a workshop, we are here for you. Contact us today to discuss your needs!",
+            contact_form_name: "Name",
+            contact_form_email: "Email",
+            contact_form_subject: "Subject",
+            contact_form_message: "Message",
+            contact_form_send: "Send",
+            contact_form_adress: "Address",
+            contact_form_call: "Call-us",
+            news_letter_title: "Join our Newsletter",
+            news_letter_text: "Subscribe to our newsletter and receive the latest news about our products and services!",
+            news_letter_button: "Subscribe",
+            footer_atelier_enfant: "Culinary workshops for children",
+            footer_atelier_enfant_1: "Cooking workshops for children",
+            location_materiel: "Rental kitchen equipment",
+            location_materiel_1: "Rental kitchen equipment",
+            footer_location: "Rental of kitchen equipment",
+            mg_food_slogan_footer: "Catering, festivals, culinary workshops and much more. Discover the flavors of Africa in Germany.",
+            service_catering_title: "Tailor-made catering service",
+            service_catering_subtitle: "Discover our recipes, tips and culinary adventures!",
+            service_about: "About this service",
+            service_coming_events: "Upcoming events",
+            service_catering_offer: "Offer your guests an unforgettable culinary experience with our tailor-made catering.\n" +
+                "Whether for:",
+            service_catering_offer_1: "a wedding",
+            service_catering_offer_2: "a party",
+            service_catering_offer_3: "a private dinner",
+            service_catering_text_after_offer: "we create menus tailored to your tastes and budget.",
+
+            service_catering_offers: "Our catering offers",
+            service_catering_offers_text: "Tailored to all budgets. Examples below (Quote examples):",
+            service_catering_menu_title: "Our menus for events",
+            service_catering_menu_mariage: "1. Wedding (50 people)",
+            service_catering_menu_mariage_entree: "Starter:",
+            service_catering_menu_mariage_entree_text: "Mango and shrimp salad",
+            service_catering_menu_mariage_plat: "Dishes:",
+            service_catering_menu_mariage_plat_text: "Ndolè, Grilled fish, Eru",
+            service_catering_menu_mariage_dessert: "Dessert:",
+            service_catering_menu_mariage_dessert_text: "Banana fritters & ice cream",
+            service_catering_menu_mariage_prix: "Price:",
+            service_catering_menu_mariage_option: "Option: Add an exotic fruit buffet for +200 €",
+
+            service_catering_menu_anniv: "2. Birthday (30 people)",
+            service_catering_menu_anniv_entree: "Starter:",
+            service_catering_menu_anniv_entree_text: "Samosas & fritters",
+            service_catering_menu_anniv_plat: "Dishes:",
+            service_catering_menu_anniv_plat_text: "Poulet DG, African fried rice",
+            service_catering_menu_anniv_dessert: "Dessert:",
+            service_catering_menu_anniv_dessert_text: "Mango mousse",
+            service_catering_menu_anniv_prix: "Price:",
+
+            service_catering_menu_entreprise_event: "3. Corporate event (100 people)",
+            service_catering_menu_entreprise_event_buffet: "Cold buffet:",
+            service_catering_menu_entreprise_event_buffet_text: "10 varieties of mini African delights",
+            service_catering_menu_entreprise_event_prix: "Price:",
+            service_catering_note: "Note:",
+            service_catering_note_text: "These menus are modifiable. Request a personalized quote for your event, whatever your budget!",
+            service_catering_avis: "Request your quote",
+
+            service_festival_subtitle: "We make every festival a unique moment",
+            service_festival_after_about: "We bring the flavors of Africa to your favorite festivals.",
+            service_festival_stand: "Discover our colorful stands.",
+            service_festival_plats: "Taste traditional dishes prepared with love.",
+
+            service_atelier_enfant: "Discover our recipes, tips and culinary adventures!",
+            service_atelier_after_about: "At MG Africa Food, we believe that cooking is a gateway to culture and creativity.\n" +
+                "That's why we offer free cooking workshops for children, where they learn to prepare\n" +
+                "traditional African dishes while having fun. These workshops are designed to awaken their curiosity and\n" +
+                "introduce them to new flavors. Check our calendar for upcoming workshop dates and sign your children up for a unique culinary experience!",
+            service_atelier_1: "Free cooking workshop for children.",
+            service_atelier_2: "Awaken children's curiosity.",
+            service_atelier_3: "Introduce them to new flavors.",
+            service_atelier_event_1_title: "Children's cooking class",
+            service_atelier_event_1_program: "Program",
+            service_atelier_event_1_program_detail_1: "Discover Cameroonian flavors",
+            service_atelier_event_1_program_detail_2: "Prepare simple and fun dishes",
+            service_atelier_event_1_footer_1: "Children from 6 to 12 years old",
+            service_atelier_event_1_inscription: "Registration required",
+            service_atelier_event_1_inscription_ici: "here",
+            service_atelier_event_1_inscription_ou_ici: "or here",
+
+            service_location_text: "We offer rental of professional kitchen equipment, including heating pots,\n" +
+                "for your events or culinary needs. Our equipment is of high quality and perfectly\n" +
+                "maintained to ensure your success.\n" +
+                "List of available equipment:",
+            service_location_marmite: "Heating pots",
+            service_location_couverts: "Crockery",
+            service_location_grills: "Grills and barbecues",
+            service_location_refrigerateur: "Portable refrigerators and freezers",
+            service_location_ustensiles: "Kitchen utensils (ladles, spatulas, etc.)",
+            service_location_ask_location: "Request a rental",
+            service_location_subtitle: "Discover our professional kitchen equipment!",
+
+            festival_title: "Event Calendar",
+            germany: "Germany",
+            june: "June",
+            juli: "July",
+            august: "August",
+            december: "December",
+            festival_event_1_title: "Children's cooking workshop",
+            festival_event_1_text: "Join us in Potsdam for a FREE cooking workshop for children.",
+            festival_event_2_text: "Join us in Brandenburg for a street food festival.",
+            festival_event_3_title: "Cameroonian Challenge 2025",
+            festival_event_3_text: "Culinary competition and tasting of traditional Cameroonian dishes in Emsdetten.",
+            festival_event_4_text: "Participation in the famous Berlin Carnival of Cultures with an interactive cooking stand.",
+            festival_event_5_text: "Participation in the famous Mboa Symposium in Berlin.",
+
+            blog_title: "MG Africa Food Blog",
+            blog_text: "Discover our recipes, tips and culinary adventures!",
+            blog_text_1: "Featured Articles",
+            blog_1_title_1: "African Recipes",
+            blog_1_title_2: "Our 3 star dishes for a successful summer",
+            blog_1_text: "Discover our flagship dishes that will delight your guests all summer long. Authentic flavors that transport you straight to Africa.",
+            published: "Published on May 15, 2024",
+
+            blog_2_title_1: "Tips",
+            blog_2_title_2: "Children's workshops: why cooking together is educational",
+            blog_2_text: "Discover how our culinary workshops for children stimulate creativity, autonomy and cultural openness.",
+            published_1: "Published on June 2, 2024",
+
+            blog_3_title_1: "African Recipes",
+            blog_3_title_2: "How to prepare the perfect Ndolè",
+            blog_3_text: "All our tips for preparing this iconic Cameroonian dish with fresh Ndolè leaves.",
+            published_2: "Published on June 10, 2024",
+
+            blog_4_title_1: "Events",
+            blog_4_title_2: "Back on the Karneval der Kulturen 2024",
+            blog_4_text: "Relive the highlights of our participation in this multicultural Berlin festival.",
+            published_3: "Published on May 28, 2024",
+
+            blog_5_title_1: "Tips",
+            blog_5_title_2: "5 tips for organizing a successful wedding",
+            blog_5_text: "Our tips for a memorable wedding with an authentic African touch.",
+            published_4: "Published on May 15, 2024",
+
+            blog_6_title_1: "Culture",
+            blog_6_title_2: "The history of Poulet DG in Cameroon",
+            blog_6_text: "Discover the origins of this prestigious dish that bears the name of an important function.",
+            published_5: "Published on May 5, 2024",
+
+            last_articles: "Latest Articles",
+
+
+            //event 6
+            event6_title1: "Music festival in Hanover",
+            event6_title2: "MG Africa Food at the music festival in Hanover Location: Hanover city centre",
+            event6_text: "Experience the rhythms of Africa not only with your ears, but also with your taste buds!" +
+                "                  MG Africa Food is bringing authentic African delights to the Hannover Music Festival." +
+                "                  While you enjoy the varied sounds of this international music festival, we pamper you" +
+                " with traditional dishes that reflect the culinary diversity of the African continent." +
+                "                  Visit our stand in the city centre and let us take you on a culinary journey that blends" +
+                " perfectly with the sounds of music from all over the world.",
+
+            //event 7
+            event7_title1: "FeeFee e.V. sports tournament",
+            event7_title2: "MG Africa Food accompanies Santé Coppi e.V. at the FeeFee e.V. sports tournament",
+            event7_text: "On July 5th, 2025, MG Africa Food will proudly provide catering for Santé Coppi e.V. during the exciting tournament hosted by FeeFee e.V.. While the teams give their best on the field, we’ll serve up fresh, energizing and flavorful African dishes – the perfect match for a day full of action.\n" +
+                "It’s an honor to support a community dedicated to health, sports and togetherness with the tastes of Africa.\n" +
+                "MG Africa Food – Taste Africa. Feel the Love.\n",
+
+            //event 8
+            event8_title1: "Potsdam's Africa Festival",
+            event8_title2: "MG Africa Food at Potsdam's Africa Festival",
+            event8_text: "Immerse yourself in the flavors and aromas of Africa at this year's Africa Festival in Potsdam! " +
+                "MG Africa Food is proud to be part of this cultural highlight, bringing you authentic dishes from various regions " +
+                "of the continent. From spicy stews to sweet treats – our diverse offerings will delight you. Visit our stand at the " +
+                "Volkspark and experience how food connects people and cultures. Let yourself be enchanted by our delicacies while enjoying " +
+                "the music, dances, and crafts of the festival.",
+
+            //event 9
+            event9_title1: "Africa Cup Berlin",
+            event9_title2: "MG Africa Food at the Africa Cup Berlin",
+            event9_text: "Culture connects – and food is the universal language! MG Africa Food is proud to provide culinary support for the African Integration Event in Wolfenbüttel. " +
+                "At this important event promoting intercultural dialogue and integration, we bring authentic African dishes that build bridges between cultures. Experience how our traditional " +
+                "recipes, passed down through generations, bring people together. Visit our stand at the city market and become part of an event that celebrates diversity and promotes cultural " +
+                "exchange through the joy of sharing meals.\n",
+
+            //event 10
+            event10_title1: "Wolfenbüttel's Integration Event",
+            event10_title2: "MG Africa Food at Wolfenbüttel's Integration Event",
+            event10_text: "Culture connects – and food is the universal language! MG Africa Food is proud to provide culinary support for the African Integration Event in Wolfenbüttel. " +
+                "At this important event promoting intercultural dialogue and integration, we bring authentic African dishes that build bridges between cultures. Experience how our traditional recipes, " +
+                "passed down through generations, bring people together. Visit our stand at the city market and become part of an event that celebrates diversity and promotes cultural exchange through " +
+                "the joy of sharing meals.",
+
+            //event 11
+            event11_title1: "Exclusive Wedding Catering",
+            event11_title2: "Exclusive Wedding Catering in Berlin",
+            event11_text: "MG Africa Food gives your wedding a unique culinary accent! For a special wedding celebration in Berlin, we create a customized menu that combines African traditions with " +
+                "modern influences. Our experienced chefs prepare each dish with love and care to make your special day unforgettable. From elegant finger food creations for the reception to the festive" +
+                " main menu – we ensure your guests are pampered culinary. Contact us for your individual wedding planning and let's create a menu together that tells your personal story.",
+
+            //event 12
+            event12_title1: "African Wedding Catering",
+            event12_title2: "African Wedding Catering in Hamburg",
+            event12_text: "Celebrate your love with the exquisite flavors of Africa! MG Africa Food travels to Hamburg to enrich a special wedding celebration with authentic African specialties. " +
+                "Our experienced team creates a customized menu that combines the wishes of the bride and groom with Africa's rich culinary tradition. From stylish decoration to the final dessert – " +
+                "we take care of every detail so you and your guests can enjoy an unforgettable day. Our dishes tell stories of community, love, and tradition – perfect for the beginning of your journey " +
+                "together. Talk to us about your ideas for this special occasion.",
+
+            //event 13
+            event13_title1: "Fusion Wedding Menu",
+            event13_title2: "Fusion Wedding Menu in Würzburg",
+            event13_text: "A wedding that connects cultures! MG Africa Food brings the flavors of Africa to Würzburg for a very special wedding celebration. Our creative catering team has developed a unique " +
+                "fusion menu that combines African specialties with Franconian influences – a culinary bridge between traditions. Each dish is prepared with fresh, seasonal ingredients and reflects both the " +
+                "origin and future of the couple. From appetizer to dessert, we offer a taste experience that will delight your guests. Let's create together a culinary highlight for your special day that will " +
+                "be remembered.",
+
+            //event 14
+            event14_title1: "African-inspired Christmas Party",
+            event14_title2: "African-inspired Christmas Party at Paul Gerhardt Stift",
+            event14_text: "A Christmas celebration with a special twist! MG Africa Food brings African warmth and hospitality to the festive season at Paul Gerhardt Stift in Berlin. For around 600 employees, " +
+                "we create a festive buffet that combines traditional Christmas flavors with African specialties. Experience how African spices enrich classic Christmas dishes in surprising ways and create new " +
+                "taste experiences. Our experienced team ensures a smooth process and a welcoming atmosphere that invites you to linger and enjoy. A culinary world tour that celebrates the diversity of holiday " +
+                "traditions and opens new perspectives – perfect for an unforgettable year-end celebration.",
+        }
+    },
+    de: {
+        translation: {
+            menu_home: "Home",
+            menu_about: "Über uns",
+            menu_Services: "Dienstleistungen",
+            menu_Contact: "Kontakt",
+            get_started: "Loslegen",
+            homepage_title_1: "Entdecken Sie die",
+            homepage_title_2: "authentischen Geschmäcker",
+            homepage_title_3: "Afrikas in Deutschland",
+            subtitle: "Catering, Festivals, Kochworkshops und vieles mehr. Tauchen Sie ein in ein einzigartiges kulinarisches Erlebnis!",
+            nos_services: "Unsere Dienstleistungen",
+            contactez_nous: "Kontaktieren Sie uns",
+            about_qui_sommes: "Wer sind",
+            about_nous: "wir",
+            about_intro: " MG Africa Food ist viel mehr als ein Catering Unternehmen. Wir sind  leidenschaftlich begeistert von der afrikanischen Küche und engagieren uns dafür, ihre reichen und vielfältigen Aromen mit Ihnen zu teilen. Ob für eine private Veranstaltung, ein Festival oder einen Kochworkshop, wir bieten Ihnen ein unvergessliches gastronomisches Erlebnis.",
+            notre_histoire: "Unsere Geschichte",
+            notre_histoire_text: "MG Africa Food wurde aus einer Leidenschaft für die afrikanische Küche und dem Wunsch geboren, ihre einzigartigen Aromen mit der Welt zu teilen. Gegründet von Denis 1 Fotso, hat sich unser Unternehmen schnell als Referenz in Deutschland für afrikanische kulinarische Veranstaltungen etabliert. Ob durch unser Catering, unsere Festivalstände oder Workshops, wir verpflichten uns, ein authentisches und unvergessliches Erlebnis zu bieten.",
+            events: "Veranstaltungen",
+            events_text: "Ob Sie eine Veranstaltung planen, uns auf einem Festival treffen oder an einem Workshop teilnehmen möchten, wir sind für Sie da. Kontaktieren Sie uns noch heute, um Ihre Bedürfnisse zu besprechen!",
+            mission: "Unsere Mission ist es, den Reichtum der afrikanischen Küche durch schmackhafte Gerichte, lebendige Veranstaltungen und lehrreiche Workshops zu präsentieren. Wir glauben, dass Essen viel mehr ist als nur eine Mahlzeit – es ist ein kulturelles Erlebnis, das Menschen zusammenbringt.",
+            passion: "Leidenschaft",
+            passion_text: " Unser Team besteht aus Menschen, die leidenschaftlich für Kochen, Kultur und Kundenservice brennen. Jedes unserer Mitglieder bringt einzigartige Expertise mit, aber wir alle teilen die gleiche Vision: Ihnen das Beste aus Afrika auf jedem Teller zu bieten.",
+            services: "Dienstleistungen",
+            services_nos: "Unsere",
+            services_text: "Bei MG Africa Food bieten wir eine komplette Palette von Dienstleistungen, um alle Ihre kulinarischen Bedürfnisse zu erfüllen. Ob Sie eine private Veranstaltung oder ein Festival organisieren oder professionelle Küchenausrüstung benötigen, wir sind für Sie da.",
+            service_catering: "Maßgeschneiderte Buffets für Ihre privaten oder beruflichen Veranstaltungen.",
+            service_festivals: "Eine Explosion afrikanischer Aromen auf Ihren Lieblingsfestivals.",
+            service_ateliers: " Führen Sie Ihre Kinder in die afrikanische Küche ein durch unsere kostenlosen und lehrreichen Workshops. Entdecken Sie die Termine der kommenden Workshops.",
+            service_location: "Mieten Sie professionelle Küchenausrüstung, einschließlich Wärmetöpfe, für Ihre Veranstaltungen.",
+            service_savoir_plus: "Mehr erfahren",
+            protofolio_intro: "Entdecken Sie einige unserer jüngsten Projekte. Ob Hochzeit, Festival oder Kochworkshop, jede Veranstaltung ist eine Gelegenheit, unsere Leidenschaft für die afrikanische Küche zu teilen.",
+            portofolio_realisations: "Unsere Leistungen",
+            /* --- Portfolio details --- */
+            pd_title: "MG Africa Food in Aktion",
+            pd_brief: "Kurz gefasst",
+            pd_k_specialty: "Spezialität", pd_v_specialty: "Authentische afrikanische Küche",
+            pd_k_services: "Leistungen", pd_v_services: "Catering, Festivals & Street Food, Workshops",
+            pd_k_coverage: "Einsatzgebiet", pd_v_coverage: "Deutschlandweit",
+            pd_k_based: "Sitz in", pd_v_based: "Berlin",
+            pd_cta: "Angebot anfragen",
+            pd_h2: "Afrikanische Aromen bei jedem Event",
+            pd_p1: "Von unseren Festivalständen bis zum Catering für private Events bringt MG Africa Food den Reichtum der afrikanischen Küche in ganz Deutschland näher. Unser Team bereitet jedes Gericht aus frischen Zutaten zu – mit der gleichen Sorgfalt, ob für wenige Gäste oder mehrere Hundert.",
+            pd_p2: "Wir veranstalten außerdem Koch-Workshops für Kinder und begleiten gemeinnützige und solidarische Veranstaltungen – denn Essen bringt Menschen zusammen.",
+            pd_hl1: "Festival- & Street-Food-Stände in ganz Deutschland",
+            pd_hl2: "Catering für Hochzeiten und private Events (bis zu 150 Gäste, türkisch-afrikanische Hochzeit in Brandenburg)",
+            pd_hl3: "Koch-Workshops für Kinder",
+            pd_hl4: "Frisch vor Ort zubereitet, vegetarische Optionen",
+            /* --- Monate + Events 2026 --- */
+            month_may: "Mai", month_july: "Juli", month_october: "Oktober", month_december: "Dezember",
+            ev_karneval: "Karneval der Kulturen, Berlin",
+            ev_niedersachsen: "Tag der Niedersachsen, Braunschweig",
+            ev_geburtstag: "Geburtstagsparty, Wolfenbüttel",
+            ev_hochzeit_dk: "Hochzeit in Dänemark",
+            ev_potsdam: "Afrika Festival Potsdam",
+            ev_hochzeit_bs: "Hochzeit in Braunschweig",
+            ev_hochzeit_wob: "Hochzeit in Wolfsburg",
+            evenements_culinaires: "Kulinarische Veranstaltungen",
+            tous: "Alle",
+            partenariats: "Partnerschaften",
+            actions: "Solidaritätsaktionen",
+            faq_intro: "Hier finden Sie Antworten auf Ihre Fragen. Wenn nicht, kontaktieren Sie uns!",
+            faq_ques_1: "Bieten Sie Catering-Dienste in ganz Deutschland an?",
+            faq_resp_1: "Ja! Wir decken ganz Deutschland mit unseren Catering- und Veranstaltungsdiensten ab. Reisekosten können je nach Entfernung anfallen (wir geben sie immer in unseren Angeboten an).",
+            faq_ques_2: "Was sind Ihre kulinarischen Spezialitäten?",
+            faq_resp_2: `Wir konzentrieren uns auf die Küchen:
+
+                      - Kamerunisch: Ndolè, Poulet DG, Eru etc.
+                      - Nigerianisch: Jollof Rice, Egusi-Suppe, Suya etc.
+                      - Ghanaisch: Banku & Tilapia, Waakye etc.
+                      - Ivorisch: Alloco, Attieke, Garba, Sauce graine etc.
+                      Wir passen die Gerichte auch an Ihre Vorlieben an!`,
+            faq_ques_3: "Ich möchte eine Veranstaltung organisieren, habe aber ein kleines Budget. Ist das möglich?",
+            faq_resp_3: `Auf jeden Fall! Wir bieten für jedes Budget das passende Paket an. Zum Beispiel :
+
+                      - Mini-Buffet ab 10€/Person (2 Gänge + Beilage).
+                      - Food Truck / Mobile Gastronomie für intime Veranstaltungen.
+                      Nennen Sie uns Ihr Budget, wir finden eine Lösung!`,
+            faq_ques_4: "Wie reserviere ich Ihr Catering für eine Veranstaltung?",
+            faq_resp_4: "Senden Sie uns eine Anfrage über unser Kontaktformular oder WhatsApp mit dem Datum, der Anzahl der Personen und Ihren Vorlieben. Wir senden Ihnen innerhalb von 24 Stunden ein Angebot.",
+            faq_ques_5: "Bieten Sie einen Lieferservice an?",
+            faq_resp_5: "Ja, in der gesamten Region Berlin-Brandenburg mit Gebühren je nach Entfernung.",
+            faq_ques_6: "Welche Zahlungsmethoden akzeptieren Sie?",
+            faq_resp_6: "Bargeld, Banküberweisung, PayPal und Karten (vor Ort).",
+            faq_ques_7: "Kann ich die Gerichte vor der Buchung probieren?",
+            faq_resp_7: "Ja! Wir bieten Verkostungstermine nach Vereinbarung an (symbolische Gebühren, die bei Buchung abgezogen werden).",
+            faq_ques_8: "Bieten Sie auch Dekoration und Geschirr an?",
+            faq_resp_8: "Ja, optional :\n" +
+                "- Afrikanische Dekoration\n" +
+                "- Geschirrverleih",
+            faq_ques_9: "Wie garantieren Sie die Frische der Gerichte bei einer Veranstaltung, die weit von Ihrem Standort entfernt ist?",
+            faq_resp_9: "Wir verwenden Kühlfahrzeuge und professionelle Warmhaltegeräte für optimale Qualität.",
+            faq_ques_10: "Bieten Sie halal/vegetarische/vegane Dienstleistungen an?",
+            faq_resp_10: "Ja, alle unsere Gerichte können angepasst werden (bitte bei der Buchung informieren).",
+            faq_ques_11: "Was passiert bei einer Stornierung?",
+            faq_resp_11: "- >30 Tage vorher: 100% Rückerstattung\n" +
+                "- 15-30 Tage vorher: 50%\n" +
+                "- <15 Tage: 30% Gebühren",
+            faq_ques_12: "Fehlt hier eine Frage? Kontaktieren Sie uns über",
+            faq_resp_12: " WhatsApp\n" +
+                " Unser Kontaktformular",
+            specialities_intro: "Einige Spezialitäten",
+            specialities_text: "Entdecken Sie einige unserer Spezialitäten",
+            testi_intro: "Was unsere Kunden sagen",
+            testi_1: "\"MG Africa Food sorgt seit mehreren Jahren für das Catering unserer Hauptversammlungen. Ihre Professionalität, die außergewöhnliche Qualität ihrer Gerichte und ihre Flexibilität machen sie zu einem unverzichtbaren Partner. Immer perfekt!\"",
+            testi_2: "\"Für unsere Hauptversammlung hat MG Africa Food ein afrikanisches Buffet kreiert, das unsere Gäste verblüfft hat. Eine perfekte Mischung aus Authentizität und kulinarischer Kreativität. Unsere Spender sprechen immer noch darüber!\"",
+            testi_3: "\"Unser Traum von einer Hochzeit mit afrikanischen Aromen wurde dank MG Africa Food Wirklichkeit. Der tadellose Service und die köstlichen Gerichte haben unseren Tag noch magischer gemacht. Danke für diese Prise Afrika in Berlin!\"",
+            testi_4: "\"Erfolgreiche türkisch-afrikanische Fusion! MG Africa Food hat sein Menü an unsere beiden Kulturen angepasst und damit alle unsere Gäste überrascht. Ein herzlicher Service und eine raffinierte Präsentation\"",
+            testi_5: "\"100 Gäste und null Enttäuschung! MG Africa Food hat unsere Veranstaltung in eine kulinarische Reise durch Afrika verwandelt. Das Poulet DG und der Ndolé standen im Mittelpunkt der Gespräche\"",
+            testi_6: "\"Zu meinem 25. Geburtstag wollte ich Geschmäcker, die an meine Heimat Kamerun erinnern. MG Africa Food hat meine Erwartungen mit Gerichten, wie sie meine Mutter zubereitet, übertroffen. Emotionen garantiert!\"",
+            contact_title: "Kontaktieren Sie uns",
+            contact_text: "Ob Sie eine Veranstaltung planen, uns auf einem Festival treffen oder an einem Workshop teilnehmen möchten, wir sind für Sie da. Kontaktieren Sie uns noch heute, um Ihre Bedürfnisse zu besprechen!",
+            contact_form_name: "Name",
+            contact_form_email: "Email",
+            contact_form_subject: "Betreff",
+            contact_form_message: "Nachricht",
+            contact_form_send: "Absenden",
+            contact_form_adress: "Adresse",
+            contact_form_call: "Rufen Sie uns an",
+            news_letter_title: "Abonnieren Sie unseren Newsletter",
+            news_letter_text: "Melden Sie sich für unseren Newsletter an und erhalten Sie die neuesten Nachrichten zu unseren Produkten und Dienstleistungen!",
+            news_letter_button: "Abonnieren",
+            footer_atelier_enfant: "Kinder Kochkurse",
+            footer_location: "Vermietung von Küchenequipment",
+            footer_atelier_enfant_1: "Kinder Kochkurse",
+            location_materiel: "Vermietung von Küchenequipment",
+            location_materiel_1: "Vermietung von Küchenequipment",
+            mg_food_slogan_footer: "Catering, Festivals, Kochworkshops und vieles mehr. Entdecken Sie die Aromen Afrikas in Deutschland.",
+            service_catering_title: "Maßgeschneiderter Catering-Service",
+            service_catering_subtitle: "Entdecken Sie unsere Rezepte, Tipps und kulinarischen Abenteuer!",
+            service_about: "Über diesen Service",
+            service_catering_offer: "Bieten Sie Ihren Gästen ein unvergessliches kulinarisches Erlebnis mit unserem maßgeschneiderten Catering.\n" +
+                "Ob für:",
+            service_catering_offer_1: "eine Hochzeit",
+            service_catering_offer_2: "eine Feier",
+            service_catering_offer_3: "ein privates Abendessen",
+            service_catering_text_after_offer: "wir erstellen Menüs, die auf Ihre Vorlieben und Ihr Budget zugeschnitten sind.",
+            service_coming_events: "Kommende Events",
+
+            service_catering_offers: "Unsere Catering-Angebote",
+            service_catering_offers_text: "Maßgeschneidert für jedes Budget. Beispiele unten (Beispielangebote):",
+            service_catering_menu_title: "Unsere Menüs für Veranstaltungen",
+            service_catering_menu_mariage: "1. Hochzeit (50 Personen)",
+            service_catering_menu_mariage_entree: "Vorspeise:",
+            service_catering_menu_mariage_entree_text: "Mangold- und Garnelensalat",
+            service_catering_menu_mariage_plat: "Gerichte:",
+            service_catering_menu_mariage_plat_text: "Ndolè, Gegrillter Fisch, Eru",
+            service_catering_menu_mariage_dessert: "Nachspeise:",
+            service_catering_menu_mariage_dessert_text: "Bananenfritters & Eis",
+            service_catering_menu_mariage_prix: "Preis:",
+            service_catering_menu_mariage_option: "Option: Fügen Sie ein exotisches Obstbuffet für +200 € hinzu",
+
+            service_catering_menu_anniv: "2. Geburtstag (30 Personen)",
+            service_catering_menu_anniv_entree: "Vorspeise:",
+            service_catering_menu_anniv_entree_text: "Samosas & Fritters",
+            service_catering_menu_anniv_plat: "Gerichte:",
+            service_catering_menu_anniv_plat_text: "Poulet DG, Afrikanischer gebratener Reis",
+            service_catering_menu_anniv_dessert: "Nachspeise:",
+            service_catering_menu_anniv_dessert_text: "Mangomousse",
+            service_catering_menu_anniv_prix: "Preis:",
+            service_catering_menu_entreprise_event: "3. Unternehmensveranstaltung (100 Personen)",
+            service_catering_menu_entreprise_event_buffet: "Kaltes Buffet:",
+            service_catering_menu_entreprise_event_buffet_text: "10 Sorten afrikanischer Mini-Leckereien",
+            service_catering_menu_entreprise_event_prix: "Preis:",
+            service_catering_note: "Hinweis:",
+            service_catering_note_text: "Diese Menüs sind anpassbar. Fordern Sie ein individuelles Angebot für Ihre Veranstaltung an, unabhängig von Ihrem Budget!",
+            service_catering_avis: "Angebot anfordern",
+
+            service_festival_subtitle: "Wir machen jedes Festival zu einem einzigartigen Moment",
+            service_festival_after_about: "Wir bringen die Aromen Afrikas zu Ihren Lieblingsfestivals.",
+            service_festival_stand: "Entdecken Sie unsere bunten Stände.",
+            service_festival_plats: "Probieren Sie traditionelle Gerichte, die mit Liebe zubereitet werden.",
+
+            service_atelier_enfant: "Entdecken Sie unsere Rezepte, Tipps und kulinarischen Abenteuer!",
+            service_atelier_after_about: "Bei MG Africa Food glauben wir, dass Kochen ein Tor zur Kultur und Kreativität ist.\n" +
+                "Deshalb bieten wir kostenlose Kinder Kochkurse an, in denen sie lernen, traditionelle afrikanische Gerichte zuzubereiten und dabei Spaß zu haben. Diese Workshops sind darauf ausgelegt, ihre Neugier zu wecken und ihnen neue Geschmäcker näherzubringen. Überprüfen Sie unseren Kalender für die nächsten Workshop-Termine und melden Sie Ihre Kinder für ein einzigartiges kulinarisches Erlebnis an!",
+            service_atelier_1: "Kostenloser Kochworkshop für Kinder.",
+            service_atelier_2: "Wecken Sie die Neugier der Kinder.",
+            service_atelier_3: "Führen Sie sie in neue Geschmäcker ein.",
+            service_atelier_event_1_title: "Kochkurs für Kinder",
+            service_atelier_event_1_program: "Programm",
+            service_atelier_event_1_program_detail_1: "Entdecken Sie kamerunische Aromen",
+            service_atelier_event_1_program_detail_2: "Zubereitung einfacher und lustiger Gerichte",
+            service_atelier_event_1_footer_1: "Kinder von 6 bis 12 Jahren",
+            service_atelier_event_1_inscription: "Anmeldung erforderlich",
+            service_atelier_event_1_inscription_ici: "hier",
+            service_atelier_event_1_inscription_ou_ici: "oder hier",
+
+            service_location_text: "Wir bieten die Vermietung von professioneller Küchenausrüstung, einschließlich Wärmetöpfen,\n" +
+                "für Ihre Veranstaltungen oder kulinarischen Bedürfnisse an. Unsere Ausrüstung ist von hoher Qualität und perfekt\n" +
+                "gewartet, um Ihren Erfolg zu gewährleisten.\n" +
+                "Liste der verfügbaren Geräte:",
+            service_location_marmite: "Wärmetöpfe",
+            service_location_couverts: "Geschirr",
+            service_location_grills: "Grills und Barbecues",
+            service_location_refrigerateur: "Tragbare Kühlschränke und Gefriergeräte",
+            service_location_ustensiles: "Küchenutensilien (Schöpflöffel, Spatel usw.)",
+            service_location_ask_location: "Vermietung anfragen",
+            service_location_subtitle: "Entdecken Sie unsere professionelle Küchenausrüstung!",
+
+            festival_title: "Veranstaltungskalender",
+            germany: "Deutschland",
+            june: "Juni",
+            juli: "Juli",
+            august: "August",
+            december: "December",
+            festival_event_1_title: "Kochworkshop für Kinder",
+            festival_event_1_text: "Begleiten Sie uns in Potsdam zu einem KOSTENLOSEN Kochworkshop für Kinder.",
+            festival_event_2_text: "Begleiten Sie uns in Brandenburg zu einem Street Food Festival.",
+            festival_event_3_title: "Kamerun-Challenge 2025",
+            festival_event_3_text: "Kochwettbewerb und Verkostung traditioneller kamerunischer Gerichte in Emsdetten.",
+            festival_event_4_text: "Teilnahme am berühmten Karneval der Kulturen in Berlin mit einem interaktiven Kochstand.",
+            festival_event_5_text: "Teilnahme am berühmten Mboa-Symposium in Berlin.",
+
+            blog_title: "MG Africa Food Blog",
+            blog_text: "Entdecken Sie unsere Rezepte, Tipps und kulinarischen Abenteuer!",
+            blog_text_1: "Ausgewählte Artikel",
+
+            blog_1_title_1: "Afrikanische Rezepte",
+            blog_1_title_2: "Unsere 3 Star-Gerichte für einen gelungenen Sommer",
+            blog_1_text: "Entdecken Sie unsere Star-Gerichte, die Ihre Gäste den ganzen Sommer über begeistern werden. Authentische Aromen, die Sie direkt nach Afrika bringen.",
+            published: "Veröffentlicht am 15. Mai 2024",
+
+            blog_2_title_1: "Tipps",
+            blog_2_title_2: "Kochworkshops für Kinder: Warum gemeinsames Kochen lehrreich ist",
+            blog_2_text: "Entdecken Sie, wie unsere Kochworkshops für Kinder Kreativität, Autonomie und kulturelle Offenheit fördern.",
+            published_1: "Veröffentlicht am 2. Juni 2024",
+
+            blog_3_title_1: "Afrikanische Rezepte",
+            blog_3_title_2: "So bereiten Sie das perfekte Ndolè zu",
+            blog_3_text: "Alle unsere Tipps zur Zubereitung dieses ikonischen kamerunischen Gerichts mit frischen Ndolè-Blättern.",
+            published_2: "Veröffentlicht am 10. Juni 2024",
+
+            blog_4_title_1: "Veranstaltungen",
+            blog_4_title_2: "Rückblick auf den Karneval der Kulturen 2024",
+            blog_4_text: "Erleben Sie die Höhepunkte unserer Teilnahme an diesem multikulturellen Festival in Berlin.",
+            published_3: "Veröffentlicht am 28. Mai 2024",
+
+            blog_5_title_1: "Tipps",
+            blog_5_title_2: "5 Tipps für die Organisation einer gelungenen Hochzeit",
+            blog_5_text: "Unsere Tipps für eine unvergessliche Hochzeit mit einem authentischen afrikanischen Touch.",
+            published_4: "Veröffentlicht am 15. Mai 2024",
+
+            blog_6_title_1: "Kultur",
+            blog_6_title_2: "Die Geschichte des Poulet DG in Kamerun",
+            blog_6_text: "Entdecken Sie die Ursprünge dieses prestigeträchtigen Gerichts, das den Namen einer wichtigen Funktion trägt.",
+            published_5: "Veröffentlicht am 5. Mai 2024",
+
+            last_articles: "Neueste Artikel",
+
+            //event 6
+            event6_title1: "Musikfest in Hannover",
+            event6_title2: "MG Africa Food auf dem Musikfest in Hannover Ort: Innenstadt von Hannover",
+            event6_text: "Erleben Sie die Rhythmen Afrikas nicht nur mit den Ohren, sondern auch mit dem Gaumen!" +
+                "                  MG Africa Food bringt authentische afrikanische Köstlichkeiten auf das Musikfest in Hannover." +
+                "                  Während Sie die vielfältigen Klänge dieses internationalen Musikfestivals genießen, verwöhnen wir Sie" +
+                " mit traditionellen Gerichten, die die kulinarische Vielfalt des afrikanischen Kontinents widerspiegeln." +
+                "                  Besuchen Sie unseren Stand in der Innenstadt und lassen Sie sich auf eine Geschmacksreise entführen, die" +
+                " perfekt mit den musikalischen Klängen aus aller Welt harmoniert.",
+
+            //event 7
+            event7_title1: "FeeFee e.V. Sportturnier",
+            event7_title2: "MG Africa Food begleitet Santé Coppi e.V. beim Sportturnier von FeeFee e.V.",
+            event7_text: "Am 5. Juli 2025 ist MG Africa Food stolz darauf, das Catering für Santé Coppi e.V. anlässlich des" +
+                " großen Turniers, das von FeeFee e.V. organisiert wird, zu liefern. Während die Mannschaften auf dem Spielfeld alles geben, werden wir" +
+                " eine schmackhafte, ausgewogene und energiegeladene afrikanische Küche anbieten - ideal für einen sportlichen Tag." +
+                "                    Es ist ein Vergnügen, unsere kulinarische Leidenschaft mit einem Verein zu teilen, der sich für Gesundheit, Sport und Solidarität engagiert." +
+                "                    MG Africa Food - Schmecken Sie Afrika. Spüren Sie die Liebe.",
+
+            //event 8
+            event8_title1: "Afrika Festival Potsdam",
+            event8_title2: "MG Africa Food beim Afrika Festival Potsdam",
+            event8_text: "Tauchen Sie ein in die Aromen und Düfte Afrikas beim diesjährigen Afrika Festival in Potsdam! MG Africa Food ist stolz darauf, Teil dieses kulturellen " +
+                "Highlights zu sein und bringt Ihnen authentische Gerichte aus verschiedenen Regionen des Kontinents. Von würzigen Eintöpfen bis hin zu süßen Leckereien – unser " +
+                "vielfältiges Angebot wird Sie begeistern. Besuchen Sie unseren Stand im Volkspark und erleben Sie, wie Essen Menschen und Kulturen verbindet. Lassen Sie sich von " +
+                "unseren Köstlichkeiten verzaubern, während Sie die Musik, Tänze und Kunsthandwerke des Festivals genießen.",
+
+            //event 9
+            event9_title1: "Africa Cup Berlin",
+            event9_title2: "MG Africa Food beim Afrika Cup Berlin",
+            event9_text: "Sport und kulinarischer Genuss vereinen sich beim Afrika Cup Berlin! MG Africa Food sorgt für die authentische Verpflegung bei diesem spannenden Fußballturnier, " +
+                "das Teams aus der afrikanischen Community in Berlin zusammenbringt. Genießen Sie unsere energiereichen Spezialitäten, die perfekt sind, um die Spieler anzufeuern und die " +
+                "Gemeinschaft zu stärken. Von erfrischenden Getränken bis zu herzhaften Gerichten – wir bieten Ihnen ein Geschmackserlebnis, das die Vielfalt Afrikas widerspiegelt. Kommen " +
+                "Sie vorbei, feuern Sie Ihr Lieblingsteam an und entdecken Sie die Verbindung zwischen Sport, Kultur und Kulinarik!",
+
+            //event 10
+            event10_title1: "Integrationsevent Wolfenbüttel",
+            event10_title2: "MG Africa Food beim Integrationsevent Wolfenbüttel",
+            event10_text: "Kultur verbindet – und Essen ist die universelle Sprache! MG Africa Food ist stolz darauf, das Afrikanische Integrationsevent in Wolfenbüttel kulinarisch zu begleiten. " +
+                "Bei dieser wichtigen Veranstaltung, die den interkulturellen Dialog und die Integration fördert, bringen wir authentische afrikanische Gerichte mit, die Brücken zwischen Kulturen bauen. " +
+                "Erleben Sie, wie unsere traditionellen Rezepte, die von Generation zu Generation weitergegeben wurden, Menschen zusammenbringen. Besuchen Sie unseren Stand am Stadtmarkt und werden Sie " +
+                "Teil eines Ereignisses, das Vielfalt feiert und kulturellen Austausch durch die Freude am gemeinsamen Essen fördert.\n",
+
+            //event 11
+            event11_title1: "Exklusives Hochzeits-Catering",
+            event11_title2: "Exklusives Hochzeits-Catering in Berlin",
+            event11_text: "MG Africa Food verleiht Ihrer Hochzeit einen einzigartigen kulinarischen Akzent! Für eine besondere Hochzeitsfeier in Berlin kreieren wir ein maßgeschneidertes Menü, " +
+                "das afrikanische Traditionen mit modernen Einflüssen verbindet. Unsere erfahrenen Köche bereiten jedes Gericht mit Liebe und Sorgfalt zu, um Ihren besonderen Tag unvergesslich zu machen. " +
+                "Von eleganten Fingerfood-Kreationen für den Empfang bis hin zum festlichen Hauptmenü – wir sorgen dafür, dass Ihre Gäste kulinarisch verwöhnt werden. Kontaktieren Sie uns für Ihre" +
+                " individuelle Hochzeitsplanung und lassen Sie uns gemeinsam ein Menü gestalten, das Ihre persönliche Geschichte erzählt.",
+
+            //event 12
+            event12_title1: "Hochzeits-Catering",
+            event12_title2: "Afrikanisches Hochzeits-Catering in Hamburg",
+            event12_text: "Feiern Sie Ihre Liebe mit den exquisiten Aromen Afrikas! MG Africa Food reist nach Hamburg, um eine besondere Hochzeitsfeier mit authentischen afrikanischen Spezialitäten zu " +
+                "bereichern. Unser erfahrenes Team kreiert ein individuelles Menü, das die Wünsche des Brautpaares mit der reichen kulinarischen Tradition Afrikas verbindet. Von der stilvollen Dekoration " +
+                "bis zum letzten Dessert – wir kümmern uns um jedes Detail, damit Sie und Ihre Gäste einen unvergesslichen Tag genießen können. Unsere Gerichte erzählen Geschichten von Gemeinschaft, Liebe " +
+                "und Tradition – perfekt für den Beginn Ihrer gemeinsamen Reise. Sprechen Sie mit uns über Ihre Vorstellungen für diesen besonderen Anlass.",
+
+            //event 13
+            event13_title1: "Fusion-Hochzeitsmenü",
+            event13_title2: "Fusion-Hochzeitsmenü in Würzburg",
+            event13_text: "Eine Hochzeit, die Kulturen verbindet! MG Africa Food bringt die Aromen Afrikas nach Würzburg für eine ganz besondere Hochzeitsfeier. Unser kreatives Catering-Team hat ein einzigartiges " +
+                "Fusion-Menü entwickelt, das afrikanische Spezialitäten mit fränkischen Einflüssen kombiniert – eine kulinarische Brücke zwischen Traditionen. Jedes Gericht wird mit frischen, saisonalen Zutaten " +
+                "zubereitet und spiegelt sowohl die Herkunft als auch die Zukunft des Paares wider. Von der Vorspeise bis zum Dessert bieten wir ein Geschmackserlebnis, das Ihre Gäste begeistern wird. Lassen Sie " +
+                "uns gemeinsam einen kulinarischen Höhepunkt für Ihren besonderen Tag gestalten, der in Erinnerung bleibt.",
+
+            //event 14
+            event14_title1: "Afrikanisch inspirierte Weihnachtsfeier",
+            event14_title2: "Afrikanisch inspirierte Weihnachtsfeier im Paul Gerhardt Stift",
+            event14_text: "Eine Weihnachtsfeier der besonderen Art! MG Africa Food bringt afrikanische Wärme und Gastfreundschaft in die festliche Jahreszeit beim Paul Gerhardt Stift in Berlin. Für rund " +
+                "600 Mitarbeiter kreieren wir ein festliches Buffet, das traditionelle Weihnachtsaromen mit afrikanischen Spezialitäten verbindet. Erleben Sie, wie afrikanische Gewürze klassische " +
+                "Weihnachtsgerichte auf überraschende Weise bereichern und neue Geschmackserlebnisse schaffen. Unser erfahrenes Team sorgt für einen reibungslosen Ablauf und eine einladende Atmosphäre, " +
+                "die zum Verweilen und Genießen einlädt. Eine kulinarische Weltreise, die die Vielfalt der Festtagstraditionen feiert und neue Perspektiven eröffnet – perfekt für einen unvergesslichen " +
+                "Jahresabschluss.",
+        }
+    }
+};
+
+i18next
+    .use(i18nextBrowserLanguageDetector)
+    .init({
+        resources,
+        fallbackLng: 'de',
+        debug: true
+    }, function(err, t) {
+        updateContent();
+    });
+
+function updateContent() {
+    $('[data-i18n]').each(function () {
+        const key = $(this).attr('data-i18n');
+        const value = i18next.t(key);
+        const tag = this.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') {
+            // Les <input>/<textarea> n'ont pas de contenu texte : on traduit
+            // l'attribut adéquat (value pour les boutons, placeholder sinon).
+            if (this.type === 'submit' || this.type === 'button' || this.type === 'reset') {
+                this.value = value;
+            } else {
+                $(this).attr('placeholder', value);
+            }
+        } else {
+            $(this).text(value);
+        }
+    });
+}
+
+// Normalise le code locale (ex. "de-DE" -> "de") et limite aux langues gérées,
+// sinon le <select> ne trouve pas d'option et reste vide.
+const supportedLangs = ['en', 'fr', 'de'];
+let detectedLang = (i18next.language || 'de').slice(0, 2).toLowerCase();
+if (!supportedLangs.includes(detectedLang)) detectedLang = 'de';
+$('#languageSwitcher').val(detectedLang);
+
+$('#languageSwitcher').on('change', function () {
+    const selectedLang = $(this).val();
+    i18next.changeLanguage(selectedLang, updateContent);
+});
