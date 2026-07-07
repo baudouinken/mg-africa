@@ -1698,7 +1698,7 @@ h1, h2, h3, h4, h5, h6,
   width: 64px;
   height: 4px;
   border-radius: 4px;
-  background: linear-gradient(90deg, var(--accent-color), var(--safran));
+  background: var(--accent-color);
 }
 .section-title p {
   max-width: 720px;
@@ -1715,11 +1715,7 @@ h1, h2, h3, h4, h5, h6,
   height: 6px;
   margin: 0 auto 18px;
   border-radius: 6px;
-  background:
-    linear-gradient(90deg,
-      var(--accent-color) 0 33%,
-      var(--safran) 33% 66%,
-      var(--terracotta) 66% 100%);
+  background: var(--accent-color);
 }
 
 /* ---------- 3. Navigation --------------------------------------------------- */
@@ -1736,7 +1732,7 @@ h1, h2, h3, h4, h5, h6,
     position: absolute;
     left: 15px; right: 15px; bottom: 10px;
     height: 2px;
-    background: linear-gradient(90deg, var(--accent-color), var(--safran));
+    background: var(--accent-color);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .3s ease;
@@ -1999,8 +1995,7 @@ a.btn-getstarted:hover, .header .btn-getstarted:hover {
   height: 5px;
   margin-top: 14px;
   border-radius: 5px;
-  background: linear-gradient(90deg,
-    var(--accent-color) 0 34%, var(--safran) 34% 67%, var(--terracotta) 67% 100%);
+  background: var(--accent-color);
 }
 @media (min-width: 992px) {
   .page-title h1:after { margin-left: 0; }
