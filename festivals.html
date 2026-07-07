@@ -25,7 +25,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css?v=3" rel="stylesheet">
+  <link href="assets/css/main.css?v=5" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Ninestars
@@ -44,7 +44,38 @@
       line-height: 1.2;
     }
     .event-month { text-transform: uppercase; letter-spacing: .06em; }
-    .card-body { padding: 1.4rem; }
+
+    /* ===== Agenda compact : cartes en lignes fines ===== */
+    .row.mb-5 .mb-4 { margin-bottom: .8rem !important; }
+    .event-card {
+      display: flex; align-items: stretch; height: auto !important;
+      border-radius: 14px; overflow: hidden;
+    }
+    .event-card .event-date {
+      flex: 0 0 84px; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; padding: 8px 6px; gap: 2px;
+    }
+    .event-day { font-size: 1.35rem; line-height: 1; }
+    .event-month { font-size: .6rem; }
+    .event-card .card-body {
+      padding: 10px 16px !important; display: flex; flex-direction: column;
+      justify-content: center; gap: 3px;
+    }
+    .event-title { font-size: 1rem !important; line-height: 1.2 !important; margin: 0; }
+    .event-card .card-text { display: none; }         /* description masquée pour compacter */
+    .event-card .card-body .d-flex { margin-top: 0 !important; }
+    .event-card small { font-size: .76rem; }
+
+    /* Événements passés (repliés) + bouton */
+    .past-wrap { text-align: center; margin: 6px 0 24px; }
+    .past-toggle {
+      font-family: var(--nav-font, sans-serif); font-weight: 700; font-size: .82rem; letter-spacing: .04em;
+      color: var(--accent-color); background: transparent;
+      border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+      border-radius: 999px; padding: 9px 22px; cursor: pointer; transition: .25s;
+    }
+    .past-toggle:hover { background: var(--accent-color); color: #fff; }
+    .ev-past .event-card { opacity: .72; }
 
     .gallery-img {
       height: 200px;
@@ -712,6 +743,42 @@
   <script src="https://unpkg.com/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
   <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="assets/js/translation.js?v=6"></script>
+
+  <!-- Agenda : tri par date, à venir en premier, passés repliés -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const M = {janvier:1,januar:1,january:1,'février':2,fevrier:2,februar:2,february:2,mars:3,'märz':3,marz:3,march:3,avril:4,april:4,mai:5,may:5,juin:6,juni:6,june:6,juillet:7,juli:7,july:7,'août':8,aout:8,august:8,septembre:9,september:9,octobre:10,oktober:10,october:10,novembre:11,november:11,'décembre':12,decembre:12,dezember:12,december:12};
+      const row = document.querySelector('.row.mb-5');
+      if (!row) return;
+      const cols = [...row.children].filter(c => c.querySelector && c.querySelector('.event-card'));
+      const items = cols.map(col => {
+        const day = parseInt((col.querySelector('.event-day') || {}).textContent || '1') || 1;
+        const mt = ((col.querySelector('.event-month') || {}).textContent || '').trim();
+        const year = parseInt((mt.match(/\d{4}/) || ['1970'])[0]);
+        const mw = mt.replace(/\d{4}/, '').replace(/[^A-Za-zÀ-ÿ]/g, '').toLowerCase();
+        return { col, d: new Date(year, (M[mw] || 1) - 1, day) };
+      });
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const up = items.filter(i => i.d >= today).sort((a, b) => a.d - b.d);
+      const past = items.filter(i => i.d < today).sort((a, b) => b.d - a.d);
+      up.forEach(i => row.appendChild(i.col));
+      if (past.length) {
+        const L = ((window.i18next && i18next.language) || document.documentElement.lang || 'fr').slice(0, 2);
+        const T = ({fr:['Voir les événements passés','Masquer les événements passés'],de:['Vergangene Veranstaltungen anzeigen','Vergangene ausblenden'],en:['Show past events','Hide past events']})[L] || ['Voir les événements passés','Masquer les événements passés'];
+        const wrap = document.createElement('div'); wrap.className = 'col-12 past-wrap';
+        const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'past-toggle';
+        btn.textContent = T[0] + ' (' + past.length + ')';
+        wrap.appendChild(btn); row.appendChild(wrap);
+        past.forEach(i => { i.col.classList.add('ev-past', 'd-none'); row.appendChild(i.col); });
+        let open = false;
+        btn.addEventListener('click', function () {
+          open = !open;
+          past.forEach(i => i.col.classList.toggle('d-none', !open));
+          btn.textContent = open ? T[1] : (T[0] + ' (' + past.length + ')');
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

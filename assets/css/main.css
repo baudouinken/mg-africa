@@ -1848,7 +1848,8 @@ a.btn-getstarted:hover, .header .btn-getstarted:hover {
 .header {
   background-color: color-mix(in srgb, var(--cream), white 35%);
   box-shadow: 0 1px 0 var(--sand-line);
-  backdrop-filter: saturate(140%) blur(2px);
+  /* NE PAS ajouter de backdrop-filter/filter/transform ici : cela crée un
+     bloc conteneur qui casse le position:fixed du menu hamburger mobile. */
 }
 
 /* ---------- 7. Atmosphère : motif wax + grain ------------------------------ */
