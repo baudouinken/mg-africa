@@ -781,40 +781,136 @@
   <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="assets/js/translation.js?v=7"></script>
 
-  <!-- Agenda : tri par date, à venir en premier, passés repliés -->
+  <!-- ============================================================
+       AGENDA DES ÉVÉNEMENTS — piloté par Google Sheets
+       Le client remplit un tableur (colonnes : Date | Titre | Ville),
+       la page l'affiche automatiquement (tri par date, passés repliés).
+       ➜ Voir la marche à suivre dans README-events.md
+       ============================================================ -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const M = {janvier:1,januar:1,january:1,'février':2,fevrier:2,februar:2,february:2,mars:3,'märz':3,marz:3,march:3,avril:4,april:4,mai:5,may:5,juin:6,juni:6,june:6,juillet:7,juli:7,july:7,'août':8,aout:8,august:8,septembre:9,september:9,octobre:10,oktober:10,october:10,novembre:11,november:11,'décembre':12,decembre:12,dezember:12,december:12};
-      const row = document.querySelector('.row.mb-5');
-      if (!row) return;
-      const cols = [...row.children].filter(c => c.querySelector && c.querySelector('.event-card'));
-      const items = cols.map(col => {
-        const day = parseInt((col.querySelector('.event-day') || {}).textContent || '1') || 1;
-        const mt = ((col.querySelector('.event-month') || {}).textContent || '').trim();
-        const year = parseInt((mt.match(/\d{4}/) || ['1970'])[0]);
-        const mw = mt.replace(/\d{4}/, '').replace(/[^A-Za-zÀ-ÿ]/g, '').toLowerCase();
-        return { col, d: new Date(year, (M[mw] || 1) - 1, day) };
-      });
-      const today = new Date(); today.setHours(0, 0, 0, 0);
-      const up = items.filter(i => i.d >= today).sort((a, b) => a.d - b.d);
-      const past = items.filter(i => i.d < today).sort((a, b) => b.d - a.d);
-      up.forEach(i => row.appendChild(i.col));
+  (function () {
+    /* ⚙️  1) COLLE ICI l'URL CSV de ton Google Sheet publié :
+           Google Sheets → Fichier → Partager → Publier sur le web → format CSV → Copier le lien.
+       Tant que cette valeur est vide, la page affiche les événements écrits ci-dessus (repli). */
+    var SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7W-3gND0S9vaRSdFUrjlDMcVtxionx7jHsODiWVWul12HdTt4y-B9fTWvO3vHSjS_PvYwYUttoqju/pub?output=csv";
+
+    var MONTHS_IN = {janvier:1,januar:1,january:1,'février':2,fevrier:2,februar:2,february:2,mars:3,'märz':3,marz:3,march:3,avril:4,april:4,mai:5,may:5,juin:6,juni:6,june:6,juillet:7,juli:7,july:7,'août':8,aout:8,august:8,septembre:9,september:9,octobre:10,oktober:10,october:10,novembre:11,november:11,'décembre':12,decembre:12,dezember:12,december:12};
+    var MONTHS_OUT = {
+      fr:['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
+      de:['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
+      en:['January','February','March','April','May','June','July','August','September','October','November','December']
+    };
+    var lang = ((window.i18next && i18next.language) || document.documentElement.lang || 'fr').slice(0,2);
+    if (!MONTHS_OUT[lang]) lang = 'fr';
+    var T = ({fr:['Voir les événements passés','Masquer les événements passés'],de:['Vergangene Veranstaltungen anzeigen','Vergangene ausblenden'],en:['Show past events','Hide past events']})[lang];
+
+    var row = document.querySelector('.row.mb-5');
+    if (!row) return;
+    function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+
+    /* Tri : à venir d'abord (croissant), passés repliés sous un bouton */
+    function layout(items) {
+      var today = new Date(); today.setHours(0,0,0,0);
+      var up = items.filter(function(i){return i.d >= today;}).sort(function(a,b){return a.d-b.d;});
+      var past = items.filter(function(i){return i.d < today;}).sort(function(a,b){return b.d-a.d;});
+      up.forEach(function(i){ row.appendChild(i.col); });
       if (past.length) {
-        const L = ((window.i18next && i18next.language) || document.documentElement.lang || 'fr').slice(0, 2);
-        const T = ({fr:['Voir les événements passés','Masquer les événements passés'],de:['Vergangene Veranstaltungen anzeigen','Vergangene ausblenden'],en:['Show past events','Hide past events']})[L] || ['Voir les événements passés','Masquer les événements passés'];
-        const wrap = document.createElement('div'); wrap.className = 'col-12 past-wrap';
-        const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'past-toggle';
+        var wrap = document.createElement('div'); wrap.className='col-12 past-wrap';
+        var btn = document.createElement('button'); btn.type='button'; btn.className='past-toggle';
         btn.textContent = T[0] + ' (' + past.length + ')';
         wrap.appendChild(btn); row.appendChild(wrap);
-        past.forEach(i => { i.col.classList.add('ev-past', 'd-none'); row.appendChild(i.col); });
-        let open = false;
-        btn.addEventListener('click', function () {
-          open = !open;
-          past.forEach(i => i.col.classList.toggle('d-none', !open));
-          btn.textContent = open ? T[1] : (T[0] + ' (' + past.length + ')');
-        });
+        past.forEach(function(i){ i.col.classList.add('ev-past','d-none'); row.appendChild(i.col); });
+        var open=false;
+        btn.addEventListener('click', function(){ open=!open; past.forEach(function(i){ i.col.classList.toggle('d-none',!open); }); btn.textContent = open ? T[1] : (T[0]+' ('+past.length+')'); });
       }
-    });
+    }
+
+    /* Fabrique une carte événement à partir des données du tableur */
+    function makeCol(dayText, monthText, title, city) {
+      var col = document.createElement('div'); col.className='col-md-6 col-lg-4 mb-4';
+      col.innerHTML =
+        '<div class="event-card h-100">' +
+          '<div class="event-date"><div class="event-day">'+esc(dayText)+'</div><div class="event-month">'+esc(monthText)+'</div></div>' +
+          '<div class="card-body"><h3 class="event-title">'+esc(title)+'</h3>' + (city ? '<small class="text-muted">'+esc(city)+'</small>' : '') + '</div>' +
+        '</div>';
+      return col;
+    }
+
+    /* Lit une date : "12.09.2026", "24-26.07.2026", "24.-26.07.2026", "23/07/2027"… */
+    function parseDate(str) {
+      str = String(str==null?'':str).trim();
+      var y = str.match(/(\d{4})/); if (!y) return null;         // année = groupe à 4 chiffres
+      var year = parseInt(y[1],10);
+      var nums = str.replace(y[1],' ').match(/\d{1,2}/g);         // chiffres restants (jour(s) + mois)
+      if (!nums || !nums.length) return null;
+      var month = parseInt(nums[nums.length-1],10);              // dernier = mois
+      var days = nums.slice(0, nums.length-1); if (!days.length) days = ['1'];
+      var dayText = days.length > 1 ? (days[0] + '-' + days[days.length-1]) : days[0];
+      if (!month) return null;
+      return { dayText: dayText, month: month, year: year, d: new Date(year, month-1, parseInt(days[0],10)||1) };
+    }
+
+    /* Mini-parseur CSV (gère les virgules dans les titres) */
+    function parseCSV(text) {
+      text = text.replace(/\r\n?/g, '\n');
+      var rows=[], row=[], f='', q=false;
+      for (var i=0;i<text.length;i++){ var c=text[i];
+        if (q){ if(c==='"'){ if(text[i+1]==='"'){f+='"';i++;} else q=false; } else f+=c; }
+        else { if(c==='"')q=true; else if(c===','){row.push(f);f='';} else if(c==='\n'){row.push(f);rows.push(row);row=[];f='';} else f+=c; }
+      }
+      if (f.length||row.length){ row.push(f); rows.push(row); }
+      return rows;
+    }
+
+    /* Construit les événements depuis le CSV du tableur */
+    function fromSheet(csv) {
+      var rows = parseCSV(csv).filter(function(r){ return r.some(function(c){ return c && c.trim(); }); });
+      if (rows.length < 2) return null;
+      var head = rows[0].map(function(h){ return h.trim().toLowerCase(); });
+      var iDate  = head.findIndex(function(h){ return /date|datum/.test(h); });
+      var iTitle = head.findIndex(function(h){ return /titre|title|titel|event|nom/.test(h); });
+      var iCity  = head.findIndex(function(h){ return /ville|stadt|city|lieu|ort/.test(h); });
+      if (iDate < 0 || iTitle < 0) return null;
+      var items = [];
+      for (var r=1; r<rows.length; r++){
+        var pd = parseDate(rows[r][iDate]);
+        var title = (rows[r][iTitle]||'').trim();
+        if (!pd || !title) continue;
+        var monthText = (MONTHS_OUT[lang][pd.month-1] || '') + ' ' + pd.year;
+        items.push({ col: makeCol(pd.dayText, monthText, title, iCity>=0 ? (rows[r][iCity]||'').trim() : ''), d: pd.d });
+      }
+      return items.length ? items : null;
+    }
+
+    /* Repli : événements écrits en dur dans la page */
+    function fromDOM() {
+      return [].slice.call(row.children).filter(function(c){ return c.querySelector && c.querySelector('.event-card'); }).map(function(col){
+        var day = parseInt((col.querySelector('.event-day')||{}).textContent || '1') || 1;
+        var mt = ((col.querySelector('.event-month')||{}).textContent || '').trim();
+        var year = parseInt((mt.match(/\d{4}/) || ['1970'])[0]);
+        var mw = mt.replace(/\d{4}/,'').replace(/[^A-Za-zÀ-ÿ]/g,'').toLowerCase();
+        return { col: col, d: new Date(year, (MONTHS_IN[mw]||1)-1, day) };
+      });
+    }
+    function clearDOMEvents() {
+      [].slice.call(row.children).filter(function(c){ return c.querySelector && c.querySelector('.event-card'); }).forEach(function(c){ c.remove(); });
+    }
+
+    function start() {
+      if (SHEET_CSV_URL) {
+        fetch(SHEET_CSV_URL).then(function(r){ return r.ok ? r.text() : Promise.reject(); }).then(function(csv){
+          var items = fromSheet(csv);
+          if (items) { clearDOMEvents(); layout(items); }   // tableur OK → on l'utilise
+          else { layout(fromDOM()); }                        // tableur vide/mal formé → repli
+        }).catch(function(){ layout(fromDOM()); });          // erreur réseau → repli
+      } else {
+        layout(fromDOM());                                   // pas d'URL configurée → événements de la page
+      }
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+    else start();
+  })();
   </script>
 </body>
 
