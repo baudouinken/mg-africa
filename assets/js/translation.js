@@ -49,7 +49,8 @@ const resources = {
             pd_hl3: "Ateliers culinaires pour enfants",
             pd_hl4: "Cuisine fraîche préparée sur place, options végétariennes",
             /* --- Mois + événements 2026 --- */
-            month_may: "Mai", month_july: "Juillet", month_october: "Octobre", month_december: "Décembre",
+            month_may: "Mai", month_july: "Juillet", month_september: "Septembre", month_october: "Octobre", month_december: "Décembre",
+            ev_sommerfest: "Lecker Sommerfest, Wolfenbüttel", ev_peine: "Événement privé à Peine",
             ev_karneval: "Carnaval des Cultures, Berlin",
             ev_niedersachsen: "Tag der Niedersachsen, Braunschweig",
             ev_geburtstag: "Fête d'anniversaire, Wolfenbüttel",
@@ -394,7 +395,8 @@ const resources = {
             pd_hl3: "Cooking workshops for children",
             pd_hl4: "Fresh food prepared on site, vegetarian options",
             /* --- Months + 2026 events --- */
-            month_may: "May", month_july: "July", month_october: "October", month_december: "December",
+            month_may: "May", month_july: "July", month_september: "September", month_october: "October", month_december: "December",
+            ev_sommerfest: "Lecker Sommerfest, Wolfenbüttel", ev_peine: "Private event in Peine",
             ev_karneval: "Carnival of Cultures, Berlin",
             ev_niedersachsen: "Tag der Niedersachsen, Braunschweig",
             ev_geburtstag: "Birthday party, Wolfenbüttel",
@@ -722,7 +724,8 @@ const resources = {
             pd_hl3: "Koch-Workshops für Kinder",
             pd_hl4: "Frisch vor Ort zubereitet, vegetarische Optionen",
             /* --- Monate + Events 2026 --- */
-            month_may: "Mai", month_july: "Juli", month_october: "Oktober", month_december: "Dezember",
+            month_may: "Mai", month_july: "Juli", month_september: "September", month_october: "Oktober", month_december: "Dezember",
+            ev_sommerfest: "Lecker Sommerfest, Wolfenbüttel", ev_peine: "Privates Event in Peine",
             ev_karneval: "Karneval der Kulturen, Berlin",
             ev_niedersachsen: "Tag der Niedersachsen, Braunschweig",
             ev_geburtstag: "Geburtstagsparty, Wolfenbüttel",
